@@ -4,12 +4,11 @@ Registradas a partir da execução de 2026-11-11. A primeira seção lista o que
 
 ## O que falta para a distribuição (plano de lotes, Task 10)
 
-O texto está completo: toda entrada traduzível tem `pt` e status `traduzido` (`testes/test_lotes.py::test_tudo_traduzido`; as entradas só com códigos, como `[s0:06]` ou `[espera]`, ficam vazias e `pendente`, e o montador mantém o original). Falta:
+Nada. O texto está completo e foi revisado jogando, do início ao fim: toda entrada traduzível tem `pt` e status `revisado` (as entradas só com códigos, como `[s0:06]` ou `[espera]`, ficam vazias e `pendente`, e o montador mantém o original).
 
-1. **Revisão jogando, pelo autor**: jogar do início ao fim na ROM de `construir`. As correções voltam para os YAML de `traducao/textos/`, e as entradas conferidas passam a `revisado`.
-2. [resolvido na Task 10b] **Texto desenhado em tiles**: `FIM`, `CONTINUA...`, `HOT` e `SAÍDA` (itens `final`, `placas_hot` e `placa_saida` em `config/graficos.yaml`, patches `final.*`; mapa-rom.md §8). Na revisão jogando, falta ver as placas `HOT` dos blocos `0x37`, `0x10B` e `0x11C`, cujas cenas não foram alcançadas no emulador (o teste confere só o VRAM). O acento do `Í` de `SAÍDA` está no tile 10 do bloco `0xB8`: nas 4 salas com a placa ele só aparece acima dela, mas não se conferiu se outra sala carrega o bloco e usa o tile 10 no cenário (um acento solto denunciaria).
-3. [visto pelo autor; traduzido] **Game over**: o texto é desenhado no bloco `0xFF`. `GAME OVER` virou `FIM DE JOGO` (item `game_over` em `config/graficos.yaml`; mapa-rom.md §8, "Game over"), visto no emulador com uma cópia da ROM que força o game over (`testes/test_texto_tiles.py::test_game_over_no_jogo`; capturas em `build/capturas/game_over_base/` e `game_over_ptbr/`). Na revisão jogando, falta ver a tela depois de uma morte de verdade.
-4. **Distribuição**, num plano próprio, depois da revisão jogando: o patch IPS e o README do patch, com a recomendação de emulador abaixo (save em EEPROM).
+- [resolvido] **Revisão jogando**, pelo autor, do início ao fim, incluindo as placas `HOT` e `SAÍDA`, o `FIM DE JOGO` depois de uma morte, o cursor do SIM/NÃO da pedra encantada, os créditos e o final.
+- [resolvido] **Texto desenhado em tiles**: `FIM`, `CONTINUA...`, `HOT`, `SAÍDA` e `FIM DE JOGO` (itens de `config/graficos.yaml`; mapa-rom.md §8).
+- [resolvido] **Distribuição**: o patch versionado em `patch/wbmw-ptbr.ips` (regravado por `construir`), o `patch/LEIA-ME.txt` e a release por tag (`.github/workflows/release.yml`; README, "Publicar uma versão").
 
 ## Confirmados no emulador (Plano 3, Tarefa 6)
 

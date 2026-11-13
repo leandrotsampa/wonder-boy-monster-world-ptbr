@@ -1,0 +1,39 @@
+Wonder Boy in Monster World - Tradução PT-BR
+=============================================
+
+Tradução completa para português do Brasil de Wonder Boy in Monster World
+(Mega Drive): diálogos, lojas, itens, equipamentos, magias, menus, mensagens
+do sistema, nomes de lugares, créditos e os gráficos com texto (tela de
+título, MOEDAS no HUD, placas, FIM DE JOGO e o final), com acentuação
+completa.
+
+Arquivo: wbmw-ptbr.ips
+
+ROM necessária
+--------------
+O patch só funciona sobre esta ROM:
+
+  Arquivo (GoodGen): Wonder Boy in Monster World (UE) [!].bin
+  No-Intro:          Wonder Boy in Monster World (USA, Europe)
+  Tamanho:           786.432 bytes, sem cabeçalho SMD
+  CRC32:             1592F5B0
+  MD5:               edba0bdb192d47712edbe0097f885f40
+  SHA-1:             87a968f773c7e807e647c0737132457b06b78276
+
+A ROM não acompanha o patch.
+
+Como aplicar
+------------
+Use um programa de IPS (Floating IPS, Rom Patcher JS ou outro) e aplique
+wbmw-ptbr.ips sobre a ROM acima. Guarde uma cópia da ROM original.
+
+A ROM traduzida mantém o mesmo CRC32 da original (1592F5B0). Para
+diferenciar as duas, use o nome do arquivo ou o SHA-1.
+
+Emulador
+--------
+Recomendado: Genesis Plus GX (RetroArch) ou BlastEm. O save do jogo é uma
+EEPROM, e esses emuladores a reconhecem na ROM traduzida. No ares o jogo
+roda, mas não salva.
+
+Projeto: https://github.com/leandrotsampa/wonder-boy-monster-world-ptbr

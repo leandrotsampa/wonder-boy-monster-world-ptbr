@@ -53,6 +53,7 @@ ETAPAS: list[Callable[[bytearray, Projeto], None]] = [etapa_texto, etapa_inline,
 
 NOME_BIN = "wbmw-ptbr.bin"
 NOME_IPS = "wbmw-ptbr.ips"
+PASTA_PATCH = "patch"
 NOME_RELATORIO = "relatorio.txt"
 
 
@@ -244,7 +245,12 @@ def cmd_construir(projeto: Projeto, args) -> int:
     (destino / NOME_BIN).write_bytes(rom)
     (destino / NOME_IPS).write_bytes(patch)
     (destino / NOME_RELATORIO).write_text(relatorio, encoding="utf-8", newline="\n")
-    print(f"Gerados em {destino}: {NOME_BIN}, {NOME_IPS}, {NOME_RELATORIO}")
+    # cópia versionada do patch (vai para a release; testes/test_compensacao.py confere)
+    pasta_patch = projeto.raiz / PASTA_PATCH
+    pasta_patch.mkdir(exist_ok=True)
+    (pasta_patch / NOME_IPS).write_bytes(patch)
+    print(f"Gerados em {destino}: {NOME_BIN}, {NOME_IPS}, {NOME_RELATORIO}; "
+          f"patch versionado em {PASTA_PATCH}/{NOME_IPS}")
     return 0
 
 

@@ -6,6 +6,7 @@ build/
 *.gen
 *.smd
 *.ips
+!patch/*.ips
 
 # Python
 __pycache__/

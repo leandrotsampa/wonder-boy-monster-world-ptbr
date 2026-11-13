@@ -181,3 +181,11 @@ def test_build_real_crc_e_checksum_iguais_ao_original(rom_base, tmp_path):
     assert calcular_checksum(rom) == 0x9D79
     assert aplicar_ips(rom_base, ips) == rom
     assert _construir(tmp_path, rom_base) == (rom, ips)
+    assert (tmp_path / "patch" / "wbmw-ptbr.ips").read_bytes() == ips
+
+
+def test_patch_versionado_atualizado(rom_base, tmp_path):
+    """patch/wbmw-ptbr.ips (o que vai na release) é o que o build gera hoje."""
+    _, ips = _construir(tmp_path, rom_base)
+    assert (RAIZ / "patch" / "wbmw-ptbr.ips").read_bytes() == ips, \
+        "patch/wbmw-ptbr.ips desatualizado: rode 'python -m ferramentas construir'"

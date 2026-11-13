@@ -1,20 +1,32 @@
 # Wonder Boy in Monster World — Tradução PT-BR
 
-Projeto de tradução completa para português do Brasil de *Wonder Boy in Monster World (UE) [!]* (Mega Drive).
+Tradução **completa** para português do Brasil de *Wonder Boy in Monster World*, o clássico de ação e aventura da Westone e da SEGA para Mega Drive (1991). Ajude Shion a salvar Monster World, agora com todos os diálogos, menus, itens e telas em português.
 
-O resultado distribuído é **apenas um patch IPS**. Nenhuma ROM faz parte deste repositório.
+O projeto é distribuído **apenas como patch IPS**: você aplica o patch na sua própria cópia da ROM original. Nenhuma ROM faz parte deste repositório.
 
-## Estado
+## Destaques
 
-Todo o texto está traduzido (`traducao/textos/`, status `traduzido`), fora as entradas só com códigos (como `[s0:06]` ou `[espera]`, que mantêm o original) e as 4 strings japonesas do lote `sem_traducao`. O índice de `python -m ferramentas revisao --lote todos` (`build/revisao/todos.html`) mostra o progresso por arquivo e por lote. O que falta antes da distribuição está em `docs/tecnico/pendencias.md`, "O que falta para a distribuição":
+- **100% traduzido:** diálogos, lojas, estalagens, itens, equipamentos, magias, menus, mensagens do sistema, o quiz da Esfinge, nomes de lugares e os créditos.
+- **Acentuação completa:** a fonte ganhou as letras do português (á, à, â, ã, é, ê, í, ó, ô, õ, ú, ç), desenhadas no estilo da original.
+- **Gráficos traduzidos:** tela de título (APERTE START, NOVO JOGO, CONTINUAR), "MOEDAS" no HUD, placas de HOT e SAÍDA, FIM DE JOGO, FIM e CONTINUA... no final.
+- **Texto natural:** português conversado, adaptado ao tom de cada cena, e não uma tradução ao pé da letra.
+- **Revisada jogando**, do início ao fim, com cada tela conferida no jogo.
+- **Save funcionando** nos emuladores com suporte à EEPROM do cartucho (veja "Como jogar").
+- **Mesmo CRC32 da ROM original** (`1592F5B0`) e checksum do cabeçalho válido.
 
-- a **revisão jogando**, pelo autor, do início ao fim. As entradas conferidas passam a `revisado`;
-- a **distribuição** (o patch IPS e as instruções), num plano próprio. Para jogar, use o **Genesis Plus GX**: o save do jogo é uma EEPROM, e emuladores que a reconhecem pelo hash da ROM original (como o ares) perdem o save na ROM traduzida (ver "Compatibilidade de emuladores", abaixo).
+## Imagens
 
-## Requisitos
+| | |
+|:-:|:-:|
+| ![Tela de título: APERTE START](docs/imagens/aperte_start.png) | ![Tela de título: NOVO JOGO](docs/imagens/novo_jogo.png) |
+| ![Diálogo de abertura](docs/imagens/dialogo.png) | ![Diálogo de abertura, segunda página](docs/imagens/dialogo_2.png) |
+| ![Menu: SELECIONAR](docs/imagens/menu.png) | ![Menu: MAGIA](docs/imagens/magias.png) |
+| ![Menu: ARMADURA](docs/imagens/armadura.png) | ![Menu: BOTAS](docs/imagens/botas.png) |
 
-- Python 3.11+
-- Sua própria cópia da ROM original, exatamente esta:
+## Como jogar
+
+1. Baixe o patch `wbmw-ptbr.ips` na página de [Releases](../../releases).
+2. Tenha a ROM original, exatamente esta:
 
 | Campo | Valor |
 |---|---|
@@ -26,9 +38,29 @@ Todo o texto está traduzido (`traducao/textos/`, status `traduzido`), fora as e
 | SHA-1 | `87a968f773c7e807e647c0737132457b06b78276` |
 | Checksum do cabeçalho (`0x18E`) | `9D79` |
 
-O IPS só deve ser aplicado sobre essa ROM; `python -m ferramentas checar-rom` confere. A ROM traduzida mantém o mesmo CRC32 (`1592F5B0`) e o mesmo checksum; o MD5 e o SHA-1 mudam (ver "CRC32 e checksum iguais aos da original", abaixo).
+3. Aplique o patch com um programa de IPS, como o [Floating IPS](https://www.smwcentral.net/?p=section&a=details&id=11474) ou o [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) (no navegador). Em outra ROM (outra versão, com cabeçalho ou já modificada), o resultado não funciona.
+4. Jogue no **Genesis Plus GX** (RetroArch) ou no **BlastEm**. O save do jogo é uma EEPROM, e esses emuladores a reconhecem na ROM traduzida. O **ares** só a reconhece na ROM original: com o patch, o jogo roda, mas não salva.
 
-## Instalação
+A ROM traduzida tem o mesmo CRC32 da original, então gerenciadores de coleção que identificam pelo CRC32 vão mostrá-la como a original. Para diferenciar, use o nome do arquivo ou o SHA-1.
+
+## Para desenvolvedores
+
+O restante deste README é sobre o ferramental que gera o patch a partir dos textos e gráficos do repositório.
+
+### Requisitos
+
+- Python 3.11+
+- A ROM original descrita em "Como jogar", em `rom/`. `python -m ferramentas checar-rom` confere o hash.
+
+### Publicar uma versão
+
+O patch versionado fica em `patch/wbmw-ptbr.ips` e é regravado por todo `construir`; o teste `test_patch_versionado_atualizado` falha se ele estiver desatualizado. Para publicar:
+
+1. `python -m ferramentas construir` e commit do `patch/wbmw-ptbr.ips` junto com a mudança.
+2. Crie e envie a tag da versão: `git tag v1.0.0` e `git push origin v1.0.0`.
+3. O workflow `.github/workflows/release.yml` cria a release da tag com o `wbmw-ptbr.ips` e um `.zip` com o patch e o `patch/LEIA-ME.txt`. O GitHub não tem a ROM, então ele não gera o patch: publica o que está versionado.
+
+### Instalação
 
 ```bash
 pip install -r requirements.txt
@@ -36,7 +68,7 @@ pip install -r requirements.txt
 
 Coloque a ROM original em `rom/` (pasta ignorada pelo git).
 
-## Estrutura
+### Estrutura
 
 - `ferramentas/` — ferramental Python (CLI)
 - `traducao/` — tabela de caracteres, glossário e textos (YAML)
@@ -44,7 +76,7 @@ Coloque a ROM original em `rom/` (pasta ignorada pelo git).
 - `config/` — hashes esperados da ROM e configuração
 - `docs/` — design, planos e documentação técnica
 
-## Uso
+### Uso
 
 Todos os comandos rodam a partir da raiz do projeto:
 
@@ -52,8 +84,8 @@ Todos os comandos rodam a partir da raiz do projeto:
 python -m ferramentas checar-rom   # confere o hash da ROM base em rom/
 python -m ferramentas extrair      # extrai o texto da ROM para dados/scripts/ e traducao/textos/
 python -m ferramentas verificar    # roda as checagens da tradução, sem gerar ROM
-python -m ferramentas construir    # verifica e gera build/wbmw-ptbr.bin, .ips e relatorio.txt
-python -m ferramentas importar-tiles --origem rom/<ROM>.bin --item titulo   # PNG de um item gráfico
+python -m ferramentas construir    # verifica e gera build/wbmw-ptbr.bin, .ips e relatorio.txt (e patch/wbmw-ptbr.ips)
+python -m ferramentas importar-tiles --origem rom/<ROM>.bin --item final    # PNG de um item gráfico
 ```
 
 - `extrair` lê a ROM base e grava `dados/scripts/esqueleto.json` (estrutura dos scripts, não editar) e os YAML em `traducao/textos/`. Pode ser rodado de novo: preserva o `pt`/`status` já escritos.
@@ -61,7 +93,7 @@ python -m ferramentas importar-tiles --origem rom/<ROM>.bin --item titulo   # PN
 - `verificar` checa os caracteres contra a tabela, os códigos de controle, o glossário, o espaço do texto, as strings de tamanho fixo e a **largura de linha** e as **linhas por página** (pela janela de cada diálogo, `janelas` em `config/texto.yaml`: 23 colunas × 3 linhas na maioria; nos diálogos e nas lojas). Sai com código 1 se houver erro.
 - `construir` não grava nada em `build/` se a verificação ou a validação da ROM falhar. O build é determinístico. O `relatorio.txt` traz o progresso e a linha `Espaço: N bytes usados de M em 0xA4C80–0xBFFF8`, seguida do que ocupa a região (o texto e, se houver, blocos da fonte realocados).
 
-### Fonte (letras acentuadas)
+#### Fonte (letras acentuadas)
 
 A fonte do jogo fica em `graficos/fonte/fonte.png`: PNG indexado de 16 × 16 tiles (128 × 128 pixels), em que o tile `n` é o caractere de código `n` (`A` = `0x41`, `á` = `0xB4`...). Cada 2 linhas de tiles são um bloco comprimido da ROM (blocos 0–7 da tabela `0x41000`). Para editar:
 
@@ -71,7 +103,7 @@ A fonte do jogo fica em `graficos/fonte/fonte.png`: PNG indexado de 16 × 16 til
 
 `construir` só recomprime os blocos que mudaram (com o PNG intacto, a fonte da ROM fica byte a byte igual). Bloco que cabe no lugar original é gravado lá; senão vai para a região livre depois do texto. `extrair` gera o PNG e `graficos/fonte/fonte.yaml` (metadados e origem de cada glifo novo) só se o PNG ainda não existir: a fonte da ROM base com os glifos das letras acentuadas (`GLIFOS_ACENTOS` em `ferramentas/fonte.py`, desenhados pelo projeto no estilo da fonte original) e o rótulo do HUD.
 
-### Tela de título
+#### Tela de título
 
 Os textos da tela de título ("APERTE START", "NOVO JOGO", "CONTINUAR" e a seta do menu) são sprites desenhados com os tiles dos blocos `0x166–0x168` da tabela de gráficos. Ficam em `graficos/telas/titulo.png`: PNG indexado de 48 × 2 tiles (384 × 16 pixels), em que cada coluna de tiles é uma coluna de sprite, então o texto aparece como na tela. Índices: 0 = transparente, 1 = contorno, 15 = traço. O item está descrito em `config/graficos.yaml` (sem `origem`: o PNG é arte do projeto, editada à mão), e `graficos/telas/titulo.yaml` traz os metadados e as colunas de cada texto.
 
@@ -88,7 +120,7 @@ Os textos da tela de título ("APERTE START", "NOVO JOGO", "CONTINUAR" e a seta 
 - `construir` recomprime só os blocos que mudaram. Bloco que cabe no lugar original é gravado lá; senão vai para a região livre depois do texto e da fonte. O logo não é tocado.
 - `importar-tiles` não se aplica ao título (item sem `origem`): edite o PNG.
 
-### HUD ("MOEDAS")
+#### HUD ("MOEDAS")
 
 O rótulo do quadro do ouro no HUD ("GOLD" no original) é escrito pelo código com as letras da fonte. Na tradução ele vira "MOEDAS", 3 pixels mais alto que o original para não encostar no valor (até 999999), dividido entre duas linhas de tiles:
 
@@ -96,7 +128,7 @@ O rótulo do quadro do ouro no HUD ("GOLD" no original) é escrito pelo código 
 - o código que imprime o rótulo em duas linhas é o par de patches `hud.moedas_chamada` e `hud.moedas_rotina` em `config/patches.yaml`. Mudar os códigos dos tiles exige mudar a string no patch (`testes/test_hud.py` confere os dois);
 - `testes/test_hud.py::test_hud_moedas_no_jogo` grava as capturas em `build/capturas/hud_base/` e `build/capturas/hud_ptbr/` (campo e ouro no máximo).
 
-### Texto desenhado no cenário e no final
+#### Texto desenhado no cenário e no final
 
 O texto que não sai da fonte (letras desenhadas nos blocos de gráficos) também é traduzido: "FIM" e "CONTINUA..." no lugar de "THE END" e "TO BE CONTINUED", "HOT" na placa das estalagens ("INN"), "SAÍDA" na placa de saída ("EXIT") e "FIM DE JOGO" no lugar de "GAME OVER". São quatro itens de `config/graficos.yaml` com disposição `fundo`: o PNG mostra cada bloco como 2 linhas de 16 tiles, na ordem do bloco, com os blocos empilhados.
 
@@ -107,11 +139,11 @@ O texto que não sai da fonte (letras desenhadas nos blocos de gráficos) també
 - As letras novas são do projeto, no estilo das originais (mesma paleta, traço e sombra). Ficam em `RETOQUES` de `ferramentas/graficos.py`, e `importar-tiles --origem "rom/Wonder Boy In Monster World (UE) [!].bin" --item <nome>` regenera o PNG e os metadados a partir da ROM base.
 - `testes/test_texto_tiles.py` confere o desenho, os patches e as telas no emulador. As capturas ficam em `build/capturas/final_base/` e `final_ptbr/` (`fim.png`, `continua.png`), em `build/capturas/placas_base/` e `placas_ptbr/` (`sala_57.png` e `sala_59.png` com o "HOT", `sala_0a.png` com o "SAÍDA") e em `build/capturas/game_over_base/` e `game_over_ptbr/` (`game_over.png` e `game_over_4x.png`, a faixa do texto ampliada). Para chegar ao final, o teste usa uma cópia temporária da ROM que pula direto para o desfecho; para as placas, cópias que começam o jogo na sala da placa; para o game over, uma cópia em que o laço do jogo sempre cai no game over (detalhes em `docs/tecnico/mapa-rom.md` §8).
 
-### Menus do START e magias
+#### Menus do START e magias
 
 Os rótulos do menu (cabeçalhos, opções, lista de magias e o nome da magia no HUD) são texto da fonte desenhado pelo código, não gráficos. Ficam em `traducao/textos/inline.yaml` (`menu.*`, `magia.*`, `magia_hud.*`) e são blocos repontáveis (`inline_repontavel.blocos` em `config/texto.yaml`): com algum `pt`, a lista inteira vai para o espaço livre e o código passa a lê-la por trampolins; cada rótulo tem a largura do seu painel e o `verificar` acusa o que não couber (regras no `docs/projeto/guia-traducao.md`; detalhes técnicos em `docs/tecnico/mapa-rom.md` §6, "Menus e magias"). `testes/test_menus.py::test_menus_no_jogo` grava as capturas em `build/capturas/menus_base/`, `menus_ptbr/` e as comparações `build/capturas/menus_*_comparacao.png`.
 
-### Onde editar os textos
+#### Onde editar os textos
 
 Cada arquivo de `traducao/textos/*.yaml` é uma lista de entradas `id`, `en` (original, não editar), `pt` (sua tradução), `status` (`pendente`, `traduzido` ou `revisado`) e `nota`. `pt` vazio mantém o texto original. Arquivos: `dialogos` (conversas), `banco0_sistema` (menus e quiz), `banco1_itens` (nome completo dos itens: diálogos, loja e baú), `banco1_menu` (nome curto nas listas do menu; vazio = o completo), `banco2_nomes`, `banco3_lojas` (lojas, estalagem, ocarina) e `inline` (strings no código: em geral de tamanho fixo, o `pt` não pode passar do original; as mensagens do baú, `bau.*`, e os menus, `menu.*`/`magia.*`/`magia_hud.*`, vão para espaço livre e só respeitam a largura da linha ou do painel).
 
@@ -131,7 +163,7 @@ Os códigos `[s0:..]`, `[item:..]`, `[nome:..]`, `[s3:..]` e `[$XX]` (incluindo 
 
 Para rodar os testes: `python -m pytest`.
 
-## Compatibilidade de emuladores (save em EEPROM)
+### Compatibilidade de emuladores (save em EEPROM)
 
 O jogo grava o save numa EEPROM serial (I2C, 128 bytes), não numa SRAM comum. O
 cabeçalho do cartucho não diz isso; cada emulador reconhece o jogo por conta própria:
@@ -145,7 +177,7 @@ O build aplica o patch `eeprom.nack_sem_trava` (`config/patches.yaml`): sem resp
 EEPROM o jogo não trava mais no START. Com a EEPROM presente o save não muda. No ares a ROM traduzida
 roda, mas o save não fica gravado.
 
-### CRC32 e checksum iguais aos da original
+#### CRC32 e checksum iguais aos da original
 
 A última etapa do `construir` grava 8 bytes de compensação no fim da ROM (`0xBFFF8–0xBFFFF`,
 `FF` na original e nunca lidos pelo jogo; `compensacao` em `config/rom.yaml`) para que a
@@ -162,7 +194,7 @@ Limites:
   gerenciadores de coleção) vão listar o arquivo traduzido **como a ROM original**.
   Para distinguir, use o SHA-1 ou o nome do arquivo.
 
-## Emulador para testes
+### Emulador para testes
 
 As capturas de tela e os testes de emulação usam o core libretro **Genesis Plus GX** controlado por Python (sem janela). O core não faz parte do repositório:
 

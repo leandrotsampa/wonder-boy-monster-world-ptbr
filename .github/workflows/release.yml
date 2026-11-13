@@ -1,0 +1,43 @@
+# Release a partir de uma tag v* (ex.: git tag v1.0.0 && git push origin v1.0.0).
+# O GitHub não tem a ROM, então não gera o patch: publica o patch/wbmw-ptbr.ips
+# versionado (regravado por 'python -m ferramentas construir') e o LEIA-ME.
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Empacotar o patch
+        run: |
+          set -e
+          test -s patch/wbmw-ptbr.ips
+          head -c 5 patch/wbmw-ptbr.ips | grep -q PATCH
+          nome="wbmw-ptbr-${GITHUB_REF_NAME}"
+          mkdir -p dist/"$nome"
+          cp patch/wbmw-ptbr.ips patch/LEIA-ME.txt dist/"$nome"/
+          (cd dist && zip -r "$nome.zip" "$nome")
+          cp patch/wbmw-ptbr.ips dist/
+
+      - name: Criar a release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Wonder Boy in Monster World PT-BR ${{ github.ref_name }}
+          body: |
+            Patch IPS da tradução PT-BR de Wonder Boy in Monster World (Mega Drive).
+
+            Aplique sobre a ROM `Wonder Boy in Monster World (UE) [!].bin`
+            (CRC32 `1592F5B0`, SHA-1 `87a968f773c7e807e647c0737132457b06b78276`).
+            Instruções no `LEIA-ME.txt` do .zip e no README do projeto.
+            Emulador recomendado: Genesis Plus GX ou BlastEm (o ares não salva).
+          files: |
+            dist/wbmw-ptbr.ips
+            dist/wbmw-ptbr-${{ github.ref_name }}.zip
