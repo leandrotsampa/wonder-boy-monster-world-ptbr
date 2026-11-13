@@ -39,7 +39,7 @@ O projeto é distribuído **apenas como patch IPS**: você aplica o patch na sua
 | Checksum do cabeçalho (`0x18E`) | `9D79` |
 
 3. Aplique o patch com um programa de IPS, como o [Floating IPS](https://www.smwcentral.net/?p=section&a=details&id=11474) ou o [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) (no navegador). Em outra ROM (outra versão, com cabeçalho ou já modificada), o resultado não funciona.
-4. Jogue no **Genesis Plus GX** (RetroArch) ou no **BlastEm**. O save do jogo é uma EEPROM, e esses emuladores a reconhecem na ROM traduzida. O **ares** só a reconhece na ROM original: com o patch, o jogo roda, mas não salva.
+4. Emuladores recomendados: **Genesis Plus GX** (RetroArch) ou **BlastEm**.
 
 A ROM traduzida tem o mesmo CRC32 da original, então gerenciadores de coleção que identificam pelo CRC32 vão mostrá-la como a original. Para diferenciar, use o nome do arquivo ou o SHA-1.
 
