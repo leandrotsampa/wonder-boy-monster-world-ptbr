@@ -1,58 +1,48 @@
-Wonder Boy in Monster World - Tradução PT-BR
-=============================================
+==============================================================
+   WONDER BOY IN MONSTER WORLD - Tradução PT-BR  (versão 1.0)
+==============================================================
 
-NOME DO JOGO:   Wonder Boy in Monster World
-CONHECIDO COMO: Wonder Boy V: Monster World III (Japão)
-CONSOLE:        Mega Drive / Genesis
-IDIOMA:         Português do Brasil
-VERSÃO:         1.0
+  Jogo ........ Wonder Boy in Monster World
+  Também ...... Wonder Boy V: Monster World III (Japão)
+  Console ..... Mega Drive / Genesis
+  Tradutor .... Leandro Tavares de Melo
+  Contato ..... leandrotsampa@yahoo.com.br
+  Projeto ..... https://github.com/leandrotsampa/wonder-boy-monster-world-ptbr
 
-TRADUZIDO POR:  Leandro Tavares de Melo
-E-MAIL:         leandrotsampa@yahoo.com.br
 
-OBS: Esta tradução possui acentos (á, à, â, ã, é, ê, í, ó, ô, õ, ú, ç)
-e foi revisada jogando, do início ao fim.
+O QUE FOI TRADUZIDO
+-------------------
+  Tudo: diálogos, lojas, itens, magias, menus, quiz da Esfinge,
+  nomes de lugares, créditos e os textos em gráfico (título,
+  MOEDAS, placas, FIM DE JOGO e o final).
 
-Qualquer problema na tradução ou alguma dúvida, é só mandar um e-mail
-ou abrir uma issue no GitHub que eu resolvo.
+  - Com acentos: á à â ã é ê í ó ô õ ú ç
+  - Revisada jogando, do início ao fim.
 
-OBRIGADO!
 
-Sobre a tradução
-----------------
-Tradução completa para português do Brasil de Wonder Boy in Monster World
-(Mega Drive): diálogos, lojas, itens, equipamentos, magias, menus, mensagens
-do sistema, nomes de lugares, créditos e os gráficos com texto (tela de
-título, MOEDAS no HUD, placas, FIM DE JOGO e o final), com acentuação
-completa.
+COMO JOGAR
+----------
+  1. Use a ROM original abaixo (ela não acompanha o patch).
+  2. Aplique o wbmw-ptbr.ips com Floating IPS ou Rom Patcher JS.
+  3. Jogue no Genesis Plus GX (RetroArch) ou no BlastEm.
 
-Arquivo: wbmw-ptbr.ips
+  ROM:    Wonder Boy in Monster World (UE) [!].bin
+          (No-Intro: Wonder Boy in Monster World (USA, Europe))
+  CRC32:  1592F5B0
+  SHA-1:  87a968f773c7e807e647c0737132457b06b78276
 
-ROM necessária
---------------
-O patch só funciona sobre esta ROM:
 
-  Arquivo (GoodGen): Wonder Boy in Monster World (UE) [!].bin
-  No-Intro:          Wonder Boy in Monster World (USA, Europe)
-  Tamanho:           786.432 bytes, sem cabeçalho SMD
-  CRC32:             1592F5B0
-  MD5:               edba0bdb192d47712edbe0097f885f40
-  SHA-1:             87a968f773c7e807e647c0737132457b06b78276
+BOM SABER
+---------
+  - Save: o jogo salva numa EEPROM. No emulador ares ele roda,
+    mas não salva; use os emuladores indicados acima.
+  - A ROM traduzida tem o mesmo CRC32 da original. Para diferenciar,
+    use o nome do arquivo ou o SHA-1.
+  - Em outra ROM (outra versão, com cabeçalho ou modificada) o
+    patch não funciona.
 
-A ROM não acompanha o patch.
 
-Como aplicar
-------------
-Use um programa de IPS (Floating IPS, Rom Patcher JS ou outro) e aplique
-wbmw-ptbr.ips sobre a ROM acima. Guarde uma cópia da ROM original.
+Achou algum problema ou tem dúvida? Mande um e-mail ou abra uma
+issue no GitHub.
 
-A ROM traduzida mantém o mesmo CRC32 da original (1592F5B0). Para
-diferenciar as duas, use o nome do arquivo ou o SHA-1.
-
-Emulador
---------
-Recomendado: Genesis Plus GX (RetroArch) ou BlastEm. O save do jogo é uma
-EEPROM, e esses emuladores a reconhecem na ROM traduzida. No ares o jogo
-roda, mas não salva.
-
-Projeto: https://github.com/leandrotsampa/wonder-boy-monster-world-ptbr
+Obrigado e bom jogo!
