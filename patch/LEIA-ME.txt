@@ -1,6 +1,25 @@
 Wonder Boy in Monster World - Tradução PT-BR
 =============================================
 
+NOME DO JOGO:   Wonder Boy in Monster World
+CONHECIDO COMO: Wonder Boy V: Monster World III (Japão)
+CONSOLE:        Mega Drive / Genesis
+IDIOMA:         Português do Brasil
+VERSÃO:         1.0
+
+TRADUZIDO POR:  Leandro Tavares de Melo
+E-MAIL:         leandrotsampa@yahoo.com.br
+
+OBS: Esta tradução possui acentos (á, à, â, ã, é, ê, í, ó, ô, õ, ú, ç)
+e foi revisada jogando, do início ao fim.
+
+Qualquer problema na tradução ou alguma dúvida, é só mandar um e-mail
+ou abrir uma issue no GitHub que eu resolvo.
+
+OBRIGADO!
+
+Sobre a tradução
+----------------
 Tradução completa para português do Brasil de Wonder Boy in Monster World
 (Mega Drive): diálogos, lojas, itens, equipamentos, magias, menus, mensagens
 do sistema, nomes de lugares, créditos e os gráficos com texto (tela de
