@@ -2,47 +2,41 @@
    WONDER BOY IN MONSTER WORLD - Tradução PT-BR  (versão 1.0)
 ==============================================================
 
-  Jogo ........ Wonder Boy in Monster World
-  Também ...... Wonder Boy V: Monster World III (Japão)
+O JOGO
+------
+  Nome ........ Wonder Boy in Monster World
+  Japão ....... Wonder Boy V: Monster World III
   Console ..... Mega Drive / Genesis
-  Tradutor .... Leandro Tavares de Melo
-  Contato ..... leandrotsampa@yahoo.com.br
+  Produtora ... Westone / SEGA (1991)
+
+
+A TRADUÇÃO
+-----------
+  Idioma ...... Português do Brasil, com acentos
+  Versão ...... 1.0
+  Arquivo ..... wbmw-ptbr.ips
+
+
+EM QUAL ROM APLICAR
+-------------------
+  Arquivo ..... Wonder Boy in Monster World (UE) [!].bin
+  No-Intro .... Wonder Boy in Monster World (USA, Europe)
+  Tamanho ..... 786.432 bytes (sem cabeçalho)
+  CRC32 ....... 1592F5B0
+  SHA-1 ....... 87a968f773c7e807e647c0737132457b06b78276
+
+  Em outra ROM (outra versão, com cabeçalho ou já modificada)
+  o patch não funciona. A ROM não acompanha o patch.
+
+
+O TRADUTOR
+----------
+  Nome ........ Leandro Tavares de Melo
+  E-mail ...... leandrotsampa@yahoo.com.br
   Projeto ..... https://github.com/leandrotsampa/wonder-boy-monster-world-ptbr
 
+  Achou algum problema ou tem dúvida? Mande um e-mail ou abra
+  uma issue no GitHub.
 
-O QUE FOI TRADUZIDO
--------------------
-  Tudo: diálogos, lojas, itens, magias, menus, quiz da Esfinge,
-  nomes de lugares, créditos e os textos em gráfico (título,
-  MOEDAS, placas, FIM DE JOGO e o final).
-
-  - Com acentos: á à â ã é ê í ó ô õ ú ç
-  - Revisada jogando, do início ao fim.
-
-
-COMO JOGAR
-----------
-  1. Use a ROM original abaixo (ela não acompanha o patch).
-  2. Aplique o wbmw-ptbr.ips com Floating IPS ou Rom Patcher JS.
-  3. Jogue no Genesis Plus GX (RetroArch) ou no BlastEm.
-
-  ROM:    Wonder Boy in Monster World (UE) [!].bin
-          (No-Intro: Wonder Boy in Monster World (USA, Europe))
-  CRC32:  1592F5B0
-  SHA-1:  87a968f773c7e807e647c0737132457b06b78276
-
-
-BOM SABER
----------
-  - Save: o jogo salva numa EEPROM. No emulador ares ele roda,
-    mas não salva; use os emuladores indicados acima.
-  - A ROM traduzida tem o mesmo CRC32 da original. Para diferenciar,
-    use o nome do arquivo ou o SHA-1.
-  - Em outra ROM (outra versão, com cabeçalho ou modificada) o
-    patch não funciona.
-
-
-Achou algum problema ou tem dúvida? Mande um e-mail ou abra uma
-issue no GitHub.
 
 Obrigado e bom jogo!
