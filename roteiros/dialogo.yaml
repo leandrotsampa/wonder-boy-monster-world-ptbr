@@ -1,0 +1,19 @@
+# Novo jogo → primeira fala ("Monster World was once a ...").
+# Captura a tela e o VRAM com a janela de diálogo aberta: a fonte fica nos
+# tiles 0x00–0xFF (VRAM 0x0000–0x1FFF), ver docs/tecnico/mapa-rom.md §8.
+- esperar: 300
+- apertar: [start]        # pula a abertura
+  quadros: 2
+- esperar: 240
+- apertar: [start]        # tela de título → menu (NEW GAME)
+  quadros: 2
+- esperar: 120
+- apertar: [start]        # NEW GAME → casa do herói, a fala começa ("Mo...")
+  quadros: 2
+- esperar: 120
+- apertar: [start]        # acelera a fala até a primeira linha completa
+  quadros: 2
+- esperar: 120
+- capturar: dialogo
+- checar_fonte: dialogo
+- vram: dialogo

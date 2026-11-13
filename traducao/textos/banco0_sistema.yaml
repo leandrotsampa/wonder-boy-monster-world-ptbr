@@ -1,0 +1,221 @@
+- id: b0.000.t00
+  en: '[$03][$00][quebra2][$04][$04]YES  NO'
+  pt: '[$03][$00][quebra2][$04][$04]SIM  NÃO'
+  status: revisado
+- id: b0.001.t00
+  en: ' GOLD'
+  pt: ' MOEDAS'
+  status: revisado
+- id: b0.002.t00
+  en: '[cor]'
+  pt: ''
+  status: pendente
+- id: b0.002.t01
+  en: '[/cor]'
+  pt: ''
+  status: pendente
+- id: b0.003.t00
+  en: '[$04][$01]'
+  pt: ''
+  status: pendente
+- id: b0.003.t01
+  en: '[s0:01]'
+  pt: ''
+  status: pendente
+- id: b0.004.t00
+  en: '[$95][$97][$8C][$98][$9B][$BD]'
+  pt: ''
+  status: pendente
+- id: b0.005.t00
+  en: '[$04][$03]'
+  pt: '[$04][$01]'
+  status: revisado
+- id: b0.005.t01
+  en: '[s0:01]'
+  pt: ''
+  status: pendente
+- id: b0.006.t00
+  en: '[$0A][$02][$03][$06][$04][$02]'
+  pt: ''
+  status: pendente
+- id: b0.007.t00
+  en: '[$03][$06][$0A][$02][espera][linha]'
+  pt: ''
+  status: pendente
+- id: b0.008.t00
+  en: '[$03][$10] [s3:04][s3:03][s3:04][s3:03][s3:04][s3:05][s3:04][$03][$06]'
+  pt: ''
+  status: pendente
+- id: b0.009.t00
+  en: '[$03][$10] [s3:03][s3:04][s3:05][s3:04][s3:05][s3:03][s3:04][$03][$06]'
+  pt: ''
+  status: pendente
+- id: b0.00A.t00
+  en: '[$03][$10] [s3:03][s3:05][s3:05][s3:03][s3:04][s3:03][s3:04][$03][$06]'
+  pt: ''
+  status: pendente
+- id: b0.00B.t00
+  en: What's the first[quebra2]type of magic you[quebra2]acquired?
+  pt: Qual foi a sua[quebra2]primeira magia?
+  status: revisado
+- id: b0.00C.t00
+  en: Fire Storm
+  pt: Bolas de Fogo
+  status: revisado
+- id: b0.00D.t00
+  en: Tornado
+  pt: Tornado
+  status: revisado
+- id: b0.00E.t00
+  en: Quake
+  pt: Terremoto
+  status: revisado
+- id: b0.00F.t00
+  en: What's the name[quebra2]of the queen in[quebra2]the elf village?
+  pt: Qual é o nome da[quebra2]rainha da vila[quebra2]das fadas?
+  status: revisado
+- id: b0.010.t00
+  en: Rosanna
+  pt: Rosanna
+  status: revisado
+- id: b0.011.t00
+  en: Eleanora
+  pt: Eleanora
+  status: revisado
+- id: b0.012.t00
+  en: Sonia
+  pt: Sonia
+  status: revisado
+- id: b0.013.t00
+  en: Which of these[quebra2]monsters did you[quebra2]battle first?
+  pt: Que monstro você[quebra2]encarou primeiro?
+  status: revisado
+- id: b0.014.t00
+  en: Myconid
+  pt: Myconid
+  status: revisado
+- id: b0.015.t00
+  en: Mecha-Dragon
+  pt: Mecha-Dragon
+  status: revisado
+- id: b0.016.t00
+  en: Eleanora
+  pt: Eleanora
+  status: revisado
+- id: b0.017.t00
+  en: After defeating[quebra2]Gragg & Glagg,[quebra2]what did you[quebra2]receive?
+  pt: O que você[quebra2]ganhou ao vencer[quebra2]Gragg & Glagg?
+  status: revisado
+- id: b0.018.t00
+  en: Lamp
+  pt: Lamparina
+  status: revisado
+- id: b0.019.t00
+  en: Amulet
+  pt: Amuleto
+  status: revisado
+- id: b0.01A.t00
+  en: Trident
+  pt: Tridente
+  status: revisado
+- id: b0.01B.t00
+  en: Which of these[quebra2]items is not sold[quebra2]at the Wanderer[quebra2]weapon shop?
+  pt: Qual destes itens[quebra2]a loja Wanderer[quebra2]não vende?
+  status: revisado
+- id: b0.01C.t00
+  en: Trident
+  pt: Tridente
+  status: revisado
+- id: b0.01D.t00
+  en: Excalibur
+  pt: Excalibur
+  status: revisado
+- id: b0.01E.t00
+  en: Steel Shield
+  pt: Escudo de Aço
+  status: revisado
+- id: b0.01F.t00
+  en: What's the name[quebra2]of the dwarf[quebra2]village?
+  pt: Qual é o nome da[quebra2]vila dos anões?
+  status: revisado
+- id: b0.020.t00
+  en: Lilian
+  pt: Lilian
+  status: revisado
+- id: b0.021.t00
+  en: Lilypad
+  pt: Lilypad
+  status: revisado
+- id: b0.022.t00
+  en: Lollipop
+  pt: Lollipop
+  status: revisado
+- id: b0.023.t00
+  en: Which key do[quebra2]you need to[quebra2]enter the[quebra2]Pyramid ?
+  pt: Qual chave abre[quebra2]a Pirâmide?
+  status: revisado
+- id: b0.024.t00
+  en: Star Key
+  pt: Chave Estrela
+  status: revisado
+- id: b0.025.t00
+  en: Sun Key
+  pt: Chave Sol
+  status: revisado
+- id: b0.026.t00
+  en: Moon Key
+  pt: Chave Lua
+  status: revisado
+- id: b0.027.t00
+  en: How much does a[quebra2]Charmstone cost?
+  pt: Quanto custa uma[quebra2]Pedra Encantada?
+  status: revisado
+- id: b0.028.t00
+  en: 50000 GOLD
+  pt: 50000 MOEDAS
+  status: revisado
+- id: b0.029.t00
+  en: 500000 GOLD
+  pt: 500000 MOEDAS
+  status: revisado
+- id: b0.02A.t00
+  en: 5000000 GOLD
+  pt: 5000000 MOEDAS
+  status: revisado
+- id: b0.02B.t00
+  en: What item helped[quebra2]you to traverse[quebra2]Maugham Desert?
+  pt: Com que item você[quebra2]cruzou o Deserto de Maugham?
+  status: revisado
+  nota: 'a linha ''cruzou o Deserto '' tem 17 colunas de propósito: a quebra automática cai antes de ''de Maugham''; não editar sem conferir no emulador'
+- id: b0.02C.t00
+  en: Desert Boots
+  pt: Botas de Areia
+  status: revisado
+- id: b0.02D.t00
+  en: Oasis Boots
+  pt: Botas do Oásis
+  status: revisado
+- id: b0.02E.t00
+  en: Puss'n Boots
+  pt: Gato de Botas
+  status: revisado
+- id: b0.02F.t00
+  en: Which of these[quebra2]stores does not[quebra2]sell weapons?
+  pt: Qual destas lojas[quebra2]não vende armas?
+  status: revisado
+- id: b0.030.t00
+  en: Gooningle
+  pt: Gooningle
+  status: revisado
+- id: b0.031.t00
+  en: Bacchus
+  pt: Bacchus
+  status: revisado
+- id: b0.032.t00
+  en: Felissimo
+  pt: Felissimo
+  status: revisado
+- id: b0.033.t00
+  en: '[$03][$00][quebra2][$04][$04]YES  NO'
+  pt: '[$03][$00][quebra2][$04][$04]SIM  NÃO'
+  status: revisado

@@ -1,0 +1,15 @@
+# Tela de título com "PRESS START BUTTON" aceso e o menu com "NEW GAME" aceso.
+# Os dois textos piscam (sprites que somem e voltam): os quadros abaixo caem na fase
+# acesa. Texto = sprites com os tiles 0x3C0–0x41F (blocos 0x166–0x168, slots 30–32);
+# ver docs/tecnico/mapa-rom.md §8 e config/graficos.yaml.
+- esperar: 300
+- apertar: [start]        # pula a abertura
+  quadros: 2
+- esperar: 150
+- capturar: titulo
+- vram: titulo
+- apertar: [start]        # título → menu
+  quadros: 2
+- esperar: 20
+- capturar: menu
+- vram: menu

@@ -1,0 +1,85 @@
+- id: b2.000.t00
+  en: Shion
+  pt: Shion
+  status: revisado
+- id: b2.001.t00
+  en: '[cor]Alsedo[/cor]'
+  pt: '[cor]Alsedo[/cor]'
+  status: revisado
+- id: b2.002.t00
+  en: '[cor]Maugham Desert[/cor]'
+  pt: '[cor]Deserto de Maugham[/cor]'
+  status: revisado
+- id: b2.003.t00
+  en: '[cor]Lilypad[/cor]'
+  pt: '[cor]Lilypad[/cor]'
+  status: revisado
+- id: b2.004.t00
+  en: '[cor]Begonia[/cor]'
+  pt: '[cor]Begonia[/cor]'
+  status: revisado
+- id: b2.005.t00
+  en: '[cor]Childam[/cor]'
+  pt: '[cor]Childam[/cor]'
+  status: revisado
+- id: b2.006.t00
+  en: '[cor][$FF][$EA][$D2][$D1][$FA][$DD][/cor]'
+  pt: ''
+  status: pendente
+- id: b2.007.t00
+  en: '[cor]Purapril[/cor]'
+  pt: '[cor]Purapril[/cor]'
+  status: revisado
+- id: b2.008.t00
+  en: '[cor]Ice Capital[/cor]'
+  pt: '[cor]Capital do Gelo[/cor]'
+  status: revisado
+- id: b2.009.t00
+  en: '[cor]Castle of Illusion[/cor]'
+  pt: '[cor]Castelo da Ilusão[/cor]'
+  status: revisado
+- id: b2.020.t00
+  en: '[cor]Eleanora[/cor]'
+  pt: '[cor]Eleanora[/cor]'
+  status: revisado
+- id: b2.021.t00
+  en: '[cor]Myconid[/cor]'
+  pt: '[cor]Myconid[/cor]'
+  status: revisado
+- id: b2.022.t00
+  en: Monster
+  pt: Monstro
+  status: revisado
+  nota: 'caso cinzento: palavra comum, não nome próprio; traduzida'
+- id: b2.023.t00
+  en: '[cor]Priscilla[/cor]'
+  pt: '[cor]Priscilla[/cor]'
+  status: revisado
+- id: b2.024.t00
+  en: '[cor]Poseidon[/cor]'
+  pt: '[cor]Poseidon[/cor]'
+  status: revisado
+- id: b2.025.t00
+  en: '[cor]Shiela Purapril[/cor]'
+  pt: '[cor]Shiela Purapril[/cor]'
+  status: revisado
+- id: b2.026.t00
+  en: '[cor]Sphinx[/cor]'
+  pt: '[cor]Esfinge[/cor]'
+  status: revisado
+- id: b2.027.t00
+  en: '[cor]Hotta[/cor]'
+  pt: '[cor]Hotta[/cor]'
+  status: revisado
+- id: b2.028.t00
+  en: '[cor]Prince of the Devil World[/cor]'
+  pt: '[cor]Príncipe do Mundo das Trevas[/cor]'
+  status: revisado
+- id: b2.029.t00
+  en: '[cor]Bio-Mecha[/cor]'
+  pt: '[cor]Bio-Mecha[/cor]'
+  status: revisado
+- id: b2.02A.t00
+  en: '[cor]Shabo[/cor]'
+  pt: '[cor]Shabo[/cor]'
+  status: revisado

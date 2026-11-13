@@ -1,0 +1,65 @@
+# Fonte editável (ferramentas/fonte.py). Gerado por 'python -m ferramentas extrair'
+# quando graficos/fonte/fonte.png não existe; edite o PNG, não este arquivo (os
+# metadados descrevem a ROM base e a origem dos glifos novos).
+#
+# PNG indexado de 16x16 tiles (128x128): tile n = código de caractere n; o bloco b
+# são as linhas de tiles 2b e 2b+1. Use só os índices 0-15 (fundo 1, traço 15).
+# - tiles 0x80-0x9F (bloco 4) NÃO aparecem no jogo: o slot 4 recebe o bloco 0x235
+#   (HUD/efeitos) em toda cena com texto. Estão aqui só como contexto;
+# - tiles 0x5C, 0x5D e 0x5F são zerados pelo jogo depois da carga;
+# - 0xBE/0xBF são o tile de cima do prefixo FE/FF;
+# - 0xC0, 0xC1, 0xC2, 0xC3, 0xC4, 0xC5, 0xD0, 0xFE, 0xFF não são glifos: são gráficos
+#   de sprite (bolhas d'água em 0xC0-0xC5 e 0xD0); deixe-os como estão;
+# - 0xC6-0xCB e 0xD3-0xD8 (se 'hud' abaixo) são o rótulo MOEDAS do HUD, não caracteres.
+# Ver docs/tecnico/vram.md e docs/tecnico/mapa-rom.md §8.
+origem:
+  rom_sha1: 87a968f773c7e807e647c0737132457b06b78276
+  tabela: 0x41000
+png: fonte.png
+largura_tiles: 16
+tiles: 256
+blocos:
+  - {bloco: 0, ponteiro: 0x41000, blob: 0x41C00, bytes: 207, tiles: "0x00-0x1F"}
+  - {bloco: 1, ponteiro: 0x41004, blob: 0x41CCF, bytes: 284, tiles: "0x20-0x3F"}
+  - {bloco: 2, ponteiro: 0x41008, blob: 0x41DEB, bytes: 312, tiles: "0x40-0x5F"}
+  - {bloco: 3, ponteiro: 0x4100C, blob: 0x41F23, bytes: 246, tiles: "0x60-0x7F"}
+  - {bloco: 4, ponteiro: 0x41010, blob: 0x42019, bytes: 310, tiles: "0x80-0x9F"}
+  - {bloco: 5, ponteiro: 0x41014, blob: 0x4214F, bytes: 345, tiles: "0xA0-0xBF"}
+  - {bloco: 6, ponteiro: 0x41018, blob: 0x422A8, bytes: 338, tiles: "0xC0-0xDF"}
+  - {bloco: 7, ponteiro: 0x4101C, blob: 0x423FA, bytes: 340, tiles: "0xE0-0xFF"}
+tiles_invisiveis: "0x80-0x9F"
+tiles_zerados: [0x5C, 0x5D, 0x5F]
+tiles_efeito: [0xC0, 0xC1, 0xC2, 0xC3, 0xC4, 0xC5, 0xD0, 0xFE, 0xFF]
+paleta_exibicao: ["#FF00FF", "#000060", "#222222", "#333333", "#444444", "#555555", "#666666", "#777777", "#888888", "#999999", "#AAAAAA", "#BBBBBB", "#CCCCCC", "#DDDDDD", "#EEEEEE", "#FFFFFF"]
+glifos:
+  0xA1: {caractere: "À", origem: "desenho do projeto"}
+  0xA2: {caractere: "Ã", origem: "desenho do projeto"}
+  0xA3: {caractere: "Â", origem: "desenho do projeto"}
+  0xA4: {caractere: "Á", origem: "desenho do projeto"}
+  0xA5: {caractere: "É", origem: "desenho do projeto"}
+  0xA6: {caractere: "Ê", origem: "desenho do projeto"}
+  0xA7: {caractere: "Í", origem: "desenho do projeto"}
+  0xA8: {caractere: "Ó", origem: "desenho do projeto"}
+  0xA9: {caractere: "Õ", origem: "desenho do projeto: O da fonte original em 6 linhas + til ondulado de 2 linhas"}
+  0xAA: {caractere: "Ô", origem: "desenho do projeto"}
+  0xAB: {caractere: "Ú", origem: "desenho do projeto: U da fonte original em 6 linhas + agudo do Ó"}
+  0xAC: {caractere: "Ç", origem: "desenho do projeto: C da fonte original em 6 linhas + cedilha separada"}
+  0xB1: {caractere: "à", origem: "desenho do projeto"}
+  0xB2: {caractere: "ã", origem: "desenho do projeto"}
+  0xB3: {caractere: "â", origem: "desenho do projeto"}
+  0xB4: {caractere: "á", origem: "desenho do projeto"}
+  0xB5: {caractere: "é", origem: "desenho do projeto"}
+  0xB6: {caractere: "ê", origem: "desenho do projeto"}
+  0xB7: {caractere: "í", origem: "desenho do projeto"}
+  0xB8: {caractere: "ó", origem: "desenho do projeto"}
+  0xB9: {caractere: "õ", origem: "desenho do projeto"}
+  0xBA: {caractere: "ô", origem: "desenho do projeto"}
+  0xBB: {caractere: "ú", origem: "desenho do projeto"}
+  0xBC: {caractere: "ç", origem: "desenho do projeto"}
+hud:
+  texto: "MOEDAS"
+  subida: 3
+  cima: [0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB]
+  baixo: [0xD3, 0xD4, 0xD5, 0xD6, 0xD7, 0xD8]
+  janela: "linhas 4 (cima) e 5 (baixo), colunas 23-28 (patch hud.moedas_rotina)"
+  origem: "desenho do projeto: as letras da própria fonte, subidas 3 pixels e divididas entre duas linhas de tiles para não encostarem no valor"

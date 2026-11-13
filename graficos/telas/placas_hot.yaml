@@ -1,0 +1,46 @@
+# Item gráfico 'placas_hot' (ferramentas/graficos.py). Gerado por
+# 'python -m ferramentas importar-tiles --origem <ROM> --item placas_hot'; edite o
+# PNG, não este arquivo.
+#
+# PNG indexado de 16x10 tiles: cada bloco são 2 linhas de 16 tiles
+# em ordem de bloco (tile t na coluna t % 16), blocos empilhados na ordem abaixo.
+# Índices de cor da paleta da cena. Ver docs/tecnico/mapa-rom.md §8.
+origem:
+  descricao: "Wonder Boy in Monster World (UE), ROM base"
+  arquivo: "Wonder Boy In Monster World (UE) [!].bin"
+  rom_sha1: 87a968f773c7e807e647c0737132457b06b78276
+  base_sha1: 87a968f773c7e807e647c0737132457b06b78276
+  tabela: 0x41000
+png: placas_hot.png
+formato: "02"
+disposicao: fundo
+tiles: 160
+blocos:
+  - {bloco: 0x37, ponteiro: 0x410DC, base: {tipo: "02", endereco: 0x47A13, bytes: 663}, linhas_png: "0-1"}
+  - {bloco: 0x88, ponteiro: 0x41220, base: {tipo: "02", endereco: 0x51A1E, bytes: 627}, linhas_png: "2-3"}
+  - {bloco: 0xD3, ponteiro: 0x4134C, base: {tipo: "02", endereco: 0x5906B, bytes: 700}, linhas_png: "4-5"}
+  - {bloco: 0x10B, ponteiro: 0x4142C, base: {tipo: "02", endereco: 0x60049, bytes: 522}, linhas_png: "6-7"}
+  - {bloco: 0x11C, ponteiro: 0x41470, base: {tipo: "02", endereco: 0x61EF0, bytes: 406}, linhas_png: "8-9"}
+partes:
+  - retoque: "HOT no lugar de INN (bloco 0x37, linhas 6-9)"
+    bloco: 0x37
+    pixels_png: "x 98-109, y 6-9"
+    origem: "desenho do projeto"
+  - retoque: "HOT no lugar de INN (bloco 0x88, linhas 9-12)"
+    bloco: 0x88
+    pixels_png: "x 98-109, y 25-28"
+    origem: "desenho do projeto"
+  - retoque: "HOT no lugar de INN (bloco 0xD3, linhas 7-10)"
+    bloco: 0xD3
+    pixels_png: "x 98-109, y 39-42"
+    origem: "desenho do projeto"
+  - retoque: "HOT no lugar de INN (bloco 0x10B, linhas 9-12)"
+    bloco: 0x10B
+    pixels_png: "x 98-109, y 57-60"
+    origem: "desenho do projeto"
+  - retoque: "HOT no lugar de INN (bloco 0x11C, linhas 2-5)"
+    bloco: 0x11C
+    pixels_png: "x 98-109, y 66-69"
+    origem: "desenho do projeto"
+  - texto: "restante (fora dos retoques acima)"
+    origem: "Wonder Boy in Monster World (UE), ROM base"

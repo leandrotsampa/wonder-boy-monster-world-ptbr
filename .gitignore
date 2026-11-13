@@ -1,0 +1,18 @@
+# ROMs e artefatos (nunca versionar ROMs comerciais)
+rom/*
+!rom/.gitkeep
+build/
+*.bin
+*.gen
+*.smd
+*.ips
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+
+# Core do emulador (baixado à parte)
+emu/

@@ -1,0 +1,135 @@
+# Visita as cenas com texto alcançáveis a partir do NEW GAME e grava, em cada
+# uma, a tela (.png), o VRAM (.vram) e o save state (.estado). Os estados são a
+# entrada de `python -m ferramentas.emulador.vram_cenas build/capturas/cenas/*.estado`
+# (uso dos tiles 0x80–0xFF por cena; ver docs/tecnico/vram.md). Nas cenas de jogo,
+# checar_fonte grava <nome>.ram e falha se $A144 > 42 ou se os slots 5–7 não têm os
+# blocos 5–7 (invariante da fonte, vram.md §3.1).
+#
+# Controles (controle de 3 botões): B ataca, C pula/avança o texto, START abre o
+# menu de status, cima+A entra por uma porta, baixo sai de casa.
+
+# --- abertura ---
+- esperar: 300
+- apertar: [start]        # pula a abertura
+  quadros: 2
+- esperar: 240
+- capturar: titulo
+- vram: titulo
+- estado_salvar: titulo
+- apertar: [start]        # título → menu (NEW GAME)
+  quadros: 2
+- esperar: 120
+- capturar: titulo_menu
+- estado_salvar: titulo_menu
+- apertar: [start]        # NEW GAME → casa do herói, a fala começa
+  quadros: 2
+- esperar: 120
+- apertar: [start]
+  quadros: 2
+- esperar: 120
+- capturar: dialogo
+- checar_fonte: dialogo
+- vram: dialogo
+- estado_salvar: dialogo
+
+# --- fim da fala de abertura (C acelera e fecha cada janela) ---
+- repetir: 144
+  passos:
+    - apertar: [c]
+      quadros: 2
+    - esperar: 18
+- capturar: casa
+- checar_fonte: casa
+- estado_salvar: casa
+- apertar: [start]        # menu de status ainda dentro de casa
+  quadros: 2
+- esperar: 30
+- capturar: menu_casa
+- checar_fonte: menu_casa
+- estado_salvar: menu_casa
+- apertar: [start]        # fecha o menu
+  quadros: 2
+- esperar: 30
+
+# --- campo: sai da cama/casa ---
+- apertar: [baixo]
+  quadros: 20
+- esperar: 60
+- capturar: campo
+- checar_fonte: campo
+- vram: campo
+- estado_salvar: campo
+
+# --- menu de status (START no campo) ---
+- apertar: [start]
+  quadros: 3
+- esperar: 60
+- capturar: menu
+- checar_fonte: menu
+- estado_salvar: menu
+- apertar: [c]            # WEAPON
+  quadros: 3
+- esperar: 40
+- capturar: menu_arma
+- checar_fonte: menu_arma
+- estado_salvar: menu_arma
+- apertar: [b]
+  quadros: 3
+- esperar: 40
+- apertar: [baixo]
+  quadros: 3
+- esperar: 10
+- apertar: [baixo]
+  quadros: 3
+- esperar: 10
+- apertar: [c]            # ITEM
+  quadros: 3
+- esperar: 40
+- capturar: menu_item
+- checar_fonte: menu_item
+- estado_salvar: menu_item
+- apertar: [b]
+  quadros: 3
+- esperar: 40
+- apertar: [dir]
+  quadros: 3
+- esperar: 10
+- apertar: [c]            # MAGIC
+  quadros: 3
+- esperar: 40
+- capturar: menu_magia
+- checar_fonte: menu_magia
+- vram: menu_magia
+- estado_salvar: menu_magia
+
+# --- anda até o toco com porta e entra ---
+- estado_carregar: campo
+- esperar: 10
+- repetir: 6
+  passos:
+    - apertar: [dir]
+      quadros: 30
+    - apertar: [dir, b]
+      quadros: 3
+    - apertar: [dir]
+      quadros: 30
+    - apertar: [dir, c]
+      quadros: 12
+    - apertar: [dir]
+      quadros: 30
+- esperar: 30
+- capturar: campo_toco
+- checar_fonte: campo_toco
+- estado_salvar: campo_toco
+- repetir: 12             # anda para a esquerda até a porta (entra na 11.ª tentativa)
+  passos:
+    - apertar: [esq]
+      quadros: 8
+    - esperar: 4
+    - apertar: [cima, a]
+      quadros: 5
+    - esperar: 50
+- capturar: toco
+- checar_fonte: toco
+- vram: toco
+- estado_salvar: toco

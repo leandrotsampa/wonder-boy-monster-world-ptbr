@@ -1,0 +1,7 @@
+# Liga o jogo, pula a abertura com START e captura a tela de título.
+- esperar: 300
+- apertar: [start]
+  quadros: 2
+- esperar: 240
+- capturar: titulo
+- vram: titulo

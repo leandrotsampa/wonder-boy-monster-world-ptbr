@@ -1,0 +1,1196 @@
+- id: dialogo.000.t00
+  en: '[$03][$06][$0A][$02][$04][$02]'
+  pt: ''
+  status: pendente
+- id: dialogo.000.t01
+  en: Monster World was[linha]once a peaceful[linha]region.[espera][linha][linha]Then, the peace was[linha]shattered by an[linha]invading army of[espera][linha]monsters.[linha][linha][espera]A young man named[linha][cor][nome:00][/cor] vowed to[linha]defeat them and make[espera][linha]his land peaceful[linha]again.
+  pt: Houve um tempo em que[linha]Monster World vivia[linha]em paz.[espera][linha][linha]Mas essa paz foi[linha]destruída por um[linha]exército de monstros.[espera][linha][linha]Um jovem chamado[linha][cor][nome:00][/cor] jurou[linha]derrotá-los e trazer[espera][linha]a paz novamente[linha]à sua terra.
+  status: revisado
+- id: dialogo.000.t02
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.000.t03
+  en: '[$03][$06][$0A][$02][$04][$02]Having difficulties[linha]already?[linha]Give it another try![espera]'
+  pt: '[$03][$06][$0A][$02][$04][$02]Já está com[linha]dificuldades?[linha]Tente outra vez![espera]'
+  status: revisado
+- id: dialogo.001.t00
+  en: '[$03][$08][$04][$01]Welcome to[quebra2][$04][$07]Monster World! [espera]'
+  pt: '[$03][$08][$04][$01]Bem-vindo a[quebra2][$04][$07]Monster World! [espera]'
+  status: revisado
+- id: dialogo.002.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.002.t01
+  en: 'Once again this world[$04][$02]  is being threatened.[linha][espera][linha]The princess has[linha]been kidnapped from[linha]Purapril Castle.[espera][linha][linha]You''d better use[linha]caution.[linha][espera][linha]Here''s an '
+  pt: 'Mais uma vez o mundo[$04][$02]  está em perigo.[linha][espera][linha]A princesa foi[linha]sequestrada do[linha]Castelo de Purapril.[espera][linha][linha]É melhor tomar[linha]cuidado.[linha][espera][linha]Aqui estão '
+  status: revisado
+- id: dialogo.002.t02
+  en: '[s0:02][linha]and '
+  pt: '[s0:02][linha]e '
+  status: revisado
+- id: dialogo.002.t03
+  en: '[s0:02]'
+  pt: ''
+  status: pendente
+- id: dialogo.002.t04
+  en: .[espera][linha]Take them with you.[espera][linha][linha]Make sure you're[linha]ready to use magic[linha]at all times![espera]
+  pt: .[espera][linha]Leve-os com você.[espera][linha][linha]Esteja sempre[linha]pronto para usar[linha]magia![espera]
+  status: revisado
+- id: dialogo.002.t05
+  en: What are you[linha]waiting for?[espera][linha]Get moving![espera]
+  pt: O que está[linha]esperando?[espera][linha]Vá logo![espera]
+  status: revisado
+- id: dialogo.003.t00
+  en: '[$04][$02]Alsedo,[quebra2][$04][$04]the fairy village[espera]'
+  pt: '[$04][$02]Alsedo,[quebra2][$04][$04]a vila das fadas[espera]'
+  status: revisado
+- id: dialogo.004.t00
+  en: '[$04][$02]Purapril Castle[quebra2][$04][$02]Entrance[espera]'
+  pt: '[$04][$02]Entrada do[quebra2][$04][$02]Castelo de Purapril[espera]'
+  status: revisado
+- id: dialogo.005.t00
+  en: '[$04][$01]Maugham Desert-enter[quebra2][$04][$01]at your own risk![espera]'
+  pt: '[$04][$01]Deserto de Maugham:[quebra2][$04][$01]por sua conta e risco![espera]'
+  status: revisado
+- id: dialogo.006.t00
+  en: '[$04][$02]Lilypad,[quebra2][$04][$04]the dwarf village[espera]'
+  pt: '[$04][$02]Lilypad,[quebra2][$04][$04]a vila dos anões[espera]'
+  status: revisado
+- id: dialogo.007.t00
+  en: '[$04][$02]Begonia,[quebra2][$04][$04]the dragon village[espera]'
+  pt: '[$04][$02]Begonia,[quebra2][$04][$04]a vila dos dragões[espera]'
+  status: revisado
+- id: dialogo.008.t00
+  en: '[$04][$01]Childam,[quebra2][$04][$02]the Darkworld village[espera]'
+  pt: '[$04][$01]Childam, a vila do[quebra2][$04][$02]Mundo das Trevas[espera]'
+  status: revisado
+- id: dialogo.009.t00
+  en: '[$04][$02]Purapril,[quebra2][$04][$04]the Aqua Capital[espera]'
+  pt: '[$04][$02]Purapril,[quebra2][$04][$04]a Capital das Águas[espera]'
+  status: revisado
+- id: dialogo.010.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.011.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.012.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.013.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.014.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.015.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.016.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.017.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.018.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.019.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.020.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.021.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.022.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.023.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.024.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.025.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.026.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.027.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.028.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.029.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.030.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.031.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.032.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.033.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.034.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.035.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.036.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.037.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.038.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.039.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.040.t00
+  en: '[$04][$01][$03][$06]Oh, it''s the '
+  pt: '[$04][$01][$03][$06]Olha só: '
+  status: revisado
+- id: dialogo.040.t01
+  en: '[s0:02]'
+  pt: ''
+  status: pendente
+- id: dialogo.040.t02
+  en: '[$03][$A0]!'
+  pt: '[$03][$A0]!'
+  status: revisado
+- id: dialogo.040.t03
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.041.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.042.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.043.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.044.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.045.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.046.t00
+  en: '[s3:01]'
+  pt: ''
+  status: pendente
+- id: dialogo.047.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.048.t00
+  en: '[s3:00]'
+  pt: ''
+  status: pendente
+- id: dialogo.049.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.049.t01
+  en: Welcome to Purapril[linha]Castle.[espera][linha][linha]Stay as long as you[linha]like.[linha][espera]
+  pt: Bem-vindo ao[linha]Castelo de Purapril.[espera][linha][linha]Fique à vontade.[linha][espera]
+  status: revisado
+- id: dialogo.049.t02
+  en: This is Purapril[linha]Castle![espera][linha][linha]Entry is prohibited.[linha][espera][linha]Go away![linha][espera]
+  pt: Aqui é o[linha]Castelo de Purapril![espera][linha][linha]A entrada é proibida.[linha][espera][linha]Vá embora![linha][espera]
+  status: revisado
+- id: dialogo.050.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.050.t01
+  en: I hear that peace has[linha]returned to Alsedo.[espera]
+  pt: Ouvi dizer que a paz[linha]voltou a Alsedo.[espera]
+  status: revisado
+- id: dialogo.050.t02
+  en: It appears that the[linha]village of Alsedo[linha]is being attacked.[espera]
+  pt: Parece que a vila[linha]de Alsedo está[linha]sendo atacada.[espera]
+  status: revisado
+- id: dialogo.051.t00
+  en: '[s0:06]I just told you[linha]that no one may[linha]enter the castle.[espera][linha][linha]Did I speak too[linha]fast for you?[espera]'
+  pt: '[s0:06]Já falei que[linha]ninguém pode entrar[linha]no castelo.[espera][linha][linha]Quer que eu desenhe?[espera]'
+  status: revisado
+- id: dialogo.052.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.052.t01
+  en: Looks like we're sold[linha]out of everything.[espera][linha][linha]Come on back some[linha]other time.[linha][espera]
+  pt: Parece que o nosso[linha]estoque esgotou.[espera][linha][linha]Volte outro dia,[linha]por favor.[linha][espera]
+  status: revisado
+- id: dialogo.052.t02
+  en: Welcome to Bacchus,[linha]a store with a[linha]reputation for good[espera][linha]service.[espera][linha][linha]We have great[linha]confidence in the[linha]products we sell.[espera]
+  pt: Bem-vindo à Bacchus,[linha]uma loja famosa[linha]pelo bom atendimento.[espera][linha][linha]Nossos produtos são[linha]de total confiança.[espera]
+  status: revisado
+- id: dialogo.052.t03
+  en: Use this item wisely![espera]
+  pt: Faça bom proveito![espera]
+  status: revisado
+- id: dialogo.053.t00
+  en: '[s3:01]'
+  pt: ''
+  status: pendente
+- id: dialogo.054.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.054.t01
+  en: Oh, I'm terribly[linha]sorry.[espera][linha][linha]We seem to be out of[linha]stock on that item.[linha][espera]
+  pt: Ah, mil desculpas![espera][linha][linha]Parece que estamos[linha]sem estoque.[linha][espera]
+  status: revisado
+- id: dialogo.054.t02
+  en: Welcome to Kishera.[espera][linha][linha]Stand in front of the[linha]item you wish to [linha]purchase and look up.[espera]
+  pt: Bem-vindo à Kishera.[espera][linha][linha]Para comprar, fique[linha]na frente do item[linha]e olhe para cima.[espera]
+  status: revisado
+- id: dialogo.054.t03
+  en: Thank you very much.[espera]
+  pt: Agradecemos a[linha]preferência![espera]
+  status: revisado
+- id: dialogo.055.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.055.t01
+  en: Hmmm... I'm out of[linha]stock on that right[linha]now.[espera][linha][linha]Try back later.[linha][espera]
+  pt: Hmmm... estamos sem[linha]estoque no momento.[espera][linha][linha]Volte mais tarde.[linha][espera]
+  status: revisado
+- id: dialogo.055.t02
+  en: Welcome to Felissimo.[espera][linha][linha]We have a medicine[linha]for sale.[linha][espera]
+  pt: Seja bem-vindo à[linha]Felissimo.[espera][linha][linha]Temos um remédio[linha]à venda.[linha][espera]
+  status: revisado
+- id: dialogo.055.t03
+  en: Use medicines with[linha]care.[espera]
+  pt: Use remédios com[linha]moderação.[espera]
+  status: revisado
+- id: dialogo.056.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.056.t01
+  en: I'm Sonia.[linha][espera][linha]The village is under[linha]attack.[linha][espera][linha]I don't know all the[linha]details, so you'd[linha]better see Eleanora.[espera][linha][linha]If you stand between[linha]the statues and look[linha]up, you can find her.[espera]
+  pt: Eu sou a Sonia.[linha][espera][linha]A vila está sendo[linha]atacada.[linha][espera][linha]Não sei os detalhes,[linha]então é melhor você[linha]falar com Eleanora.[espera][linha][linha]É só ficar entre as[linha]estátuas e olhar para[linha]cima que você a vê.[espera]
+  status: revisado
+- id: dialogo.057.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.057.t01
+  en: I'm Queen Eleanora.[espera][linha][linha]The monsters come[linha]from a cave just[linha]beyond the village.[espera][linha][linha]Can't you help us?[espera][linha][linha]Take Priscilla[linha]with you.[espera][linha][linha]She may be able to[linha]help you.[espera][linha][linha]Remember, though,[linha]that once you set[linha]foot outside[espera][linha]Alsedo, Priscilla[linha]will return to me,[linha]as she won't be[espera][linha]able to help you[linha]any more.[linha][espera]
+  pt: 'Eu sou a rainha[linha]Eleanora.[espera][linha][linha]Os monstros saem[linha]de uma caverna[linha]logo após a vila.[espera][linha][linha]Será que você[linha]poderia nos ajudar?[espera][linha][linha]Leve Priscilla[linha]com você.[espera][linha][linha]Talvez ela possa[linha]ajudar.[espera][linha][linha]Mas lembre-se: ela[linha]só pode ajudar você[linha]aqui em Alsedo.[espera][linha][linha]Assim que você sair[linha]da vila, Priscilla[linha]voltará para mim.[espera]'
+  status: revisado
+- id: dialogo.057.t02
+  en: Is Priscilla[linha]helping you?[espera]
+  pt: Priscilla está[linha]sendo útil?[espera]
+  status: revisado
+- id: dialogo.056.t02
+  en: You need the Ocarina[linha]to open the cave[linha]doors, but I lost it[espera][linha]somewhere inside the[linha]cave.[espera]
+  pt: Você precisa da[linha]Ocarina para abrir as[linha]portas da caverna.[espera][linha][linha]Mas acabei perdendo[linha]a minha em algum[linha]lugar lá dentro![espera]
+  status: revisado
+- id: dialogo.059.t00
+  en: '[s3:01]'
+  pt: ''
+  status: pendente
+- id: dialogo.060.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.060.t01
+  en: Keep in mind that[linha]when you equip a[linha]spear, you can't[espera][linha]use a shield.[espera][linha][linha]Remember this when[linha]selecting a weapon.[linha][espera]
+  pt: Sabia que, com uma[linha]lança equipada, não[linha]dá para usar escudo?[espera][linha][linha]Pense nisso na hora[linha]de escolher sua arma.[linha][espera]
+  status: revisado
+- id: dialogo.060.t02
+  en: Queen Eleanora is[linha]a wonderful person,[linha]isn't she?[espera]
+  pt: A rainha Eleanora é[linha]uma pessoa incrível,[linha]não acha?[espera]
+  status: revisado
+- id: dialogo.060.t03
+  en: Queen Eleanora was[linha]calling for you[linha]earlier.[espera][linha][linha]Why don't you pay her[linha]a visit?[linha][espera]
+  pt: A rainha Eleanora[linha]estava chamando você[linha]agora há pouco.[espera][linha][linha]Por que não vai[linha]falar com ela?[linha][espera]
+  status: revisado
+- id: dialogo.061.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.061.t01
+  en: If it's the cave[linha]up ahead that you[linha]wish to know about,[espera][linha]go ask Sonia.[espera]
+  pt: Quer saber da caverna[linha]logo ali na frente?[espera][linha][linha]Pergunte à Sonia.[espera]
+  status: revisado
+- id: dialogo.061.t02
+  en: Our village is free![linha]We are all very[linha]grateful.[espera]
+  pt: A vila está livre![linha]Todos nós somos[linha]muito gratos![espera]
+  status: revisado
+- id: dialogo.062.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.062.t01
+  en: Good morning.[linha]Did you sleep well?[espera][linha][linha]Good luck to you[linha]on your journey.[linha][espera]
+  pt: Bom dia![linha]Dormiu bem?[espera][linha][linha]Boa sorte na sua[linha]jornada.[linha][espera]
+  status: revisado
+- id: dialogo.062.t02
+  en: That was close.[espera][linha][linha]You shouldn't take[linha]chances like that![linha][espera][linha]Please be more[linha]careful![linha][espera]
+  pt: Essa foi por pouco.[espera][linha][linha]Não se arrisque[linha]desse jeito![linha][espera][linha]Tome mais cuidado,[linha]por favor![linha][espera]
+  status: revisado
+- id: dialogo.056.t03
+  en: Oh, it's the Ocarina![espera][linha][linha]You went there to[linha]look for it,[linha]didn't you?[espera][linha]The melody of the[linha]Ocarina may help to[linha]break the seals.[espera][linha][linha]Let's practice.[espera][linha][s3:07]Think you've got it?[espera][linha][linha]Play these melodies[linha]whenever you're in[linha]the cave.[espera]
+  pt: Ah, a minha Ocarina![espera][linha][linha]Você foi até lá[linha]buscá-la, não foi?[espera][linha][linha]A melodia da Ocarina[linha]pode romper os selos.[espera][linha][linha]Vamos praticar.[espera][linha][s3:07]Já pegou o jeito?[espera][linha][linha]Toque estas melodias[linha]sempre que estiver[linha]na caverna.[espera]
+  status: revisado
+- id: dialogo.056.t04
+  en: You've forgotten[linha]the melodies already?[espera][linha][linha]You're realy[linha]hopeless, you know?[espera][linha][linha]Let's practice them[linha]again.[espera][s3:07]Have you got it now?[espera][linha][linha]If you forget them[linha]again, come on back[espera][linha]and I'll help you[linha]out.[espera]
+  pt: Já esqueceu as[linha]melodias?[espera][linha][linha]Você não tem jeito,[linha]sabia?[espera][linha][linha]Vamos praticar[linha]outra vez.[espera][s3:07]Pegou o jeito agora?[espera][linha][linha]Se esquecer de novo,[linha]é só voltar aqui que[linha]eu te ajudo.[espera]
+  status: revisado
+- id: dialogo.056.t05
+  en: Thanks to you, the[linha]village is saved.[espera][linha][linha]Keep the Ocarina.[linha][linha][espera][linha][linha]It might come in[linha]handy.[linha][espera]
+  pt: Graças a você,[linha]a vila está salva.[espera][linha][linha]Fique com a Ocarina.[linha][linha][espera][linha][linha]Pode vir a calhar.[linha][espera]
+  status: revisado
+- id: dialogo.056.t06
+  en: Did the Ocarina[linha]prove useful?[espera]
+  pt: E a Ocarina?[linha]Tem ajudado?[espera]
+  status: revisado
+- id: dialogo.057.t03
+  en: Thank you so much.[espera][linha][linha]Alsedo is once more[linha]a peaceful village.[linha][espera][linha][linha]Go beyond the large[linha]tree and you'll[linha]reach Purapril.[espera][linha][linha]If you're ever in[linha]need of help of[linha]any kind, come and[espera][linha]see me.[espera][linha][linha]I'm forever in[linha]your debt.[linha][espera]
+  pt: Muito obrigada![espera][linha][linha]Alsedo voltou a[linha]viver em paz.[linha][espera][linha][linha]Passando pela[linha]grande árvore, você[linha]chega a Purapril.[espera][linha][linha]Se um dia precisar[linha]de qualquer ajuda,[linha]venha me ver.[espera][linha][linha]Serei grata a você[linha]para sempre.[linha][espera]
+  status: revisado
+- id: dialogo.057.t04
+  en: How's your journey[linha]going?[espera][linha][linha]There are still a[linha]great many people[linha]in need of your[espera][linha]help.[espera][linha][linha]Go now and do[linha]everything in your[linha]power to save them![espera]
+  pt: Como vai a sua[linha]jornada?[espera][linha][linha]Ainda há muitas[linha]pessoas precisando[linha]da sua ajuda.[espera][linha][linha]Agora vá e faça[linha]tudo o que puder[linha]para salvá-las![espera]
+  status: revisado
+- id: dialogo.065.t00
+  en: '[s3:01]'
+  pt: ''
+  status: pendente
+- id: dialogo.066.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.066.t01
+  en: Oh oh, looks like[linha]everything's gone.[espera][linha][linha]Come around again[linha]sometime.[linha][espera]
+  pt: Opa, parece que[linha]acabou tudo![espera][linha][linha]Aparece de novo[linha]qualquer dia.[linha][espera]
+  status: revisado
+- id: dialogo.066.t02
+  en: Buy something, will[linha]you?[espera][linha][linha]If you don't, I'll[linha]start breathing fire![linha][espera]
+  pt: Compra alguma coisa,[linha]vai?[espera][linha][linha]Senão eu começo a[linha]cuspir fogo![linha][espera]
+  status: revisado
+- id: dialogo.066.t03
+  en: Oh, thank you.[espera][linha][linha]You're rolling in[linha]dough,aren't you?[linha][espera]
+  pt: Opa, valeu![espera][linha][linha]Você está cheio da[linha]grana, hein?[linha][espera]
+  status: revisado
+- id: dialogo.067.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.067.t01
+  en: What? I've got[linha]nothing to sell![espera][linha][linha]I guess the shop is[linha]closed now...[linha][espera]
+  pt: Quê? Não tenho mais[linha]nada para vender![espera][linha][linha]Acho que vou ter que[linha]fechar a loja...[linha][espera]
+  status: revisado
+- id: dialogo.067.t02
+  en: Find anything you[linha]like?[espera]
+  pt: Achou alguma coisa[linha]do seu gosto?[espera]
+  status: revisado
+- id: dialogo.068.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.068.t01
+  en: I would create a[linha]sword from the Old[linha]Axe, but a necessary[espera][linha]item to do so has[linha]been stolen from me.[espera]
+  pt: Com o Machado Velho,[linha]dá para forjar uma[linha]espada.[espera][linha][linha]Só que me roubaram[linha]o que eu preciso para[linha]o trabalho.[espera]
+  status: revisado
+- id: dialogo.068.t02
+  en: With the Fire-Urn,[linha]I can create a sword[linha]from the Old Axe.[espera][linha]It will take some[linha]time.[linha][espera][linha]
+  pt: Com a Urna de Fogo,[linha]consigo transformar o[linha]machado numa espada.[espera][linha]Vai levar um tempo.[linha][espera][linha]
+  status: revisado
+- id: dialogo.068.t03
+  en: The Elder Dragon was[linha]calling for you a[linha]while ago so why[espera][linha]don't you go and see[linha]him?[linha][espera]
+  pt: O Dragão Ancião[linha]estava te chamando[linha]agora há pouco.[espera][linha]Vai lá falar com ele.[linha][espera]
+  status: revisado
+- id: dialogo.068.t04
+  en: It's not ready yet.[espera][linha]Please wait just a[linha]little longer.[espera]
+  pt: Ainda não terminei.[espera][linha]Espere só mais um[linha]pouquinho.[espera]
+  status: revisado
+- id: dialogo.068.t05
+  en: It's finished![espera][linha]Here you go.
+  pt: Ficou pronta![espera][linha]Aqui está.
+  status: revisado
+- id: dialogo.068.t06
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.068.t07
+  en: Use its legendary[linha]powers and save[linha]Monster World for us![espera]
+  pt: Salve Monster World[linha]por nós com o poder[linha]lendário da espada![espera]
+  status: revisado
+- id: dialogo.069.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.069.t01
+  en: One of the children[linha]of my village has[linha]been kidnapped.[espera][linha][linha]I don't want to see[linha]anyone.[linha][espera][linha]Do me a favor and[linha]just go away.[linha]Please...[espera]
+  pt: Uma das crianças da[linha]nossa vila foi[linha]sequestrada.[espera][linha][linha]Não estou com cabeça[linha]para ver ninguém.[linha][espera][linha]Peço que vá embora.[linha]Por favor...[espera]
+  status: revisado
+- id: dialogo.069.t02
+  en: You're the one who[linha]saved the child?[espera][linha][linha]I am eternally[linha]grateful to you.[linha][espera][linha]You're a hero.[linha][linha][espera][linha]Now you should meet[linha]Poseidon.[linha][espera][linha]He is in a perpetual[linha]sleep at the bottom[linha]of the sea.[espera][linha][linha]In order to swim[linha]underwater, you need[linha]Poseidon's Trident.[espera][linha][linha]Unfortunately, the[linha]monsters have gotten[linha]their claws on it...[espera]
+  pt: Foi você quem salvou[linha]a criança?[espera][linha][linha]Serei eternamente[linha]grato a você.[linha][espera][linha]Você é um herói![linha][linha][espera][linha]Agora você precisa[linha]encontrar Poseidon.[linha][espera][linha]Ele dorme no fundo[linha]do mar, num sono que[linha]nunca acaba.[espera][linha][linha]Só dá para nadar[linha]debaixo d'água com o[linha]Tridente de Poseidon.[espera][linha][linha]Infelizmente, os[linha]monstros puseram as[linha]garras nele...[espera]
+  status: revisado
+- id: dialogo.069.t03
+  en: You found the[linha]Trident![espera][linha][linha]Now you're able to[linha]swim underwater.[linha][espera][linha]Go find Poseidon![linha][linha][espera]
+  pt: Você achou o[linha]Tridente![espera][linha][linha]Agora você consegue[linha]nadar debaixo d'água.[linha][espera][linha]Vá atrás de Poseidon![linha][linha][espera]
+  status: revisado
+- id: dialogo.070.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.070.t01
+  en: Looks like I'm a[linha]storekeeper with[linha]nothing to sell![espera][linha][linha]HA, HA, HA, HA...[espera]
+  pt: Olha que piada:[linha]loja aberta e nada[linha]para vender![espera][linha][linha]HA, HA, HA, HA...[espera]
+  status: revisado
+- id: dialogo.070.t02
+  en: Welcome to[linha]Gooningle's.[linha][espera][linha]I may not have the[linha]best shop in the[linha]land, but there's not[espera][linha]a friendlier store{[linha]keeper around![espera]
+  pt: Bem-vindo à[linha]Gooningle's.[linha][espera][linha]Minha loja pode não[linha]ser a melhor do[linha]mundo,[espera][linha]mas atendimento mais[linha]simpático que este[linha]você não encontra![espera]
+  status: revisado
+- id: dialogo.070.t03
+  en: Now that's a fine[linha]piece, isn't it?[espera]
+  pt: Isso sim é coisa[linha]boa, não acha?[espera]
+  status: revisado
+- id: dialogo.071.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.071.t01
+  en: I'm terribly sorry,[linha]but I seem to be out[linha]of stock.[espera]
+  pt: Sinto muitíssimo,[linha]mas parece que o[linha]estoque acabou.[espera]
+  status: revisado
+- id: dialogo.071.t02
+  en: Welcome to Drapnell[linha]sundry goods.[espera]
+  pt: Bem-vindo ao[linha]Empório Drapnell.[espera]
+  status: revisado
+- id: dialogo.071.t03
+  en: Thank you.[linha]Be sure to use magic[linha]carefully.[espera]
+  pt: 'Agradeço a compra![linha]E não esqueça: use[linha]magia com cuidado.[espera]'
+  status: revisado
+- id: dialogo.072.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.072.t01
+  en: Rise and shine![espera][linha][linha]You're wasting[linha]precious daylight![linha][espera][linha]Get enough rest?[linha]Good![linha][espera][linha]Good luck to you![linha][linha][espera]
+  pt: De pé, de pé![espera][linha][linha]Não vá desperdiçar[linha]esse dia lindo![linha][espera][linha]Descansou bem?[linha]Ótimo![linha][espera][linha]Boa sorte por aí![linha][linha][espera]
+  status: revisado
+- id: dialogo.072.t02
+  en: Boy, that was a close[linha]call.[espera][linha][linha]Better keep your eyes[linha]open.[linha][espera]
+  pt: Nossa, essa foi por[linha]um triz![espera][linha][linha]Melhor ficar de[linha]olho aberto, hein?[linha][espera]
+  status: revisado
+- id: dialogo.073.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.073.t01
+  en: At last you've[linha]come.[espera][linha][linha]I knew you would[linha]appear before too[linha]long.[espera][linha][linha]Now, you must[linha]search for the[linha]Old Axe hidden in[espera][linha]Ice World.[espera][linha][linha]
+  pt: Finalmente você[linha]chegou.[espera][linha][linha]Eu sabia que você[linha]não ia demorar a[linha]aparecer.[espera][linha][linha]Agora, vá buscar[linha]o Machado Velho.[espera][linha][linha]Ele está[linha]escondido no[linha]Mundo do Gelo.[espera][linha][linha]
+  status: revisado
+- id: dialogo.073.t02
+  en: To get to Ice[linha]World, you'll[linha]need this special[espera][linha]Bracelet.[espera][linha][linha]
+  pt: Este Bracelete[linha]vai levar você ao[linha]Mundo do Gelo.[espera][linha][linha]
+  status: revisado
+- id: dialogo.073.t03
+  en: '[cor]Shion takes the[linha]Bracelet.[/cor][espera]'
+  pt: '[cor]Shion recebe o[linha]Bracelete.[/cor][espera]'
+  status: revisado
+- id: dialogo.073.t04
+  en: I already gave[linha]you the Bracelet.[linha][espera]
+  pt: Você já tem o[linha]Bracelete.[linha][espera]
+  status: revisado
+- id: dialogo.073.t05
+  en: So, you've[linha]managed to get[linha]your hands on the[espera][linha]Old Axe.[espera][linha][linha]The Blacksmith[linha]will give you all[linha]the details.[espera][linha][linha]This boy is my[linha]grandson.[espera][linha][linha]Take him with[linha]you, for I[linha]belive he can[espera][linha]be of some help.[linha][espera]
+  pt: Você conseguiu o[linha]Machado Velho![espera][linha][linha]O ferreiro vai[linha]explicar o resto.[espera][linha][linha]Este é meu neto.[espera][linha][linha]Leve-o com você.[linha]Ele pode ajudar.[linha][espera]
+  status: revisado
+- id: dialogo.073.t06
+  en: You must hurry.[espera][linha][linha]Find the Old Axe[linha]and then return[linha]to me.[espera]
+  pt: Apresse-se.[espera][linha][linha]Encontre o[linha]Machado Velho e[linha]volte até mim.[espera]
+  status: revisado
+- id: dialogo.073.t07
+  en: The deciding[linha]battle is now[linha]at hand.[espera][linha][linha]After receiving[linha]the Legendary[linha]Sword from the[espera][linha]Blacksmith, go to[linha]the Bell Tower at[linha]Purapril Castle[espera][linha]and point the[linha]sword toward the[linha]sky.[espera][linha][linha]Emerge victorious[linha]and return[linha]safely![espera][linha][linha]We're counting on[linha]you![linha][espera]
+  pt: A hora da batalha[linha]decisiva chegou.[espera][linha][linha]Primeiro, receba[linha]do ferreiro a[linha]Espada Lendária.[espera][linha][linha]Depois, vá ao[linha]Castelo de[linha]Purapril, suba na[espera][linha]Torre do Sino e[linha]aponte a espada[linha]para o céu.[espera][linha][linha]Vença e volte[linha]são e salvo![espera][linha][linha]Estamos contando[linha]com você![linha][espera]
+  status: revisado
+- id: dialogo.074.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.074.t01
+  en: I'm terribly sorry,[linha]but Iseem to be out[linha]of stock.[espera]
+  pt: Ih, desculpa! Parece[linha]que o estoque[linha]acabou.[espera]
+  status: revisado
+- id: dialogo.074.t02
+  en: Welcome to Sundry.[espera][linha][linha]See anything you[linha]like?[linha][espera]
+  pt: Bem-vindo à Sundry.[espera][linha][linha]Gostou de alguma[linha]coisa?[linha][espera]
+  status: revisado
+- id: dialogo.074.t03
+  en: The Charmstone is...[linha]wait a minute![espera][linha][linha]I'm not going to tell[linha]you that![linha][espera]
+  pt: A Pedra Encantada[linha]é... opa, espera aí![espera][linha][linha]Isso eu não vou[linha]te contar![linha][espera]
+  status: revisado
+- id: dialogo.075.t00
+  en: '[s0:06]It''s been years[linha]since we last had[linha]a visitor.[espera][linha][linha]Your journey has[linha]just begun.[espera][linha]Please take care.[espera][linha][linha]The jellyfish will[linha]help you on your way.[linha][espera]'
+  pt: '[s0:06]Faz anos que ninguém[linha]vem nos visitar.[espera][linha][linha]Sua jornada mal[linha]começou.[espera][linha]Tome cuidado.[espera][linha][linha]A água-viva vai te[linha]ajudar no caminho.[linha][espera]'
+  status: revisado
+- id: dialogo.076.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.076.t01
+  en: Maugham Desert is[linha]a forbidding place.[espera]
+  pt: O Deserto de Maugham[linha]é um lugar perigoso.[espera]
+  status: revisado
+- id: dialogo.076.t02
+  en: It is said that one[linha]who wears the Oasis[linha]Boots can cross the[espera][linha]desert.[espera]
+  pt: Dizem que quem calça[linha]as Botas do Oásis[linha]atravessa o deserto.[espera]
+  status: revisado
+- id: dialogo.076.t03
+  en: It looks like the[linha]store over there is[linha]open.[espera]
+  pt: Parece que a loja[linha]logo ali abriu.[espera]
+  status: revisado
+- id: dialogo.077.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.077.t01
+  en: I know of a dwarf[linha]village deep in the[linha]woods that lie ahead.[espera][linha][linha]I believe it's[linha]called Lilypad.[linha][espera]
+  pt: Mais adiante, na[linha]floresta, tem uma[linha]vila de anões.[espera][linha][linha]Se não me engano,[linha]ela se chama Lilypad.[linha][espera]
+  status: revisado
+- id: dialogo.077.t02
+  en: The well at Purapril[linha]Castle is connected[linha]to the sea by an[espera][linha]underground waterway.[espera]
+  pt: O poço do Castelo de[linha]Purapril dá no mar[linha]por baixo da terra.[espera]
+  status: revisado
+- id: dialogo.077.t03
+  en: It's only a rumor,[linha]but I've heard of a[linha]house that's hidden[espera][linha]somewhere in town.[espera]
+  pt: É só boato, mas dizem[linha]que tem uma casa[linha]escondida na cidade.[espera]
+  status: revisado
+- id: dialogo.078.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.078.t01
+  en: My younger brother,[linha]Hotta, has been taken[linha]by the monsters.[espera][linha][linha]What am I going to[linha]do?[linha][espera]
+  pt: Os monstros levaram[linha]meu irmãozinho,[linha]o Hotta![espera][linha][linha]E agora, o que faço?[linha][espera]
+  status: revisado
+- id: dialogo.078.t02
+  en: The monsters have a[linha]den just beyond the[linha]village.[espera][linha][linha]Could they be holding[linha]Hotta there?[linha][espera]
+  pt: Os monstros têm um[linha]covil logo depois da[linha]vila.[espera][linha][linha]Será que o Hotta[linha]está preso lá?[linha][espera]
+  status: revisado
+- id: dialogo.078.t03
+  en: You're the one who[linha]saved my brother![espera][linha][linha]He wants to go with[linha]you.[linha][espera][linha]You know, he just may[linha]be able to help you.[linha][espera][linha]Don't go too far,[linha]though...[linha][espera]
+  pt: Foi você quem salvou[linha]meu irmão![espera][linha][linha]Ele quer ir junto[linha]com você.[linha][espera][linha]E sabe que ele pode[linha]até te ajudar?[linha][espera][linha]Só não vão muito[linha]longe, tá bom?[linha][espera]
+  status: revisado
+- id: dialogo.078.t04
+  en: My brother seems to[linha]have grown very fond[linha]of you.[espera][linha][linha]Please take him out[linha]again sometime.[linha][espera]
+  pt: Parece que meu irmão[linha]gostou muito de você.[espera][linha][linha]Quando puder, leve[linha]o Hotta para outra[linha]aventura, tá?[espera]
+  status: revisado
+- id: dialogo.078.t05
+  en: Thank you again for[linha]your help.[espera][linha][linha]Has my brother been[linha]able to help you at[linha]all?[espera][linha][linha]He's very good at[linha]finding hidden rooms,[linha]you know.[espera]
+  pt: Valeu de novo pela[linha]ajuda![espera][linha][linha]E aí, meu irmão[linha]conseguiu te ajudar[linha]em alguma coisa?[espera][linha][linha]Ele é craque em achar[linha]salas escondidas,[linha]sabia?[espera]
+  status: revisado
+- id: dialogo.079.t00
+  en: '[$03][$06][$04][$04]'
+  pt: ''
+  status: pendente
+- id: dialogo.079.t01
+  en: '[s0:02]'
+  pt: ''
+  status: pendente
+- id: dialogo.079.t02
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.080.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.080.t01
+  en: You've done well to[linha]find this place, but[linha]I'm afraid I don't[espera][linha]speak to anyone not[linha]holding a Charmstone.[espera]
+  pt: Muito bem, você achou[linha]este lugar.[espera][linha][linha]Mas eu só converso[linha]com quem tem uma[linha]Pedra Encantada.[espera]
+  status: revisado
+- id: dialogo.080.t02
+  en: How about trading[linha]your Charmstone[linha]for this Heart?[s0:00]
+  pt: Que tal trocar a sua[linha]Pedra Encantada[linha]por este Coração?[s0:00]
+  status: revisado
+- id: dialogo.080.t03
+  en: '[s0:07]Oh, you will trade.[linha]How about that!'
+  pt: '[s0:07]Opa, vai trocar![linha]Que beleza!'
+  status: revisado
+- id: dialogo.080.t04
+  en: '[espera][linha]Come back anytime,[linha]friend.[espera]'
+  pt: '[espera][linha]Volte quando quiser,[linha]amigo.[espera]'
+  status: revisado
+- id: dialogo.080.t05
+  en: '[s0:07]No deal, eh?[linha]Well, come on back[linha]some other time.[espera]'
+  pt: '[s0:07]Não vai trocar, é?[linha]Bom, volte outra[linha]hora, então.[espera]'
+  status: revisado
+- id: dialogo.080.t06
+  en: '[s0:07]Oh, sorry.[espera][linha]Your Heart supply[linha]can''t get any[linha]larger.[espera][linha]If you have two[linha]Charmstones,[espera][linha]I can increase[linha]your magical[linha]powers.[espera]'
+  pt: '[s0:07]Ah, desculpe.[espera][linha]Você já tem o[linha]máximo de Corações.[espera][linha]Mas com duas Pedras[linha]Encantadas, eu posso[linha]aumentar a sua magia.[espera]'
+  status: revisado
+- id: dialogo.080.t07
+  en: How about trading[linha]me those two[linha]Charmstones for[espera][linha]some new magic?[s0:00]
+  pt: Eu fico com as duas[linha]Pedras Encantadas e[linha]te dou uma magia.[espera][linha]Que tal?[s0:00]
+  status: revisado
+- id: dialogo.080.t08
+  en: '[s0:07]Oh, you will trade![linha]Great!'
+  pt: '[s0:07]Vai trocar? Ótimo![linha]Negócio fechado!'
+  status: revisado
+- id: dialogo.080.t09
+  en: '[espera][linha]Come on by anytime[linha]you''re in the area.[espera]'
+  pt: '[espera][linha]Quando passar por[linha]aqui, apareça![espera]'
+  status: revisado
+- id: dialogo.080.t10
+  en: '[s0:07]Oh, well.[linha]Can''t win''em all.[espera][linha]Hope to see you[linha]again.[espera]'
+  pt: '[s0:07]Fazer o quê...[linha]Não dá para ganhar[linha]todas.[espera][linha]Até a próxima![espera]'
+  status: revisado
+- id: dialogo.080.t11
+  en: '[s0:07]Oh, my mistake.[linha]You can''t handle[linha]any more magic.[espera][linha]Sorry about that.[espera]'
+  pt: '[s0:07]Ah, me enganei.[linha]Sua magia já está[linha]no máximo.[espera][linha]Desculpe![espera]'
+  status: revisado
+- id: dialogo.081.t00
+  en: '[$04][$02]The Myconid!'
+  pt: '[$04][$02]O Myconid!'
+  status: revisado
+- id: dialogo.081.t01
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.082.t00
+  en: '[$04][$02]It looks like the[linha]store is closed.[espera]'
+  pt: '[$04][$02]Parece que a loja[linha]está fechada.[espera]'
+  status: revisado
+- id: dialogo.083.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.083.t01
+  en: Sold out?[linha]I'm not surprised.[espera][linha][linha]Guess it's time to[linha]head out and collect[linha]some more weapons.[espera]
+  pt: Esgotou? Não me[linha]surpreende.[espera][linha][linha]Hora de pegar a[linha]estrada e juntar[linha]mais armas.[espera]
+  status: revisado
+- id: dialogo.083.t02
+  en: Hey, come on in and[linha]help us celebrate the[linha]Grand Opening of our[espera][linha]shop.[espera][linha][linha]This is Wanderer, the[linha]finest weapon shop in[linha]the land.[espera]
+  pt: Ei, pode entrar![linha]Venha comemorar a[linha]nossa inauguração![espera][linha][linha]Esta é a Wanderer,[linha]a melhor loja de[linha]armas da região.[espera]
+  status: revisado
+- id: dialogo.083.t03
+  en: Back again, eh?[espera][linha][linha]Nothing but the best[linha]for my customers.[linha][espera][linha]I've collected these[linha]items on my many[linha]journeys.[espera]
+  pt: De volta, é?[espera][linha][linha]Para meus clientes,[linha]só do bom e do[linha]melhor![espera][linha][linha]Juntei estas peças[linha]nas minhas muitas[linha]viagens.[espera]
+  status: revisado
+- id: dialogo.084.t00
+  en: '[$04][$02]It''s locked.[espera]'
+  pt: '[$04][$02]Está trancada.[espera]'
+  status: revisado
+- id: dialogo.085.t00
+  en: '[s0:06]I had been taken[linha]prisoner by the[linha]monsters.[espera][linha][linha]Please come to the[linha]castle hall.[linha][espera][linha]I''d like to thank[linha]you.[linha][espera]'
+  pt: '[s0:06]Os monstros tinham[linha]me feito prisioneira.[espera][linha][linha]Venha ao salão do[linha]castelo, por favor.[linha][espera][linha]Quero agradecer[linha]a você.[linha][espera]'
+  status: revisado
+- id: dialogo.086.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.086.t01
+  en: The gate to the[linha]castle has been[linha]opened.[espera][linha][linha]Why don't you go on[linha]inside?[linha][espera]
+  pt: O portão do castelo[linha]já está aberto.[espera][linha][linha]Pode entrar![linha][espera]
+  status: revisado
+- id: dialogo.087.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.087.t01
+  en: If you have the[linha]Amulet, you can[linha]find the shrine[espera][linha]at the bottom of the[linha]sea.[espera][linha][linha]Let me have your[linha]Ocarina and I'll tell[linha]you where to find the[espera][linha]Amulet.[linha]What do you say?[s0:33]
+  pt: Com o Amuleto, você[linha]encontra o santuário[linha]no fundo do mar.[espera][linha][linha]Me dê a sua Ocarina[linha]e eu te conto onde[linha]está o Amuleto.[espera][linha]Que tal?[s0:33]
+  status: revisado
+- id: dialogo.087.t02
+  en: '[$03][$06][$0A][$02][espera][linha][linha]There''s a door hidden[linha]amidst four palm[linha]trees.[espera][linha][linha]From there you should[linha]be able to find the[linha]Amulet.[espera]'
+  pt: '[$03][$06][$0A][$02][espera][linha][linha]Tem uma porta[linha]escondida entre[linha]quatro palmeiras.[espera][linha][linha]Passando por ela,[linha]você vai achar o[linha]Amuleto.[espera]'
+  status: revisado
+- id: dialogo.087.t03
+  en: '[$03][$06][$0A][$02][espera][linha][linha]Oh, that''s too bad.[espera][linha][linha]If you need my help,[linha]drop by again.[espera]'
+  pt: '[$03][$06][$0A][$02][espera][linha][linha]Ah, que pena.[espera][linha][linha]Se precisar da minha[linha]ajuda, volte aqui.[espera]'
+  status: revisado
+- id: dialogo.087.t04
+  en: Did you forget what[linha]I told you?[espera][linha]OK.[espera][linha][linha]Find four palm trees,[linha]then find the door[linha]that's hidden amidst[espera][linha]them.[espera][linha][linha]Good luck.[linha][linha][espera]
+  pt: Esqueceu o que eu[linha]te disse?[espera][linha]Tudo bem.[espera][linha][linha]Ache quatro palmeiras[linha]e procure a porta[linha]escondida entre elas.[espera][linha][linha]Boa sorte.[linha][linha][espera]
+  status: revisado
+- id: dialogo.087.t05
+  en: If you have the[linha]Amulet, the shrine[linha]will appear right[espera][linha]before your eyes.[espera]
+  pt: Com o Amuleto, o[linha]santuário aparece[linha]bem na sua frente.[espera]
+  status: revisado
+- id: dialogo.087.t06
+  en: So you're the[linha]legendary hero![espera][linha][linha]Now maybe my father[linha]will be able to get a[linha]decent night's sleep.[espera][linha][linha]I'm the daughter of[linha]Poseidon.[linha][espera]
+  pt: Então você é o herói[linha]lendário![espera][linha][linha]Agora talvez meu pai[linha]consiga ter uma boa[linha]noite de sono.[espera][linha][linha]Eu sou a filha de[linha]Poseidon.[linha][espera]
+  status: revisado
+- id: dialogo.088.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.088.t01
+  en: You're here at last.[linha]The legendary hero.[espera][linha][linha]The Elder Dragon is[linha]waiting for you.[linha][espera][linha]Before you meet him,[linha]though, visit the[linha]Sphinx to increase[espera][linha]your strength.[espera][linha][linha]There's a Pyramid[linha]just beyond the[linha]Maugham Desert.[espera][linha][linha]An item that will[linha]help you cross the[linha]desert is hidden[espera][linha]somewhere in this[linha]shrine.[espera][linha][linha]Find it and then go[linha]see the Sphinx.[linha][espera]
+  pt: Enfim você chegou,[linha]lendário herói.[espera][linha][linha]O Dragão Ancião[linha]espera por você.[linha][espera][linha]Mas antes procure a[linha]Esfinge, para ficar[linha]mais forte.[espera][linha][linha]Logo depois do[linha]Deserto de Maugham[linha]fica uma Pirâmide.[espera][linha][linha]Neste santuário há um[linha]item escondido para[linha]atravessar o deserto.[espera][linha][linha]Encontre-o e depois[linha]vá ver a Esfinge.[linha][espera]
+  status: revisado
+- id: dialogo.088.t02
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.088.t03
+  en: What are you[linha]dilly-dallying about[linha]for?[espera][linha][linha]Many people await[linha]your help.[linha][espera][linha]I'm going back to[linha]sleep.[linha][espera]
+  pt: Por que ainda está[linha]enrolando aqui?[espera][linha][linha]Muita gente espera[linha]pela sua ajuda.[linha][espera][linha]Vou voltar a dormir.[linha][espera]
+  status: revisado
+- id: dialogo.088.t04
+  en: '[$04][$02]He''s already in a[linha]deep sleep.[espera]'
+  pt: '[$04][$02]Ele já está num[linha]sono profundo.[espera]'
+  status: revisado
+- id: dialogo.089.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.089.t01
+  en: The princess has[linha]returned safely.[espera][linha][linha]I'm so relieved.[linha][linha][espera]
+  pt: A princesa voltou[linha]sã e salva.[espera][linha][linha]Que alívio![linha][linha][espera]
+  status: revisado
+- id: dialogo.089.t02
+  en: The princess is[linha]waiting.[espera]
+  pt: A princesa está[linha]esperando você.[espera]
+  status: revisado
+- id: dialogo.089.t03
+  en: Make yourself at[linha]home.[espera]
+  pt: Fique à vontade.[espera]
+  status: revisado
+- id: dialogo.090.t00
+  en: '[$04][$02]The door has been[quebra2][$04][$02]sealed.[espera]'
+  pt: '[$04][$02]A porta foi[quebra2][$04][$02]lacrada.[espera]'
+  status: revisado
+- id: dialogo.091.t00
+  en: '[$03][$06]'
+  pt: ''
+  status: pendente
+- id: dialogo.091.t01
+  en: So you've[quebra2]arrived.[espera]
+  pt: Ah, você chegou.[espera]
+  status: revisado
+- id: dialogo.091.t02
+  en: As you may have[quebra2]guessed, I'm the[quebra2]Sphinx.[espera]
+  pt: Como você já deve[quebra2]ter adivinhado,[quebra2]eu sou a Esfinge.[espera]
+  status: revisado
+- id: dialogo.091.t03
+  en: I've got this[quebra2]thing for[quebra2]quizzes,[espera][quebra2]but then you've[quebra2]probably heard[quebra2]that by now.[espera]
+  pt: Tenho um fraco[quebra2]por um bom quiz.[espera][quebra2]Mas aposto que[quebra2]você já ouviu[quebra2]falar disso.[espera]
+  status: revisado
+- id: dialogo.091.t04
+  en: Tell you what I'm[quebra2]gonna do.[espera]
+  pt: Vamos fazer o[quebra2]seguinte.[espera]
+  status: revisado
+- id: dialogo.091.t05
+  en: I'm gonna ask you[quebra2]some questions -[quebra2]5, to be exact.[espera]
+  pt: Vou te fazer[quebra2]umas perguntas.[quebra2]Cinco, ao todo.[espera]
+  status: revisado
+- id: dialogo.091.t06
+  en: When you've[quebra2]answered them all[quebra2]correctly, I'm[quebra2]gonna send you[quebra2]into a new world.[espera]
+  pt: Se você acertar[quebra2]todas, eu te[quebra2]mando para um[quebra2]mundo novo.[espera]
+  status: revisado
+- id: dialogo.091.t07
+  en: Are you ready?[espera]
+  pt: Está pronto?[espera]
+  status: revisado
+- id: dialogo.091.t08
+  en: '[$03][$00]Here''s the first[quebra2]question.[s3:06]Here''s the second[quebra2]question.[s3:06]Here''s the third[quebra2]question.[s3:06]Here''s the fourth[quebra2]question.[s3:06]Here''s the final[quebra2]question.[s3:06]'
+  pt: '[$03][$00]Lá vai a primeira[quebra2]pergunta.[s3:06]Lá vai a segunda[quebra2]pergunta.[s3:06]Lá vai a terceira[quebra2]pergunta.[s3:06]Lá vai a quarta[quebra2]pergunta.[s3:06]Lá vai a última[quebra2]pergunta.[s3:06]'
+  status: revisado
+- id: dialogo.091.t09
+  en: This is terrible.[quebra2]You missed every[quebra2]one!.[espera][quebra2]Looks like the[quebra2]end of the line[quebra2]for you...[espera]
+  pt: Que horror![quebra2]Você errou[quebra2]todas![espera][quebra2]Parece que é o[quebra2]fim da linha[quebra2]para você...[espera]
+  status: revisado
+- id: dialogo.091.t10
+  en: How sad.[quebra2]You only got one[quebra2]right.[espera][quebra2]I can't let you[quebra2]pass...[espera]
+  pt: Que pena.[quebra2]Você só acertou[quebra2]uma.[espera][quebra2]Não posso te[quebra2]deixar passar...[espera]
+  status: revisado
+- id: dialogo.091.t11
+  en: This is no good.[quebra2]You only got two[quebra2]correct.[espera][quebra2]Come back and try[quebra2]again.[espera]
+  pt: Assim não dá.[quebra2]Você só acertou[quebra2]duas.[espera][quebra2]Volte e tente de[quebra2]novo.[espera]
+  status: revisado
+- id: dialogo.091.t12
+  en: Not bad, but not[quebra2]good enough.[espera][quebra2]You got 3 right.[quebra2]Try the quiz one[quebra2]more time.[espera]
+  pt: Nada mal, mas[quebra2]ainda não basta.[espera][quebra2]Você acertou 3.[quebra2]Tente o quiz mais[quebra2]uma vez.[espera]
+  status: revisado
+- id: dialogo.091.t13
+  en: You're so close.[quebra2]You only missed[quebra2]one![espera][quebra2]I'll let you[quebra2]pass![s3:08]
+  pt: Quase perfeito![quebra2]Você só errou[quebra2]uma![espera][quebra2]Vou deixar você[quebra2]passar![s3:08]
+  status: revisado
+- id: dialogo.091.t14
+  en: That's fantastic![quebra2]You got every one[quebra2]right![espera][quebra2][quebra2]As your reward,[quebra2]I bestow upon you[quebra2]Thunder Magic.[quebra2][quebra2]You may pass.[s3:08]
+  pt: Fantástico![quebra2]Você acertou[quebra2]todas![espera][quebra2][quebra2]Como recompensa,[quebra2]você ganha a[quebra2]magia [cor]Trovões[/cor].[quebra2][quebra2]Pode ir.[s3:08]
+  status: revisado
+- id: dialogo.092.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.092.t01
+  en: The Elder Dragon has[linha]something he wishes[linha]to discuss with you.[espera][linha][linha]Please go to him now.[linha][linha][espera]
+  pt: O Dragão Ancião quer[linha]conversar com você.[espera][linha][linha]Vá até lá, por favor.[linha][linha][espera]
+  status: revisado
+- id: dialogo.092.t02
+  en: Only one bearing the[linha]Ancient Axe can enter[linha]the volcano.[espera]
+  pt: Só quem tem o[linha]Machado Velho pode[linha]entrar no vulcão.[espera]
+  status: revisado
+- id: dialogo.092.t03
+  en: I saw someone[linha]carring the Fire-Urn[linha]and preparing to[espera][linha]enter the volcano.[espera]
+  pt: Eu vi alguém levando[linha]a Urna de Fogo para[linha]dentro do vulcão.[espera]
+  status: revisado
+- id: dialogo.093.t00
+  en: '[$04][$02]The shop is closed.[espera]'
+  pt: '[$04][$02]A loja está fechada.[espera]'
+  status: revisado
+- id: dialogo.094.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.094.t01
+  en: I'm Shiela Purapril.[espera][linha][linha]I thank you for[linha]rescuing me.[linha][espera][linha]I heard that you're[linha]on a journey and that[linha]you're battling the[espera][linha]monsters.[espera][linha][linha]Why don't you stop by[linha]the village of[linha]Lilypad?[espera][linha][linha]There may be[linha]something there for[linha]you.[espera][linha][linha]Watch out for[linha]monsters on your way.[linha][espera]
+  pt: Sou Shiela Purapril.[espera][linha][linha]Agradeço por ter me[linha]salvado.[linha][espera][linha]Soube que você está[linha]numa jornada contra[linha]os monstros.[espera][linha][linha]Que tal passar na[linha]vila de Lilypad?[espera][linha][linha]Talvez encontre algo[linha]útil por lá.[espera][linha][linha]Cuidado com os[linha]monstros no caminho.[linha][espera]
+  status: revisado
+- id: dialogo.094.t02
+  en: Thank you again.[espera][linha][linha]Are you having a safe[linha]journey?[linha][espera][linha]Rumor has it that[linha]you're the legendary[linha]hero.[espera]
+  pt: Mais uma vez,[linha]obrigada.[espera][linha][linha]Sua jornada está[linha]correndo bem?[linha][espera][linha]Dizem que você é o[linha]herói lendário.[espera]
+  status: revisado
+- id: dialogo.094.t03
+  en: Is it true that you[linha]crossed the desert ?[espera][linha]That's incredible![espera]
+  pt: É verdade que você[linha]atravessou o deserto?[espera][linha]Que incrível![espera]
+  status: revisado
+- id: dialogo.094.t04
+  en: I heard you went[linha]to Ice Castle.[espera][linha][linha]Be very, very[linha]careful.[espera][linha][linha]I worry about you.[linha][espera]
+  pt: Soube que você foi[linha]ao Castelo de Gelo.[espera][linha][linha]Tome muito, muito[linha]cuidado.[espera][linha][linha]Fico preocupada com[linha]você.[linha][espera]
+  status: revisado
+- id: dialogo.095.t00
+  en: '[$04][$03]The Sphinx!'
+  pt: '[$04][$03]A Esfinge!'
+  status: revisado
+- id: dialogo.095.t01
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.096.t00
+  en: '[$03][$06][$04][$02]The Bracelet has [quebra2][$04][$02]begun to glow.[espera]'
+  pt: '[$03][$06][$04][$02]O Bracelete começou[quebra2][$04][$02]a brilhar.[espera]'
+  status: revisado
+- id: dialogo.097.t00
+  en: '[$04][$02][$03][$06]The seal is broken.[espera]'
+  pt: '[$04][$02][$03][$06]O selo se rompeu.[espera]'
+  status: revisado
+- id: dialogo.098.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.098.t01
+  en: Forgive me, but we[linha]seem to be sold out.[espera][linha]Please come again.[espera]
+  pt: Perdoe-nos, mas[linha]estamos sem estoque.[espera][linha]Volte em breve.[espera]
+  status: revisado
+- id: dialogo.098.t02
+  en: Thank you for coming.[espera][linha][linha]This is the weapon[linha]shop known as[linha]Labyrinth.[espera]
+  pt: Agradecemos a visita.[espera][linha][linha]Esta é a loja de[linha]armas Labyrinth.[espera]
+  status: revisado
+- id: dialogo.098.t03
+  en: Thank you very much.[espera][linha][linha]What an excellent[linha]choice![linha][espera]
+  pt: Agradecemos![espera][linha][linha]Que escolha[linha]excelente![linha][espera]
+  status: revisado
+- id: dialogo.099.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.099.t01
+  en: It looks like I'm[linha]a storekeeper with[linha]nothing to sell![espera][linha]Ha, ha, ha, ha...[espera]
+  pt: 'Essa é boa: tenho[linha]uma loja e nada[linha]para vender![espera][linha]Ha, ha, ha, ha...[espera]'
+  status: revisado
+- id: dialogo.099.t02
+  en: Well, come on in.[espera][linha]Take your time.[espera]
+  pt: Vamos, pode entrar.[espera][linha]Fique à vontade.[espera]
+  status: revisado
+- id: dialogo.100.t00
+  en: '[s3:01]'
+  pt: ''
+  status: pendente
+- id: dialogo.101.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.101.t01
+  en: You're the legendary[linha]hero I've heard so[linha]much about.[espera][linha][linha]The item you're[linha]looking for is in[linha]Ice Castle.[espera][linha][linha]Be warned-it's a[linha]frightening place.[linha][espera][linha]Take Shabo with you,[linha]in case you need[linha]help.[espera]
+  pt: Então você é o herói[linha]lendário de quem[linha]tanto ouvi falar.[espera][linha][linha]O item que você[linha]procura está no[linha]Castelo de Gelo.[espera][linha][linha]Mas cuidado, é um[linha]lugar assustador.[linha][espera][linha]Leve Shabo com você.[linha]Ele pode ajudar.[espera]
+  status: revisado
+- id: dialogo.101.t02
+  en: The Old Axe, in its[linha]original form, is of[linha]no use to you.[espera][linha][linha]You'd better return[linha]to Begonia and see[linha]the Blacksmith.[espera]
+  pt: Do jeito que está, o[linha]Machado Velho não[linha]serve para nada.[espera][linha][linha]É melhor voltar a[linha]Begonia e procurar o[linha]ferreiro.[espera]
+  status: revisado
+- id: dialogo.101.t03
+  en: You're finally[linha]starting to look like[linha]a hero.[espera][linha][linha]It appears that my[linha]job is done.[linha][espera][linha]Now, your final[linha]battle will no doubt[linha]be fierce, but I'm[espera][linha]confident that you'll[linha]triumph and that[linha]will be allowed to[espera][linha]return to our land.[espera]
+  pt: Agora sim, você tem[linha]cara de herói.[espera][linha][linha]Parece que a minha[linha]parte está feita.[linha][espera][linha]A batalha final será[linha]dura, sem dúvida.[espera][linha][linha]Mas sei que vencerá[linha]e que vamos poder[linha]voltar à nossa terra.[espera]
+  status: revisado
+- id: dialogo.102.t00
+  en: '[s0:06]To enter the volcano,[linha]you must enter the[linha]room on the other[espera][linha]side of this door,[linha]but in order to[linha]enter, you must have[espera][linha]the following items:[espera][linha]the Pygmy Sword,[linha]Pygmy Armor,[espera][linha]Pygmy Shield, and[linha]Pygmy Boots.[espera][linha][linha]'
+  pt: '[s0:06]Para chegar ao[linha]vulcão, passe pela[linha]sala atrás da porta.[espera][linha]Mas só pode entrar[linha]quem tiver os quatro[linha]itens Pygmy:[espera][linha]Espada, Armadura,[linha]Escudo e Botas.[espera][linha][linha]'
+  status: revisado
+- id: dialogo.102.t01
+  en: You have satisfied[linha]the requirements.[linha]You may enter.[espera]
+  pt: Você cumpriu as[linha]exigências.[linha]Pode entrar.[espera]
+  status: revisado
+- id: dialogo.102.t02
+  en: One of the items is[linha]missing.[espera][linha]Continue your search.[espera]
+  pt: Falta um dos itens.[espera][linha]Continue procurando.[espera]
+  status: revisado
+- id: dialogo.102.t03
+  en: You need two more[linha]items.[espera][linha]Continue your search.[espera]
+  pt: Faltam dois itens.[espera][linha]Continue procurando.[espera]
+  status: revisado
+- id: dialogo.102.t04
+  en: You have only one of[linha]the four you need.[espera][linha]Continue your search.[espera]
+  pt: Você só tem um dos[linha]quatro itens.[espera][linha]Continue procurando.[espera]
+  status: revisado
+- id: dialogo.102.t05
+  en: You have yet to find[linha]even one of the[linha]items.[espera][linha]You must find all[linha]four.[linha][espera]
+  pt: Você ainda não achou[linha]nenhum dos itens.[espera][linha]Precisa dos quatro.[linha][espera]
+  status: revisado
+- id: dialogo.103.t00
+  en: '[$04][$02]Gragg & Glagg!'
+  pt: '[$04][$02]Gragg & Glagg!'
+  status: revisado
+- id: dialogo.103.t01
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.104.t00
+  en: '[$04][$01]The Ice Bomber!'
+  pt: '[$04][$01]O Ice Bomber!'
+  status: revisado
+- id: dialogo.104.t01
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.105.t00
+  en: '[$04][$04]The Tyrant Dragon!'
+  pt: '[$04][$04]O Tyrant Dragon!'
+  status: revisado
+- id: dialogo.105.t01
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.106.t00
+  en: '[$04][$01]The Almighty Demon King!'
+  pt: '[$04][$01]O Almighty Demon King!'
+  status: revisado
+- id: dialogo.106.t01
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.107.t00
+  en: '[s0:06]I''ve heard that the[linha]Sphinx in the Pyramid[linha]likes quizzes.[espera]'
+  pt: '[s0:06]Ouvi dizer que a[linha]Esfinge da Pirâmide[linha]adora um quiz.[espera]'
+  status: revisado
+- id: dialogo.108.t00
+  en: '[s0:06]If you have a certain[linha]special item, you can[linha]swim underwater.[espera]'
+  pt: '[s0:06]Com um certo item[linha]especial, dá para[linha]nadar debaixo d''água.[espera]'
+  status: revisado
+- id: dialogo.109.t00
+  en: '[s0:06]The star crest on[linha]this Bell Tower is[linha]the same as the[espera][linha]insignia on the[linha]weapon of the[linha]legendary hero.[espera][linha][linha]The princess told me[linha]this a long time ago.[linha][espera]'
+  pt: '[s0:06]Nesta Torre do Sino[linha]há um brasão em forma[linha]de estrela.[espera][linha][linha]É o mesmo símbolo da[linha]arma do herói[linha]lendário.[espera][linha][linha]A princesa me contou[linha]isso há muito tempo.[linha][espera]'
+  status: revisado
+- id: dialogo.110.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.110.t01
+  en: You're very strong.[espera][linha][linha]I hope one day I'll[linha]be so strong.[linha][espera]
+  pt: Você é muito forte![espera][linha][linha]Um dia eu quero ser[linha]forte assim![linha][espera]
+  status: revisado
+- id: dialogo.110.t02
+  en: It is said that[linha]there's a shrine at[linha]the bottom of the[espera][linha][linha]sea, but no one's[linha]ever been able to[linha]find the entrance.[espera]
+  pt: Dizem que tem um[linha]santuário lá no[linha]fundo do mar.[espera][linha][linha]Mas ninguém nunca[linha]achou a entrada.[espera]
+  status: revisado
+- id: dialogo.111.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.111.t01
+  en: I am the Prince of[linha]DarkWorld, and you[linha]must be the[espera][linha]legendary hero.[espera][linha][linha]I was under the[linha]control of Biomeka,[linha]a deadly creature[espera][linha]from outer space, but[linha]I'm alright now.[espera][linha][linha]Thank you for coming[linha]to my aid....
+  pt: Eu sou o Príncipe do[linha]Mundo das Trevas.[espera][linha][linha]E você deve ser o[linha]herói lendário.[espera][linha][linha]Bio-Mecha, uma[linha]criatura terrível do[linha]espaço, me dominava.[espera][linha][linha]Mas agora estou bem.[espera][linha][linha]Obrigado por vir me[linha]ajudar...
+  status: revisado
+- id: dialogo.111.t02
+  en: '[linha][espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.112.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.112.t01
+  en: Some hero.[linha]Is that the best you[linha]can do?[espera][linha][linha]Well, watch this![espera]
+  pt: Belo herói, hein?[linha]É só isso que você[linha]sabe fazer?[espera][linha][linha]Agora olha só isso![espera]
+  status: revisado
+- id: dialogo.113.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.113.t01
+  en: Not too bad, eh?[linha]Now, let's see if[linha]you've got what it[espera][linha]takes.
+  pt: Nada mal, hein?[linha]Agora vamos ver se[linha]você dá conta.
+  status: revisado
+- id: dialogo.113.t02
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.114.t00
+  en: '[s0:06]You''re really going[linha]to go,aren''t you...[espera][linha][linha]Can''t you stay with[linha]me?[linha][espera][linha]No, you''re the[linha]legendary hero.[linha][espera][linha]You must go.[linha][espera][linha]Be sure to come[linha]back safely.[espera][linha][linha]I''ll be waiting right[linha]here for you.[espera]'
+  pt: '[s0:06]Você vai mesmo[linha]partir, não é...[espera][linha][linha]Não pode ficar[linha]comigo?[linha][espera][linha]Não... você é o[linha]herói lendário.[linha][espera][linha]Você precisa ir.[linha][espera][linha]Prometa que irá[linha]voltar são e salvo.[espera][linha][linha]Vou ficar aqui[linha]esperando por você.[espera]'
+  status: revisado
+- id: dialogo.115.t00
+  en: '[$03][$06][$04][$01]'
+  pt: ''
+  status: pendente
+- id: dialogo.115.t01
+  en: There's a convenient[quebra2][$04][$01]slot....[espera]
+  pt: Há um encaixe[quebra2][$04][$01]bem a calhar...[espera]
+  status: revisado
+- id: dialogo.115.t02
+  en: Shion inserts the[quebra2][$04][$01]Gold Gem.
+  pt: Shion coloca o[quebra2][$04][$01]Topázio.
+  status: revisado
+- id: dialogo.115.t03
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.115.t04
+  en: The Gem doesn't fit![espera]
+  pt: A pedra não encaixa![espera]
+  status: revisado
+- id: dialogo.116.t00
+  en: '[$03][$06][$04][$01]'
+  pt: ''
+  status: pendente
+- id: dialogo.116.t01
+  en: Shion inserts the[quebra2][$04][$01]Blue Gem.
+  pt: Shion coloca a[quebra2][$04][$01]Safira.
+  status: revisado
+- id: dialogo.116.t02
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: dialogo.117.t00
+  en: '[s0:06]A secret lies in the[linha]surface of the walls[linha]of Ice Castle.[espera]'
+  pt: '[s0:06]As paredes do[linha]Castelo de Gelo[linha]escondem um segredo.[espera]'
+  status: revisado
+- id: dialogo.118.t00
+  en: '[s0:06]'
+  pt: ''
+  status: pendente
+- id: dialogo.118.t01
+  en: Do you know where the[linha]prince went?[espera]
+  pt: Você sabe aonde o[linha]príncipe foi?[espera]
+  status: revisado
+- id: dialogo.118.t02
+  en: I think he's gone[linha]to Nightmare Castle.[espera]
+  pt: Acho que ele foi ao[linha]Castelo do Pesadelo.[espera]
+  status: revisado
+- id: dialogo.118.t03
+  en: He's probably[linha]attempting to collect[linha]the legendary[espera][linha]weapons.[espera][linha][linha]It looks as though[linha]he's got all but one[linha]of them...[espera]
+  pt: Ele deve estar atrás[linha]dos equipamentos[linha]lendários.[espera][linha][linha]Parece que ele já tem[linha]todos, menos um...[espera]
+  status: revisado
+- id: dialogo.119.t00
+  en: '[$04][$02][$03][$06]It''s sealed.[espera]'
+  pt: '[$04][$02][$03][$06]Está lacrado.[espera]'
+  status: revisado
+- id: dialogo.120.t00
+  en: '[$03][$06]You can ride a jellyfish![espera]'
+  pt: '[$03][$06]Pode montar na água-viva![espera]'
+  status: revisado
+- id: dialogo.121.t00
+  en: '[$0A][$02][$03][$06][$04][$02]The monsters have[linha]come and made this[linha]their home, so no one[espera][linha]may enter![espera]'
+  pt: '[$0A][$02][$03][$06][$04][$02]Os monstros tomaram[linha]conta deste lugar.[linha]Ninguém pode entrar![espera]'
+  status: revisado
+- id: dialogo.122.t00
+  en: '[$0A][$02][$03][$08][$04][$02]Finally, the long,[linha]treacherous journey[linha]has reached its end.'
+  pt: '[$0A][$02][$03][$08][$04][$02]Finalmente, a longa e[linha]perigosa jornada[linha]chegou ao fim.'
+  status: revisado
+- id: dialogo.123.t00
+  en: '[$0A][$02][$03][$08][$04][$02]None of the people in[linha]Monster World will[linha]ever forget what[linha]they''ve been through,'
+  pt: '[$0A][$02][$03][$08][$04][$02]Ninguém em[linha]Monster World jamais[linha]vai esquecer o que[linha]enfrentou,'
+  status: revisado
+- id: dialogo.124.t00
+  en: '[$0A][$02][$03][$08][$04][$02]nor will they forget[linha]the hero who gave[linha]their lives back to[linha]them.'
+  pt: '[$0A][$02][$03][$08][$04][$02]nem o herói que[linha]devolveu a todos[linha]a vida de antes.'
+  status: revisado
+- id: dialogo.125.t00
+  en: '[$0A][$02][$03][$08][$04][$02]The story of Shion''s[linha]valiant struggle[linha]will no doubt be[linha]passed on from[linha]generation to[linha]generation.'
+  pt: '[$0A][$02][$03][$08][$04][$02]A história da luta[linha]corajosa de Shion[linha]sem dúvida será[linha]contada de geração[linha]em geração.'
+  status: revisado
+- id: dialogo.126.t00
+  en: '[$0A][$02][$03][$06][$04][$02]And so ends another[linha]episode in the[linha]adventures of[linha]"Wonder Boy".'
+  pt: '[$0A][$02][$03][$06][$04][$02]E assim termina mais[linha]um episódio das[linha]aventuras de[linha]"Wonder Boy".'
+  status: revisado
+- id: dialogo.127.t00
+  en: '[s0:06]Welcome home, Shion.[linha]I''m so happy you made[linha]it back safely.[linha]I don''t think I''ll[linha]ever forget you...[linha]ever.'
+  pt: '[s0:06]Bem-vindo de volta,[linha]Shion! Que bom ver[linha]você são e salvo.[linha]Acho que nunca vou[linha]esquecer você...[linha]nunca.'
+  status: revisado
+- id: dialogo.128.t00
+  en: '[$03][$06][$04][$02]The dwarf child is[quebra2][$04][$02]in danger![espera]'
+  pt: '[$03][$06][$04][$02]A criança anã está[quebra2][$04][$02]em perigo![espera]'
+  status: revisado
+- id: dialogo.129.t00
+  en: '" Danger! The desert[linha][$04][$06]lies ahead! "[espera]'
+  pt: '" Perigo! O deserto[linha][$04][$06]começa aqui! "[espera]'
+  status: revisado
+- id: dialogo.130.t00
+  en: '[$03][$06][$04][$02]Anyone shorter than[quebra2][$04][$02]this sign will not[espera][quebra2][$04][$02]be able to move it.[espera]'
+  pt: '[$03][$06][$04][$02]Quem for mais baixo[quebra2][$04][$02]que esta placa[espera][quebra2][$04][$02]não consegue movê-la.[espera]'
+  status: revisado

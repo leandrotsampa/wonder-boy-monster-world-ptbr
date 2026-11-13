@@ -1,0 +1,302 @@
+# Mapa de cenas: a que lote, lugar e personagem pertence cada diálogo e script.
+#
+# Um lote por tarefa de tradução, na ordem em que são traduzidos; `sem_traducao` guarda
+# as strings que ficam vazias, com o motivo. O `id` de uma entrada é um diálogo inteiro
+# (`dialogo.NNN` = todos os `.tNN`), um script do banco 3 (`b3.NNN`) ou uma entrada de
+# outro arquivo (`b0.NNN.tNN`, `b2.NNN.tNN`, os ids de `inline.yaml`).
+# `onde`: lugar e situação; `quem`: personagem, ou Placa, Narrador, Sistema.
+# Locais marcados "a confirmar" foram deduzidos do texto; conferir no emulador.
+#
+# Os diálogos que só chamam um script do banco 3 (`[s3:00]` = loja, `[s3:01]` =
+# estalagem) ficam no lote do script.
+# Ordem dos lotes = ordem do jogo informada pelo autor: Alsedo, Castelo de Purapril e a
+# Capital das Águas, Lilypad, fundo do mar e Deserto de Maugham, Begonia, o Mundo do Gelo e o
+# vulcão, Childam, o final; `geral` reúne o que aparece em todo lugar.
+
+- id: alsedo
+  titulo: "Alsedo: abertura, a vila das fadas, a caverna e o Castelo de Purapril no começo"
+  entradas:
+    - {id: dialogo.000, onde: "Abertura do NEW GAME (t01); t03 = ao continuar depois de perder (a confirmar)", quem: Narrador, nota: "piloto aprovado (t01, t03)"}
+    - {id: dialogo.001, onde: "Começo do jogo", quem: Narrador, nota: "piloto aprovado"}
+    - {id: dialogo.002, onde: "Casa da senhora em Alsedo, no começo", quem: Senhora, nota: "piloto aprovado; dá o Elixir e a magia ([s0:02] = itens)"}
+    - {id: dialogo.003, onde: "Placa na entrada de Alsedo", quem: Placa, nota: "piloto aprovado"}
+    - {id: dialogo.056, onde: "Alsedo, casa de Sonia", quem: Sonia, nota: "t01 vila atacada; t02 perdeu a Ocarina na caverna; t03/t04 ensina as melodias (chama b3.007); t05/t06 depois da vila salva"}
+    - {id: b3.007, onde: "Alsedo, aula de Ocarina com Sonia (chamado por dialogo.056.t03/t04)", quem: Sonia, nota: "a melodia de cada porta; chama b3.002"}
+    - {id: b3.002, onde: "Alsedo, aula de Ocarina: resposta de Sonia a cada tentativa (chamado por b3.007)", quem: Sonia, nota: ""}
+    - {id: dialogo.057, onde: "Alsedo, a rainha entre as estátuas", quem: "Rainha Eleanora", nota: "t01 pede ajuda e manda Priscilla junto; t02 durante; t03 vila salva, aponta Purapril; t04 mais tarde"}
+    - {id: dialogo.060, onde: "Alsedo, morador", quem: "Morador de Alsedo", nota: "t01 dica de lança e escudo; t02/t03 sobre a rainha"}
+    - {id: dialogo.061, onde: "Alsedo, morador", quem: "Morador de Alsedo", nota: "t01 antes (manda falar com Sonia); t02 vila salva"}
+    - {id: dialogo.004, onde: "Placa na entrada do Castelo de Purapril", quem: Placa, nota: ""}
+    - {id: dialogo.049, onde: "Portão do Castelo de Purapril", quem: Guarda, nota: "t02 castelo fechado (ríspido); t01 depois de salvar a princesa"}
+    - {id: dialogo.050, onde: "Portão do Castelo de Purapril", quem: Guarda, nota: "t02 Alsedo atacada; t01 depois da vila salva"}
+    - {id: dialogo.051, onde: "Portão do Castelo de Purapril, falando de novo", quem: Guarda, nota: "irônico, ríspido"}
+    - {id: dialogo.075, onde: "Primeira loja do mapa, logo depois da casa da senhora do começo (conferido pelo autor no jogo)", quem: Atendente, nota: "a água-viva; antes no lote purapril como casa no fundo do mar"}
+    - {id: dialogo.120, onde: "Placa antes da vila das fadas, onde se monta na água-viva (conferido pelo autor no jogo)", quem: Placa, nota: "janela de uma linha, até 26 colunas; antes no lote purapril"}
+    - {id: b3.001, onde: "Todas as estalagens: pernoite e gravação (a de Alsedo é a primeira; antes no lote geral)", quem: Estalajadeiro, nota: "neutro em gênero"}
+    - {id: dialogo.059, onde: "Estalagem de Alsedo (a confirmar; chama b3.001)", quem: Estalajadeiro, nota: ""}
+    - {id: dialogo.081, onde: "Chefe da caverna de Alsedo, ao aparecer (conferido pelo autor no jogo)", quem: Sistema, nota: "nome do chefe (monstro, fica); antes no lote final"}
+
+- id: purapril
+  titulo: "Castelo de Purapril e a Capital das Águas: a rainha, a princesa Shiela libertada e a cidade (logo depois de Alsedo)"
+  entradas:
+    - {id: dialogo.009, onde: "Placa na entrada de Purapril", quem: Placa, nota: ""}
+    - {id: dialogo.077, onde: "Purapril, morador", quem: "Morador de Purapril", nota: "t01 Lilypad; t02 o poço do castelo leva ao mar; t03 a casa escondida"}
+    - {id: dialogo.085, onde: "Castelo de Purapril, a rainha libertada (conferido pelo autor no jogo)", quem: Rainha, nota: "fala formal; traduzido antes do lote a pedido do autor"}
+    - {id: dialogo.086, onde: "Castelo de Purapril, portão aberto", quem: Guarda, nota: "traduzido antes do lote, junto com dialogo.085"}
+    - {id: dialogo.094, onde: "Castelo de Purapril, salão", quem: "Princesa Shiela", nota: "t01 agradece e aponta Lilypad; t02–t04 conforme o progresso (deserto, Castelo de Gelo)"}
+    - {id: dialogo.089, onde: "Castelo de Purapril, criado", quem: "Criado do castelo", nota: "t01 princesa de volta; t02 princesa espera; t03 à vontade"}
+    - {id: dialogo.109, onde: "Castelo de Purapril, Torre do Sino", quem: Guarda, nota: "a estrela da torre e a arma lendária"}
+    - {id: dialogo.110, onde: "Purapril, criança (a confirmar)", quem: Criança, nota: "t01 admira o herói; t02 o santuário no fundo do mar"}
+
+- id: lilypad
+  titulo: "Lilypad: a vila dos anões, Hotta, o Tridente e a beira do Deserto de Maugham"
+  entradas:
+    - {id: dialogo.006, onde: "Placa na entrada de Lilypad", quem: Placa, nota: ""}
+    - {id: dialogo.069, onde: "Lilypad, o ancião dos anões", quem: "Ancião de Lilypad", nota: "t01 criança sequestrada; t02 criança salva, manda achar Poseidon e o Tridente; t03 achou o Tridente"}
+    - {id: dialogo.078, onde: "Lilypad, irmã(o) de Hotta", quem: "Irmã(o) de Hotta", nota: "t01/t02 Hotta sequestrado; t03 Hotta salvo e vai junto; t04/t05 depois"}
+    - {id: dialogo.128, onde: "Lilypad, aviso quando a criança anã corre perigo", quem: Sistema, nota: ""}
+    - {id: dialogo.076, onde: "Perto do Deserto de Maugham (a confirmar: Lilypad)", quem: Morador, nota: "t01 o deserto; t02 Botas do Oásis; t03 loja aberta"}
+    - {id: dialogo.005, onde: "Placa na entrada do Deserto de Maugham", quem: Placa, nota: ""}
+    - {id: dialogo.129, onde: "Placa antes do deserto", quem: Placa, nota: "entre aspas no original"}
+
+- id: mar_deserto
+  titulo: "Fundo do mar e Deserto de Maugham: a filha de Poseidon, Poseidon, a Pirâmide e a Esfinge (depois de Lilypad)"
+  entradas:
+    - {id: dialogo.108, onde: "Dica sobre nadar debaixo d'água (a confirmar onde)", quem: Morador, nota: ""}
+    - {id: dialogo.087, onde: "Mar, a filha de Poseidon", quem: "Filha de Poseidon", nota: "t01 troca a Ocarina pela dica do Amuleto ([s0:33] = SIM/NÃO); t02 aceitou; t03 recusou; t04 repete; t05 lembrete; t06 depois"}
+    - {id: dialogo.088, onde: "Santuário no fundo do mar, Poseidon", quem: Poseidon, nota: "t01 Esfinge, Pirâmide, Deserto de Maugham; t03 depois; t04 já dormindo (narrador)"}
+    - {id: dialogo.107, onde: "Dica sobre a Esfinge (a confirmar onde)", quem: Morador, nota: ""}
+    - {id: dialogo.091, onde: "Pirâmide, a Esfinge e o quiz", quem: Esfinge, nota: "janela 4 (17 colunas); t08 as cinco perguntas (chama b3.006); t09–t14 resultado (t13/t14 chamam b3.008)"}
+    - {id: b3.008, onde: "Pirâmide, a Esfinge deixa passar (chamado por dialogo.091.t13/t14)", quem: Esfinge, nota: "janela 4"}
+    - {id: b0.00B.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: "janela 4; respostas na coluna 3"}
+    - {id: b0.00C.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "magia (como no menu)"}
+    - {id: b0.00D.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "não existe no jogo"}
+    - {id: b0.00E.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "magia (como no menu)"}
+    - {id: b0.00F.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: "elf village = Alsedo"}
+    - {id: b0.010.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome"}
+    - {id: b0.011.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome"}
+    - {id: b0.012.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome"}
+    - {id: b0.013.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: ""}
+    - {id: b0.014.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "monstro"}
+    - {id: b0.015.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "monstro"}
+    - {id: b0.016.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome"}
+    - {id: b0.017.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: ""}
+    - {id: b0.018.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.019.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.01A.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.01B.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: "Wanderer = loja de armas"}
+    - {id: b0.01C.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.01D.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.01E.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.01F.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: ""}
+    - {id: b0.020.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome inventado"}
+    - {id: b0.021.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "lugar"}
+    - {id: b0.022.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome inventado (piada)"}
+    - {id: b0.023.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: ""}
+    - {id: b0.024.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.025.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.026.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.027.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: ""}
+    - {id: b0.028.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: ""}
+    - {id: b0.029.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: ""}
+    - {id: b0.02A.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: ""}
+    - {id: b0.02B.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: ""}
+    - {id: b0.02C.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "não existe no jogo"}
+    - {id: b0.02D.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "item (banco 1)"}
+    - {id: b0.02E.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "piada (Gato de Botas)"}
+    - {id: b0.02F.t00, onde: "Quiz da Esfinge: pergunta", quem: Esfinge, nota: ""}
+    - {id: b0.030.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome de loja"}
+    - {id: b0.031.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome de loja"}
+    - {id: b0.032.t00, onde: "Quiz da Esfinge: resposta", quem: Sistema, nota: "nome de loja"}
+    - {id: quiz.tempo, onde: "Quiz da Esfinge: tempo esgotado", quem: Sistema, nota: "tamanho fixo (inline)"}
+    - {id: quiz.errou, onde: "Quiz da Esfinge: resposta errada", quem: Sistema, nota: "tamanho fixo (inline)"}
+    - {id: quiz.acertou, onde: "Quiz da Esfinge: resposta certa", quem: Sistema, nota: "tamanho fixo (inline)"}
+    - {id: dialogo.095, onde: "Chegada à Esfinge", quem: Sistema, nota: "Sphinx = Esfinge (glossário)"}
+
+- id: begonia
+  titulo: "Begonia: a vila dos dragões, o Elder Dragon, o Castelo de Gelo e o vulcão"
+  entradas:
+    - {id: dialogo.007, onde: "Placa na entrada de Begonia", quem: Placa, nota: ""}
+    - {id: dialogo.073, onde: "Begonia, casa do Elder Dragon", quem: "Elder Dragon", nota: "t01/t02 manda buscar o Machado Velho no Mundo do Gelo e dá o Bracelete (t03 narrador); t04 já deu; t05 voltou com o machado, o neto (Shabo) vai junto; t06 lembrete; t07 batalha final: Torre do Sino"}
+    - {id: dialogo.068, onde: "Begonia, o ferreiro", quem: Ferreiro, nota: "t01 roubaram a Urna de Fogo; t02 com a urna faz a espada; t03 o Elder Dragon chamou; t04 ainda não está pronta; t05–t07 entrega a Espada Lendária"}
+    - {id: dialogo.092, onde: "Begonia, morador", quem: "Morador de Begonia", nota: "t01 o Elder Dragon chama; t02/t03 o vulcão e a Urna de Fogo"}
+    - {id: dialogo.096, onde: "O Bracelete brilha (passagem para o Mundo do Gelo)", quem: Sistema, nota: ""}
+    - {id: dialogo.102, onde: "Porta do vulcão (exige o equipamento Pygmy)", quem: "Voz da porta", nota: "t00 as exigências; t01 pode entrar; t02–t05 conforme quantas peças tem"}
+    - {id: dialogo.105, onde: "Chefe do vulcão (a confirmar)", quem: Sistema, nota: "nome do chefe (monstro, fica)"}
+
+- id: childam
+  titulo: "Mundo do Gelo e Childam: o Castelo de Gelo, o Ice Bomber, a vila do Mundo das Trevas e o príncipe"
+  entradas:
+    - {id: dialogo.101, onde: "Capital do Gelo (a confirmar), dragão que conhece a lenda", quem: "Dragão da Capital do Gelo", nota: "do Mundo do Gelo (antes no lote begonia); t01 manda ao Castelo de Gelo com Shabo; t02 levar o machado ao ferreiro; t03 antes da batalha final"}
+    - {id: dialogo.117, onde: "Dica sobre as paredes do Castelo de Gelo (a confirmar onde)", quem: Morador, nota: "do Mundo do Gelo (antes no lote begonia); "}
+    - {id: dialogo.104, onde: "Chefe do Castelo de Gelo", quem: Sistema, nota: "do Mundo do Gelo (antes no lote begonia); nome do chefe (monstro, fica)"}
+    - {id: dialogo.008, onde: "Placa na entrada de Childam", quem: Placa, nota: "cabe 'Childam, a vila do' / 'Mundo das Trevas' (glossário)"}
+    - {id: dialogo.111, onde: "Childam, o príncipe libertado", quem: "Príncipe do Mundo das Trevas", nota: "Biomeka = Bio-Mecha do banco 2"}
+    - {id: dialogo.112, onde: "Desafio antes de uma luta (a confirmar: Mundo das Trevas)", quem: "Rival (a confirmar)", nota: "zombeteiro"}
+    - {id: dialogo.113, onde: "Desafio antes de uma luta (a confirmar: Mundo das Trevas)", quem: "Rival (a confirmar)", nota: "zombeteiro"}
+    - {id: dialogo.118, onde: "Childam, moradores sobre o príncipe", quem: "Moradores de Childam", nota: "t01 pergunta; t02 Castelo do Pesadelo; t03 os equipamentos lendários"}
+    - {id: dialogo.115, onde: "Encaixe do Topázio (Gold Gem) (a confirmar onde)", quem: Narrador, nota: "t02 coloca a pedra; t04 não encaixa"}
+    - {id: dialogo.116, onde: "Encaixe da Safira (Blue Gem) (a confirmar onde)", quem: Narrador, nota: ""}
+
+- id: final
+  titulo: "Final: os chefes, a despedida, o desfecho e os créditos"
+  entradas:
+    - {id: dialogo.103, onde: "Chefe", quem: Sistema, nota: "nome do chefe (monstro, fica)"}
+    - {id: dialogo.106, onde: "Chefe final", quem: Sistema, nota: "nome do chefe (monstro, fica)"}
+    - {id: dialogo.114, onde: "Castelo de Purapril, antes da batalha final", quem: "Princesa Shiela", nota: "despedida, cena triste"}
+    - {id: dialogo.122, onde: "Desfecho", quem: Narrador, nota: "janela 6, rola devagar: por página no máximo as linhas do inglês"}
+    - {id: dialogo.123, onde: "Desfecho", quem: Narrador, nota: "janela 6"}
+    - {id: dialogo.124, onde: "Desfecho", quem: Narrador, nota: "janela 6"}
+    - {id: dialogo.125, onde: "Desfecho", quem: Narrador, nota: "janela 6"}
+    - {id: dialogo.126, onde: "Desfecho", quem: Narrador, nota: "janela 6; o nome do jogo fica"}
+    - {id: dialogo.127, onde: "Desfecho, a volta para casa", quem: "Princesa Shiela", nota: "janela 6"}
+    - {id: creditos.equipe, onde: Créditos, quem: Sistema, nota: "só os cargos são traduzidos"}
+    - {id: creditos.programador_chefe, onde: Créditos, quem: Sistema, nota: ""}
+    - {id: creditos.programador, onde: Créditos, quem: Sistema, nota: ""}
+    - {id: creditos.musica_efeitos, onde: Créditos, quem: Sistema, nota: ""}
+    - {id: creditos.projetistas, onde: Créditos, quem: Sistema, nota: ""}
+    - {id: creditos.diretores, onde: Créditos, quem: Sistema, nota: ""}
+    - {id: creditos.supervisor, onde: Créditos, quem: Sistema, nota: ""}
+    - {id: creditos.agradecimentos, onde: Créditos, quem: Sistema, nota: ""}
+
+- id: geral
+  titulo: "Geral: lojas e estalagens, avisos curtos, sistema, Ocarina e nomes"
+  entradas:
+    - {id: b3.000, onde: "Todas as lojas: compra", quem: Vendedor, nota: "piloto aprovado (t00, t02–t04); neutro em gênero"}
+    - {id: dialogo.010, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.011, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.012, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.013, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.014, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.015, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.016, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.017, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.018, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.019, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.020, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.021, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.022, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.023, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.024, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.025, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.026, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.027, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.028, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.029, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.030, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.031, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.032, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.033, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.034, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.035, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.036, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.037, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.038, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.039, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.041, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.042, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.043, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.044, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.045, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.047, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.048, onde: "Item à venda numa loja (chama b3.000)", quem: Vendedor, nota: ""}
+    - {id: dialogo.040, onde: "Ao ver um item (a confirmar onde)", quem: Sistema, nota: "[s0:02] = nome do item, sem artigo"}
+    - {id: dialogo.046, onde: "Estalagem (chama b3.001)", quem: Estalajadeiro, nota: ""}
+    - {id: dialogo.053, onde: "Estalagem (chama b3.001)", quem: Estalajadeiro, nota: ""}
+    - {id: dialogo.065, onde: "Estalagem (chama b3.001)", quem: Estalajadeiro, nota: ""}
+    - {id: dialogo.100, onde: "Estalagem (chama b3.001)", quem: Estalajadeiro, nota: ""}
+    - {id: dialogo.062, onde: "Estalagem: ao acordar (t01) e ao ser salvo depois de cair (t02)", quem: Estalajadeiro, nota: "neutro em gênero"}
+    - {id: dialogo.072, onde: "Estalagem: ao acordar (t01) e ao ser salvo depois de cair (t02)", quem: Estalajadeiro, nota: "neutro em gênero; mais animado que dialogo.062"}
+    - {id: dialogo.052, onde: "Loja Bacchus", quem: Vendedor, nota: "t01 esgotado; t02 boas-vindas; t03 depois da compra"}
+    - {id: dialogo.054, onde: "Loja Kishera", quem: Vendedor, nota: "t01 esgotado; t02 boas-vindas (ensina a comprar); t03 depois da compra"}
+    - {id: dialogo.055, onde: "Loja Felissimo (remédios)", quem: Vendedor, nota: "t01 esgotado; t02 boas-vindas; t03 depois da compra"}
+    - {id: dialogo.066, onde: "Loja do dragão (a confirmar: Begonia)", quem: "Vendedor (dragão)", nota: "brincalhão: ameaça cuspir fogo"}
+    - {id: dialogo.067, onde: "Loja", quem: Vendedor, nota: "t01 esgotado; t02 boas-vindas"}
+    - {id: dialogo.070, onde: "Loja Gooningle's", quem: Vendedor, nota: "t01 esgotado (ri); t02 boas-vindas; t03 depois da compra"}
+    - {id: dialogo.071, onde: "Loja Drapnell (miudezas)", quem: Vendedor, nota: "t01 esgotado; t02 boas-vindas; t03 depois da compra (magia)"}
+    - {id: dialogo.074, onde: "Loja Sundry", quem: Vendedor, nota: "t01 esgotado; t02 boas-vindas; t03 brinca sobre a Pedra Encantada"}
+    - {id: dialogo.083, onde: "Loja de armas Wanderer", quem: Vendedor, nota: "t01 esgotado; t02 inauguração; t03 de volta"}
+    - {id: dialogo.098, onde: "Loja de armas Labyrinth", quem: Vendedor, nota: "t01 esgotado; t02 boas-vindas; t03 depois da compra"}
+    - {id: dialogo.099, onde: "Loja", quem: Vendedor, nota: "t01 esgotado (ri); t02 boas-vindas"}
+    - {id: dialogo.080, onde: "Casa escondida: troca de Pedras Encantadas", quem: "Negociante de Pedras Encantadas", nota: "t02/t07 com SIM/NÃO ([s0:00]); Heart = Coração"}
+    - {id: dialogo.082, onde: "Aviso: loja fechada", quem: Sistema, nota: ""}
+    - {id: dialogo.093, onde: "Aviso: loja fechada", quem: Sistema, nota: ""}
+    - {id: dialogo.084, onde: "Aviso: porta trancada", quem: Sistema, nota: ""}
+    - {id: dialogo.090, onde: "Aviso: porta lacrada", quem: Sistema, nota: ""}
+    - {id: dialogo.119, onde: "Aviso: lacrado", quem: Sistema, nota: ""}
+    - {id: dialogo.097, onde: "Aviso: o selo se rompeu", quem: Sistema, nota: ""}
+    - {id: dialogo.121, onde: "Aviso: lugar tomado pelos monstros (a confirmar onde)", quem: Sistema, nota: ""}
+    - {id: dialogo.130, onde: "Placa que só alguém maior que ela empurra (a confirmar onde)", quem: Placa, nota: ""}
+    - {id: b0.000.t00, onde: "Escolha SIM/NÃO", quem: Sistema, nota: "piloto aprovado"}
+    - {id: b0.033.t00, onde: "Escolha SIM/NÃO (quiz e trocas)", quem: Sistema, nota: "piloto aprovado"}
+    - {id: b0.001.t00, onde: "Preço: palavra depois do número", quem: Sistema, nota: "GOLD = MOEDAS"}
+    - {id: ocarina.1.shion, onde: "Tocando a Ocarina: frase montada pelo código", quem: Narrador, nota: "Shion plays + the + melodia; conferir a frase inteira no emulador"}
+    - {id: ocarina.1.the, onde: "Tocando a Ocarina: frase montada pelo código", quem: Narrador, nota: ""}
+    - {id: ocarina.1.oh, onde: "Tocando a Ocarina", quem: "Quem ouve", nota: ""}
+    - {id: ocarina.2.shion, onde: "Tocando a Ocarina: frase montada pelo código", quem: Narrador, nota: ""}
+    - {id: ocarina.2.the, onde: "Tocando a Ocarina: frase montada pelo código", quem: Narrador, nota: ""}
+    - {id: ocarina.3.voce, onde: "Tocando a Ocarina", quem: "Quem ouve", nota: ""}
+    - {id: ocarina.4.mas, onde: "Tocando a Ocarina", quem: "Quem ouve", nota: "continua em ocarina.4.bem"}
+    - {id: ocarina.4.bem, onde: "Tocando a Ocarina", quem: "Quem ouve", nota: ""}
+    - {id: ocarina.5.melodia, onde: "Tocando a Ocarina", quem: "Quem ouve", nota: ""}
+    - {id: bau.achou_o, onde: "Baú de item", quem: Sistema, nota: "aprovado (Plano 4)"}
+    - {id: bau.ponto, onde: "Baú de item", quem: Sistema, nota: "aprovado (Plano 4)"}
+    - {id: bau.achou, onde: "Baú de ouro", quem: Sistema, nota: "aprovado (Plano 4)"}
+    - {id: bau.ouro, onde: "Baú de ouro", quem: Sistema, nota: "aprovado (Plano 4)"}
+    - {id: status.ap, onde: "Tela de status", quem: Sistema, nota: "aprovado"}
+    - {id: status.dp, onde: "Tela de status", quem: Sistema, nota: "aprovado"}
+    - {id: status.sp, onde: "Tela de status", quem: Sistema, nota: "aprovado"}
+    - {id: pausa, onde: "START com o herói andando (o menu não abre)", quem: Sistema, nota: "tamanho fixo (inline)"}
+    - {id: menu.cabecalho.selecionar, onde: "Menu do START: cabeçalho", quem: Sistema, nota: "aprovado"}
+    - {id: menu.cabecalho.arma, onde: "Menu do START: cabeçalho", quem: Sistema, nota: "aprovado"}
+    - {id: menu.cabecalho.armadura, onde: "Menu do START: cabeçalho", quem: Sistema, nota: "aprovado"}
+    - {id: menu.cabecalho.escudo, onde: "Menu do START: cabeçalho", quem: Sistema, nota: "aprovado"}
+    - {id: menu.cabecalho.botas, onde: "Menu do START: cabeçalho", quem: Sistema, nota: "aprovado"}
+    - {id: menu.cabecalho.item, onde: "Menu do START: cabeçalho", quem: Sistema, nota: "aprovado"}
+    - {id: menu.cabecalho.magia, onde: "Menu do START: cabeçalho", quem: Sistema, nota: "aprovado"}
+    - {id: menu.opcao.arma, onde: "Menu do START: opção", quem: Sistema, nota: "aprovado"}
+    - {id: menu.opcao.armadura, onde: "Menu do START: opção", quem: Sistema, nota: "aprovado"}
+    - {id: menu.opcao.escudo, onde: "Menu do START: opção", quem: Sistema, nota: "aprovado"}
+    - {id: menu.opcao.botas, onde: "Menu do START: opção", quem: Sistema, nota: "aprovado"}
+    - {id: menu.opcao.item, onde: "Menu do START: opção", quem: Sistema, nota: "aprovado"}
+    - {id: menu.opcao.magia, onde: "Menu do START: opção", quem: Sistema, nota: "aprovado"}
+    - {id: magia.fogo, onde: "Menu de magias", quem: Sistema, nota: "aprovado"}
+    - {id: magia.terremoto, onde: "Menu de magias", quem: Sistema, nota: "aprovado"}
+    - {id: magia.trovao, onde: "Menu de magias", quem: Sistema, nota: "aprovado"}
+    - {id: magia.poder, onde: "Menu de magias", quem: Sistema, nota: "aprovado"}
+    - {id: magia.escudo, onde: "Menu de magias", quem: Sistema, nota: "aprovado"}
+    - {id: magia.retorno, onde: "Menu de magias", quem: Sistema, nota: "aprovado"}
+    - {id: magia_hud.fogo, onde: "HUD ao lançar a magia", quem: Sistema, nota: "aprovado"}
+    - {id: magia_hud.terremoto, onde: "HUD ao lançar a magia", quem: Sistema, nota: "aprovado"}
+    - {id: magia_hud.trovao, onde: "HUD ao lançar a magia", quem: Sistema, nota: "aprovado"}
+    - {id: magia_hud.poder, onde: "HUD ao lançar a magia", quem: Sistema, nota: "aprovado"}
+    - {id: magia_hud.escudo, onde: "HUD ao lançar a magia", quem: Sistema, nota: "aprovado"}
+    - {id: magia_hud.retorno, onde: "HUD ao lançar a magia", quem: Sistema, nota: "aprovado"}
+    - {id: b2.000.t00, onde: "Banco 2: nome do herói", quem: Sistema, nota: "nome fica"}
+    - {id: b2.001.t00, onde: "Banco 2: lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.002.t00, onde: "Banco 2: lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.003.t00, onde: "Banco 2: lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.004.t00, onde: "Banco 2: lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.005.t00, onde: "Banco 2: lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.007.t00, onde: "Banco 2: lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.008.t00, onde: "Banco 2: lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.009.t00, onde: "Banco 2: lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.020.t00, onde: "Banco 2: personagem", quem: Sistema, nota: "nome fica"}
+    - {id: b2.021.t00, onde: "Banco 2: monstro", quem: Sistema, nota: "nome fica"}
+    - {id: b2.022.t00, onde: "Banco 2: palavra comum", quem: Sistema, nota: "Monster = Monstro (caso cinzento)"}
+    - {id: b2.023.t00, onde: "Banco 2: personagem", quem: Sistema, nota: "nome fica"}
+    - {id: b2.024.t00, onde: "Banco 2: personagem", quem: Sistema, nota: "nome fica"}
+    - {id: b2.025.t00, onde: "Banco 2: personagem", quem: Sistema, nota: "nome fica"}
+    - {id: b2.026.t00, onde: "Banco 2: personagem", quem: Sistema, nota: "Sphinx = Esfinge (glossário, caso cinzento)"}
+    - {id: b2.027.t00, onde: "Banco 2: personagem", quem: Sistema, nota: "nome fica"}
+    - {id: b2.028.t00, onde: "Banco 2: título com lugar", quem: Sistema, nota: "glossário"}
+    - {id: b2.029.t00, onde: "Banco 2: monstro", quem: Sistema, nota: "nome fica (nas falas: Biomeka)"}
+    - {id: b2.02A.t00, onde: "Banco 2: personagem", quem: Sistema, nota: "nome fica"}
+
+- id: sem_traducao
+  titulo: "Sem tradução: strings japonesas que sobraram do original"
+  entradas:
+    - {id: b0.004.t00, onde: "Banco 0", quem: Sistema, nota: "kana do original (bytes 0x8C–0xBD), sem uso na versão em inglês; fica vazia"}
+    - {id: b1.026.t00, onde: "Banco 1 (slot de item)", quem: Sistema, nota: "kana do original que cai nos códigos dos acentos; slot sem uso; fica vazio (guia, Nomes de itens)"}
+    - {id: b1.030.t00, onde: "Banco 1 (slot de item)", quem: Sistema, nota: "kana do original (prefixos FE/FF); slot sem uso; fica vazio (guia, Nomes de itens)"}
+    - {id: b2.006.t00, onde: "Banco 2 (slot de lugar)", quem: Sistema, nota: "kana do original entre Childam e Purapril, sem equivalente em inglês; fica vazio"}

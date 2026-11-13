@@ -1,0 +1,144 @@
+- id: b3.000.t00
+  en: '[s0:06]You have a[linha]discriminating eye.[linha][espera][linha]That''s[linha][s0:02].[linha][espera]It costs[s0:03].[espera][linha]Would you like to[linha]purchase it?[s0:00]'
+  pt: '[s0:06]Você tem bom gosto![linha][espera][linha]Que tal[linha][s0:02]?[linha][espera]Custa[s0:03].[espera][linha]Quer levar?[s0:00]'
+  status: revisado
+- id: b3.000.t01
+  en: '[linha][$03][$06]'
+  pt: ''
+  status: pendente
+- id: b3.000.t02
+  en: '[linha]Thank you very much.[espera]'
+  pt: '[linha]Valeu pela compra![espera]'
+  status: revisado
+- id: b3.000.t03
+  en: '[linha][$03][$06]You''ve decided[linha]against it?[linha]That''s too bad.[espera][linha][linha]Please stop in[linha]again.[linha][espera]'
+  pt: '[linha][$03][$06]Mudou de ideia?[linha]Que pena![espera][linha][linha]Volte quando quiser![linha][espera]'
+  status: revisado
+- id: b3.000.t04
+  en: '[linha]I''m sorry,[espera][linha]but you don''t have[linha]enough money to[linha]purchase this item.[espera][linha][linha]Why don''t you go[linha]get some money and[linha]come back?[espera]'
+  pt: '[linha]Sinto muito,[espera][linha]mas você não tem[linha]MOEDAS suficientes[linha]para este item.[espera][linha][linha]Junte mais MOEDAS[linha]e volte depois![espera]'
+  status: revisado
+- id: b3.001.t00
+  en: '[$0A][$02][$03][$06][$04][$02]Welcome to my inn.[espera][linha][linha]You can have a good[linha]night''s rest for[quebra2][s0:05].[espera][linha]Will you be staying[linha]overnight?[s0:00]'
+  pt: '[$0A][$02][$03][$06][$04][$02]Seja bem-vindo![espera][linha][linha]Uma boa noite de sono[linha]custa[s0:05].[espera][linha]Vai passar a noite?[s0:00]'
+  status: revisado
+- id: b3.001.t01
+  en: '[linha][$03][$06]'
+  pt: ''
+  status: pendente
+- id: b3.001.t02
+  en: '[linha]Oh, you don''t have[linha]enough GOLD?[linha]That''s OK.[espera][linha][linha]I''ll accept whatever[linha]you can afford.[espera][linha][linha]'
+  pt: '[linha]Ih, não tem MOEDAS[linha]suficientes?[linha]Tudo bem.[espera][linha][linha]Fico com o que você[linha]puder pagar.[espera][linha][linha]'
+  status: revisado
+- id: b3.001.t03
+  en: Do you wish to save[linha]your adventure?[s0:00]
+  pt: Quer salvar a sua[linha]aventura?[s0:00]
+  status: revisado
+- id: b3.001.t04
+  en: '[$03][$06][linha]'
+  pt: ''
+  status: pendente
+- id: b3.001.t05
+  en: Your game is saved.
+  pt: Aventura salva!
+  status: revisado
+- id: b3.001.t06
+  en: '[$03][$06][linha]Will you be[linha]continuing your[espera][linha]journey in the[linha]morning?[s0:00]'
+  pt: '[$03][$06][linha]Vai seguir viagem[espera][linha]amanhã de manhã?[s0:00]'
+  status: revisado
+- id: b3.001.t07
+  en: '[linha][$03][$06]Good night and[linha]pleasant dreams.'
+  pt: '[linha][$03][$06]Boa noite e bons[linha]sonhos.'
+  status: revisado
+- id: b3.001.t08
+  en: '[linha][$03][$06]Oh well, maybe[linha]another day.[linha]Good night.'
+  pt: '[linha][$03][$06]Que pena, fica para[linha]outro dia.[linha]Boa noite.'
+  status: revisado
+- id: b3.002.t00
+  en: '[linha][linha]'
+  pt: ''
+  status: pendente
+- id: b3.002.t01
+  en: '[linha]OK, give it a try.'
+  pt: '[linha]Agora é a sua vez.'
+  status: revisado
+- id: b3.002.t02
+  en: '[linha][linha]That''s awful![linha]Try again.'
+  pt: '[linha][linha]Que horror![linha]Tente de novo.'
+  status: revisado
+- id: b3.002.t03
+  en: '[linha][linha]You''re not even[linha]close.[linha]Once more.'
+  pt: '[linha][linha]Passou longe![linha]Mais uma vez.'
+  status: revisado
+- id: b3.002.t04
+  en: '[linha][linha]There you go![linha]That''s very good!'
+  pt: '[linha][linha]Isso mesmo![linha]Muito bem!'
+  status: revisado
+- id: b3.002.t05
+  en: '[linha][linha]'
+  pt: ''
+  status: pendente
+- id: b3.003.t00
+  en: '[$10] '
+  pt: ''
+  status: pendente
+- id: b3.004.t00
+  en: '[$11] '
+  pt: ''
+  status: pendente
+- id: b3.005.t00
+  en: '[$12] '
+  pt: ''
+  status: pendente
+- id: b3.006.t00
+  en: '[espera]'
+  pt: ''
+  status: pendente
+- id: b3.006.t01
+  en: '[$03][$08]'
+  pt: ''
+  status: pendente
+- id: b3.006.t02
+  en: '[$03][$00]'
+  pt: ''
+  status: pendente
+- id: b3.006.t03
+  en: '[$10] '
+  pt: ''
+  status: pendente
+- id: b3.006.t04
+  en: '[quebra2] [$11] '
+  pt: ''
+  status: pendente
+- id: b3.006.t05
+  en: '[quebra2] [$12] '
+  pt: ''
+  status: pendente
+- id: b3.007.t00
+  en: '[linha]'
+  pt: ''
+  status: pendente
+- id: b3.007.t01
+  en: This is the melody[linha]for the first door.
+  pt: Esta é a melodia da[linha]primeira porta.
+  status: revisado
+- id: b3.007.t02
+  en: '[s3:02]The next melody[linha]opens the second[linha]door.'
+  pt: '[s3:02]A próxima melodia[linha]abre a segunda porta.'
+  status: revisado
+- id: b3.007.t03
+  en: '[s3:02]The last melody[linha]opens the final[linha]door.'
+  pt: '[s3:02]A última melodia[linha]abre a porta final.'
+  status: revisado
+- id: b3.007.t04
+  en: '[s3:02]'
+  pt: ''
+  status: pendente
+- id: b3.007.t05
+  en: '[espera][linha]'
+  pt: ''
+  status: pendente
+- id: b3.008.t00
+  en: '[espera][quebra2][quebra2]Jump from the top[quebra2]of the Pyramid[quebra2]and enter a new[quebra2]world.[espera]'
+  pt: '[espera][quebra2][quebra2]Pule do alto da[quebra2]Pirâmide e entre[quebra2]num mundo novo.[espera]'
+  status: revisado

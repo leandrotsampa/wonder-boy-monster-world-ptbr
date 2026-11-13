@@ -1,0 +1,26 @@
+# Item gráfico 'game_over' (ferramentas/graficos.py). Gerado por
+# 'python -m ferramentas importar-tiles --origem <ROM> --item game_over'; edite o
+# PNG, não este arquivo.
+#
+# PNG indexado de 16x2 tiles: cada bloco são 2 linhas de 16 tiles
+# em ordem de bloco (tile t na coluna t % 16), blocos empilhados na ordem abaixo.
+# Índices de cor da paleta da cena. Ver docs/tecnico/mapa-rom.md §8.
+origem:
+  descricao: "Wonder Boy in Monster World (UE), ROM base"
+  arquivo: "Wonder Boy In Monster World (UE) [!].bin"
+  rom_sha1: 87a968f773c7e807e647c0737132457b06b78276
+  base_sha1: 87a968f773c7e807e647c0737132457b06b78276
+  tabela: 0x41000
+png: game_over.png
+formato: "02"
+disposicao: fundo
+tiles: 32
+blocos:
+  - {bloco: 0xFF, ponteiro: 0x413FC, base: {tipo: "02", endereco: 0x5D47B, bytes: 436}, linhas_png: "0-1"}
+partes:
+  - retoque: "FIM DE JOGO no lugar de GAME OVER (bloco inteiro: G, M, E e O do original; F, I, D e J do projeto)"
+    bloco: 0xFF
+    pixels_png: "x 0-127, y 0-15"
+    origem: "desenho do projeto"
+  - texto: "restante (fora dos retoques acima)"
+    origem: "Wonder Boy in Monster World (UE), ROM base"

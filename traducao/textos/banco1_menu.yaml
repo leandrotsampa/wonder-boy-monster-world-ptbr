@@ -1,0 +1,215 @@
+- id: b1m.000
+  en: Legend Sword
+  pt: ''
+  status: pendente
+  nota: 'tela ARMA, até 17 colunas; sem nome curto: mostra o completo (Espada Lendária)'
+- id: b1m.001
+  en: Excalibur
+  pt: ''
+  status: pendente
+  nota: 'tela ARMA, até 17 colunas; sem nome curto: mostra o completo (Excalibur)'
+- id: b1m.002
+  en: Knight Sword
+  pt: ''
+  status: pendente
+  nota: 'tela ARMA, até 17 colunas; sem nome curto: mostra o completo (Espada Militar)'
+- id: b1m.003
+  en: Gradius
+  pt: ''
+  status: pendente
+  nota: 'tela ARMA, até 17 colunas; sem nome curto: mostra o completo (Gradius)'
+- id: b1m.004
+  en: Battle Spear
+  pt: ''
+  status: pendente
+  nota: 'tela ARMA, até 17 colunas; sem nome curto: mostra o completo (Lança de Batalha)'
+- id: b1m.005
+  en: Trident
+  pt: ''
+  status: pendente
+  nota: 'tela ARMA, até 17 colunas; sem nome curto: mostra o completo (Tridente)'
+- id: b1m.006
+  en: Small Spear
+  pt: ''
+  status: pendente
+  nota: 'tela ARMA, até 17 colunas; sem nome curto: mostra o completo (Lança Curta)'
+- id: b1m.007
+  en: Pygmy Sword
+  pt: ''
+  status: pendente
+  nota: 'tela ARMA, até 17 colunas; sem nome curto: mostra o completo (Espada Pygmy)'
+- id: b1m.008
+  en: Legend Armor
+  pt: ''
+  status: pendente
+  nota: 'tela ARMADURA, até 17 colunas; sem nome curto: mostra o completo (Armadura Lendária)'
+- id: b1m.009
+  en: Flame Armor
+  pt: ''
+  status: pendente
+  nota: 'tela ARMADURA, até 17 colunas; sem nome curto: mostra o completo (Armadura de Fogo)'
+- id: b1m.00A
+  en: Knight Armor
+  pt: ''
+  status: pendente
+  nota: 'tela ARMADURA, até 17 colunas; sem nome curto: mostra o completo (Armadura Militar)'
+- id: b1m.00B
+  en: Steel Armor
+  pt: ''
+  status: pendente
+  nota: 'tela ARMADURA, até 17 colunas; sem nome curto: mostra o completo (Armadura de Aço)'
+- id: b1m.00C
+  en: Hard Armor
+  pt: ''
+  status: pendente
+  nota: 'tela ARMADURA, até 17 colunas; sem nome curto: mostra o completo (Armadura Robusta)'
+- id: b1m.00D
+  en: Chain mail
+  pt: ''
+  status: pendente
+  nota: 'tela ARMADURA, até 17 colunas; sem nome curto: mostra o completo (Cota de Malha)'
+- id: b1m.00E
+  en: Leather Armor
+  pt: ''
+  status: pendente
+  nota: 'tela ARMADURA, até 17 colunas; sem nome curto: mostra o completo (Armadura de Couro)'
+- id: b1m.00F
+  en: Pygmy Armor
+  pt: ''
+  status: pendente
+  nota: 'tela ARMADURA, até 17 colunas; sem nome curto: mostra o completo (Armadura Pygmy)'
+- id: b1m.010
+  en: Legend Shield
+  pt: ''
+  status: pendente
+  nota: 'tela ESCUDO, até 17 colunas; sem nome curto: mostra o completo (Escudo Lendário)'
+- id: b1m.011
+  en: Flame Shield
+  pt: ''
+  status: pendente
+  nota: 'tela ESCUDO, até 17 colunas; sem nome curto: mostra o completo (Escudo de Fogo)'
+- id: b1m.012
+  en: Knight Shield
+  pt: ''
+  status: pendente
+  nota: 'tela ESCUDO, até 17 colunas; sem nome curto: mostra o completo (Escudo Militar)'
+- id: b1m.013
+  en: Steel Shield
+  pt: ''
+  status: pendente
+  nota: 'tela ESCUDO, até 17 colunas; sem nome curto: mostra o completo (Escudo de Aço)'
+- id: b1m.014
+  en: Hard Shield
+  pt: ''
+  status: pendente
+  nota: 'tela ESCUDO, até 17 colunas; sem nome curto: mostra o completo (Escudo Robusto)'
+- id: b1m.015
+  en: Shell Shield
+  pt: ''
+  status: pendente
+  nota: 'tela ESCUDO, até 17 colunas; sem nome curto: mostra o completo (Escudo de Concha)'
+- id: b1m.016
+  en: Wood Shield
+  pt: ''
+  status: pendente
+  nota: 'tela ESCUDO, até 17 colunas; sem nome curto: mostra o completo (Escudo de Madeira)'
+- id: b1m.017
+  en: Pygmy Shield
+  pt: ''
+  status: pendente
+  nota: 'tela ESCUDO, até 17 colunas; sem nome curto: mostra o completo (Escudo Pygmy)'
+- id: b1m.018
+  en: Legend Boots
+  pt: ''
+  status: pendente
+  nota: 'tela BOTAS, até 17 colunas; sem nome curto: mostra o completo (Botas Lendárias)'
+- id: b1m.019
+  en: Ceramic Boots
+  pt: ''
+  status: pendente
+  nota: 'tela BOTAS, até 17 colunas; sem nome curto: mostra o completo (Botas de Cerâmica)'
+- id: b1m.01A
+  en: Oasis Boots
+  pt: ''
+  status: pendente
+  nota: 'tela BOTAS, até 17 colunas; sem nome curto: mostra o completo (Botas do Oásis)'
+- id: b1m.01B
+  en: Marine Boots
+  pt: ''
+  status: pendente
+  nota: 'tela BOTAS, até 17 colunas; sem nome curto: mostra o completo (Botas Marinhas)'
+- id: b1m.01C
+  en: Ladder Boots
+  pt: ''
+  status: pendente
+  nota: 'tela BOTAS, até 17 colunas; sem nome curto: mostra o completo (Botas de Escalada)'
+- id: b1m.01D
+  en: Leather Boots
+  pt: ''
+  status: pendente
+  nota: 'tela BOTAS, até 17 colunas; sem nome curto: mostra o completo (Botas de Couro)'
+- id: b1m.01E
+  en: Cloth Boots
+  pt: ''
+  status: pendente
+  nota: 'tela BOTAS, até 17 colunas; sem nome curto: mostra o completo (Botas de Pano)'
+- id: b1m.01F
+  en: Pygmy Boots
+  pt: ''
+  status: pendente
+  nota: 'tela BOTAS, até 17 colunas; sem nome curto: mostra o completo (Botas Pygmy)'
+- id: b1m.031
+  en: Lamp
+  pt: ''
+  status: pendente
+  nota: 'tela ITEM, até 9 colunas; sem nome curto: mostra o completo (Lamparina)'
+- id: b1m.032
+  en: Amulet
+  pt: ''
+  status: pendente
+  nota: 'tela ITEM, até 9 colunas; sem nome curto: mostra o completo (Amuleto)'
+- id: b1m.033
+  en: Sun-Key
+  pt: Chave Sol
+  status: revisado
+  nota: 'tela ITEM, até 9 colunas; completo (banco 1): Chave do Sol'
+- id: b1m.034
+  en: Moon-Key
+  pt: Chave Lua
+  status: revisado
+  nota: 'tela ITEM, até 9 colunas; completo (banco 1): Chave da Lua'
+- id: b1m.035
+  en: Star-Key
+  pt: C.Estrela
+  status: revisado
+  nota: 'tela ITEM, até 9 colunas; completo (banco 1): Chave da Estrela'
+- id: b1m.036
+  en: Gold-Gem
+  pt: ''
+  status: pendente
+  nota: 'tela ITEM, até 9 colunas; sem nome curto: mostra o completo (Topázio)'
+- id: b1m.037
+  en: Blue-Gem
+  pt: ''
+  status: pendente
+  nota: 'tela ITEM, até 9 colunas; sem nome curto: mostra o completo (Safira)'
+- id: b1m.038
+  en: Old Axe
+  pt: Machado
+  status: revisado
+  nota: 'tela ITEM, até 9 colunas; completo (banco 1): Machado Velho'
+- id: b1m.039
+  en: Fire-Urn
+  pt: Urna
+  status: revisado
+  nota: 'tela ITEM, até 9 colunas; completo (banco 1): Urna de Fogo'
+- id: b1m.03A
+  en: Bracelet
+  pt: ''
+  status: pendente
+  nota: 'tela ITEM, até 9 colunas; sem nome curto: mostra o completo (Bracelete)'
+- id: b1m.03B
+  en: Rapid Pad
+  pt: ''
+  status: pendente
+  nota: 'tela ITEM, até 9 colunas; sem nome curto: mostra o completo (Rapid Pad)'

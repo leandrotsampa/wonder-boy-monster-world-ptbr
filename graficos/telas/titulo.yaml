@@ -1,0 +1,26 @@
+# Item gráfico 'titulo' (ferramentas/graficos.py). Arte do projeto, editada à mão no
+# PNG (o item não tem origem de importação em config/graficos.yaml).
+#
+# PNG indexado de 48x2 tiles: cada coluna de tiles é uma coluna de sprite
+# (tile 2c em cima, 2c+1 embaixo, em ordem de bloco). Índices 0 = transparente,
+# 1 = contorno, 15 = traço. Ver docs/tecnico/mapa-rom.md §8.
+origem:
+  descricao: "arte do projeto"
+  base_sha1: 87a968f773c7e807e647c0737132457b06b78276
+  tabela: 0x41000
+png: titulo.png
+formato: "02"
+tiles: 96
+blocos:
+  - {bloco: 0x166, ponteiro: 0x41598, base: {tipo: "02", endereco: 0x6A2C9, bytes: 300}, colunas_png: "0-15"}
+  - {bloco: 0x167, ponteiro: 0x4159C, base: {tipo: "02", endereco: 0x6A3F5, bytes: 265}, colunas_png: "16-31"}
+  - {bloco: 0x168, ponteiro: 0x415A0, base: {tipo: "02", endereco: 0x6A4FE, bytes: 250}, colunas_png: "32-47"}
+partes:
+  - texto: "NOVO JOGO"
+    colunas_png: "0-9"
+  - texto: "CONTINUAR"
+    colunas_png: "10-19"
+  - texto: "APERTE START"
+    colunas_png: "20-31, 34-41 e 43"
+  - texto: "seta do menu"
+    colunas_png: "32-33"

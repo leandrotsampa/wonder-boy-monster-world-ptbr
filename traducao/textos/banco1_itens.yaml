@@ -1,0 +1,236 @@
+- id: b1.000.t00
+  en: Legend Sword
+  pt: Espada Lendária
+  status: revisado
+- id: b1.001.t00
+  en: Excalibur
+  pt: Excalibur
+  status: revisado
+- id: b1.002.t00
+  en: Knight Sword
+  pt: Espada Militar
+  status: revisado
+- id: b1.003.t00
+  en: Gradius
+  pt: Gradius
+  status: revisado
+- id: b1.004.t00
+  en: Battle Spear
+  pt: Lança de Batalha
+  status: revisado
+- id: b1.005.t00
+  en: Trident
+  pt: Tridente
+  status: revisado
+- id: b1.006.t00
+  en: Small Spear
+  pt: Lança Curta
+  status: revisado
+- id: b1.007.t00
+  en: Pygmy Sword
+  pt: Espada Pygmy
+  status: revisado
+- id: b1.008.t00
+  en: Legend Armor
+  pt: Armadura Lendária
+  status: revisado
+- id: b1.009.t00
+  en: Flame Armor
+  pt: Armadura de Fogo
+  status: revisado
+- id: b1.00A.t00
+  en: Knight Armor
+  pt: Armadura Militar
+  status: revisado
+- id: b1.00B.t00
+  en: Steel Armor
+  pt: Armadura de Aço
+  status: revisado
+- id: b1.00C.t00
+  en: Hard Armor
+  pt: Armadura Robusta
+  status: revisado
+- id: b1.00D.t00
+  en: Chain mail
+  pt: Cota de Malha
+  status: revisado
+- id: b1.00E.t00
+  en: Leather Armor
+  pt: Armadura de Couro
+  status: revisado
+- id: b1.00F.t00
+  en: Pygmy Armor
+  pt: Armadura Pygmy
+  status: revisado
+- id: b1.010.t00
+  en: Legend Shield
+  pt: Escudo Lendário
+  status: revisado
+- id: b1.011.t00
+  en: Flame Shield
+  pt: Escudo de Fogo
+  status: revisado
+- id: b1.012.t00
+  en: Knight Shield
+  pt: Escudo Militar
+  status: revisado
+- id: b1.013.t00
+  en: Steel Shield
+  pt: Escudo de Aço
+  status: revisado
+- id: b1.014.t00
+  en: Hard Shield
+  pt: Escudo Robusto
+  status: revisado
+- id: b1.015.t00
+  en: Shell Shield
+  pt: Escudo de Concha
+  status: revisado
+- id: b1.016.t00
+  en: Wood Shield
+  pt: Escudo de Madeira
+  status: revisado
+- id: b1.017.t00
+  en: Pygmy Shield
+  pt: Escudo Pygmy
+  status: revisado
+- id: b1.018.t00
+  en: Legend Boots
+  pt: Botas Lendárias
+  status: revisado
+- id: b1.019.t00
+  en: Ceramic Boots
+  pt: Botas de Cerâmica
+  status: revisado
+- id: b1.01A.t00
+  en: Oasis Boots
+  pt: Botas do Oásis
+  status: revisado
+- id: b1.01B.t00
+  en: Marine Boots
+  pt: Botas Marinhas
+  status: revisado
+- id: b1.01C.t00
+  en: Ladder Boots
+  pt: Botas de Escalada
+  status: revisado
+- id: b1.01D.t00
+  en: Leather Boots
+  pt: Botas de Couro
+  status: revisado
+- id: b1.01E.t00
+  en: Cloth Boots
+  pt: Botas de Pano
+  status: revisado
+- id: b1.01F.t00
+  en: Pygmy Boots
+  pt: Botas Pygmy
+  status: revisado
+- id: b1.020.t00
+  en: Fire Storm
+  pt: Bolas de Fogo
+  status: revisado
+- id: b1.021.t00
+  en: Quake
+  pt: Terremoto
+  status: revisado
+- id: b1.022.t00
+  en: Thunder
+  pt: Trovões
+  status: revisado
+- id: b1.023.t00
+  en: Power
+  pt: Super Força
+  status: revisado
+- id: b1.024.t00
+  en: Shield
+  pt: Blindagem
+  status: revisado
+- id: b1.025.t00
+  en: Return
+  pt: Voltar
+  status: revisado
+- id: b1.026.t00
+  en: '[$AF][$AE][$93]ÕâÁ'
+  pt: ''
+  status: pendente
+- id: b1.028.t00
+  en: Ocarina
+  pt: Ocarina
+  status: revisado
+- id: b1.029.t00
+  en: Charmstone
+  pt: Pedra Encantada
+  status: revisado
+- id: b1.02A.t00
+  en: Elixir
+  pt: Elixir
+  status: revisado
+- id: b1.02B.t00
+  en: Medicine
+  pt: Remédio
+  status: revisado
+- id: b1.02C.t00
+  en: Potion
+  pt: Poção
+  status: revisado
+- id: b1.02D.t00
+  en: Holywater
+  pt: Água Benta
+  status: revisado
+- id: b1.02E.t00
+  en: Hi-Potion
+  pt: Super Poção
+  status: revisado
+- id: b1.030.t00
+  en: '[$FB][$CF][$FE][$E4]'
+  pt: ''
+  status: pendente
+- id: b1.031.t00
+  en: Lamp
+  pt: Lamparina
+  status: revisado
+- id: b1.032.t00
+  en: Amulet
+  pt: Amuleto
+  status: revisado
+- id: b1.033.t00
+  en: Sun-Key
+  pt: Chave do Sol
+  status: revisado
+- id: b1.034.t00
+  en: Moon-Key
+  pt: Chave da Lua
+  status: revisado
+- id: b1.035.t00
+  en: Star-Key
+  pt: Chave da Estrela
+  status: revisado
+- id: b1.036.t00
+  en: Gold-Gem
+  pt: Topázio
+  status: revisado
+- id: b1.037.t00
+  en: Blue-Gem
+  pt: Safira
+  status: revisado
+- id: b1.038.t00
+  en: Old Axe
+  pt: Machado Velho
+  status: revisado
+- id: b1.039.t00
+  en: Fire-Urn
+  pt: Urna de Fogo
+  status: revisado
+- id: b1.03A.t00
+  en: Bracelet
+  pt: Bracelete
+  status: revisado
+- id: b1.03B.t00
+  en: Rapid Pad
+  pt: Rapid Pad
+  status: revisado
+- id: b1.040.t00
+  en: Heart
+  pt: Coração
+  status: revisado

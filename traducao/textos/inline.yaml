@@ -1,0 +1,218 @@
+- id: quiz.tempo
+  en: Time's up.
+  pt: Sem tempo.
+  status: revisado
+- id: quiz.errou
+  en: Incorrect.
+  pt: Errou.
+  status: revisado
+- id: quiz.acertou
+  en: Correct.
+  pt: Acertou.
+  status: revisado
+- id: status.ap
+  en: AP
+  pt: PA
+  status: revisado
+- id: status.dp
+  en: DP
+  pt: PD
+  status: revisado
+- id: status.sp
+  en: SP
+  pt: PE
+  status: revisado
+- id: pausa
+  en: PAUSE
+  pt: PAUSA
+  status: revisado
+- id: creditos.equipe
+  en: STAFF
+  pt: EQUIPE
+  status: revisado
+- id: creditos.programador_chefe
+  en: CHIEF PROGRAMMER
+  pt: PROGRAMADOR CHEFE
+  status: revisado
+- id: creditos.programador
+  en: PROGRAMMER
+  pt: PROGRAMADOR
+  status: revisado
+- id: creditos.musica_efeitos
+  en: MUSIC / EFFECTS
+  pt: MÚSICA E SONS
+  status: revisado
+- id: creditos.projetistas
+  en: DESIGNERS
+  pt: DESIGN
+  status: revisado
+- id: creditos.diretores
+  en: DIRECTORS
+  pt: DIRETORES
+  status: revisado
+- id: creditos.supervisor
+  en: SUPERVISOR
+  pt: SUPERVISOR
+  status: revisado
+- id: creditos.agradecimentos
+  en: SPECIAL THANKS
+  pt: AGRADECIMENTOS
+  status: revisado
+- id: ocarina.1.shion
+  en: Shion plays
+  pt: Shion toca
+  status: revisado
+- id: ocarina.1.the
+  en: 'the '
+  pt: 'sua '
+  status: revisado
+- id: ocarina.1.oh
+  en: Oh, that sounds lovely.
+  pt: Ah, que melodia linda!
+  status: revisado
+- id: ocarina.2.shion
+  en: Shion plays
+  pt: Shion toca
+  status: revisado
+- id: ocarina.2.the
+  en: 'the '
+  pt: 'sua '
+  status: revisado
+- id: ocarina.3.voce
+  en: You play beautifully.
+  pt: Você toca muito bem!
+  status: revisado
+- id: ocarina.4.mas
+  en: But I can't play very
+  pt: Mas eu não sei tocar
+  status: revisado
+- id: ocarina.4.bem
+  en: well.
+  pt: bem.
+  status: revisado
+- id: ocarina.5.melodia
+  en: The melody isn't quite right.
+  pt: Não é bem essa melodia.
+  status: revisado
+- id: bau.achou_o
+  en: 'Found the '
+  pt: 'Você achou '
+  status: revisado
+- id: bau.ponto
+  en: .
+  pt: .
+  status: revisado
+- id: bau.achou
+  en: 'Found '
+  pt: 'Você achou '
+  status: revisado
+- id: bau.ouro
+  en: ' GOLD.'
+  pt: ' MOEDAS.'
+  status: revisado
+- id: menu.cabecalho.selecionar
+  en: SELECT
+  pt: SELECIONAR
+  status: revisado
+- id: menu.cabecalho.arma
+  en: WEAPON
+  pt: '   ARMA   '
+  status: revisado
+  nota: 'decisão do autor: ARMA no lugar de PODER'
+- id: menu.cabecalho.armadura
+  en: 'ARMOR '
+  pt: ' ARMADURA '
+  status: revisado
+- id: menu.cabecalho.escudo
+  en: SHIELD
+  pt: '  ESCUDO  '
+  status: revisado
+- id: menu.cabecalho.botas
+  en: 'BOOTS '
+  pt: '  BOTAS   '
+  status: revisado
+- id: menu.cabecalho.item
+  en: ITEM
+  pt: ITEM
+  status: revisado
+- id: menu.cabecalho.magia
+  en: MAGIC
+  pt: MAGIA
+  status: revisado
+- id: menu.opcao.arma
+  en: WEAPON
+  pt: ARMA
+  status: revisado
+  nota: 'decisão do autor: ARMA no lugar de PODER'
+- id: menu.opcao.armadura
+  en: 'ARMOR '
+  pt: ARMADURA
+  status: revisado
+- id: menu.opcao.escudo
+  en: SHIELD
+  pt: ESCUDO
+  status: revisado
+- id: menu.opcao.botas
+  en: 'BOOTS '
+  pt: BOTAS
+  status: revisado
+- id: menu.opcao.item
+  en: ITEM
+  pt: ITEM
+  status: revisado
+- id: menu.opcao.magia
+  en: MAGIC
+  pt: MAGIA
+  status: revisado
+- id: magia.fogo
+  en: FIRE STORM
+  pt: BOLAS DE FOGO
+  status: revisado
+- id: magia.terremoto
+  en: QUAKE
+  pt: TERREMOTO
+  status: revisado
+  nota: 'decisão do autor: TERREMOTO no lugar de TREMOR DE TERRA'
+- id: magia.trovao
+  en: THUNDER
+  pt: TROVÕES
+  status: revisado
+- id: magia.poder
+  en: POWER
+  pt: SUPER FORÇA
+  status: revisado
+- id: magia.escudo
+  en: SHIELD
+  pt: BLINDAGEM
+  status: revisado
+- id: magia.retorno
+  en: RETURN
+  pt: VOLTAR
+  status: revisado
+- id: magia_hud.fogo
+  en: FIRE STORM
+  pt: FOGO
+  status: revisado
+  nota: 'projeto: forma curta de BOLAS DE FOGO; o HUD tem 10 colunas'
+- id: magia_hud.terremoto
+  en: QUAKE
+  pt: TERREMOTO
+  status: revisado
+  nota: 'decisão do autor: TERREMOTO no lugar de TREMOR DE TERRA'
+- id: magia_hud.trovao
+  en: THUNDER
+  pt: TROVÕES
+  status: revisado
+- id: magia_hud.poder
+  en: POWER
+  pt: FORÇA
+  status: revisado
+  nota: 'projeto: forma curta de SUPER FORÇA; o HUD tem 10 colunas'
+- id: magia_hud.escudo
+  en: SHIELD
+  pt: BLINDAGEM
+  status: revisado
+- id: magia_hud.retorno
+  en: RETURN
+  pt: VOLTAR
+  status: revisado

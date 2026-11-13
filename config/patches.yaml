@@ -1,0 +1,225 @@
+# Patches de código aplicados pelo build (ferramentas/patches.py, etapa_patches).
+# Cada item: endereço, bytes que a ROM base tem ali e bytes novos (mesmo tamanho).
+# O build confere todos os 'original' antes de gravar; se algum não bater, falha.
+patches:
+  - id: eeprom.nack_sem_trava
+    end: 0x1C552
+    # Original: 6100002A 4E71 = bsr.w $1C57E; nop (seguido de 'bra.b *-2'): se a EEPROM
+    # do save não responder (sem ACK no I2C), o jogo manda o STOP e fica num laço
+    # infinito. É o que trava no START em emuladores que só emulam a EEPROM para a ROM
+    # original exata (ex.: ares, que identifica o jogo pelo SHA-256 do arquivo).
+    original: "6100002A4E71"
+    # Novo: 4EF90001C57E = jmp $1C57E.l: manda o STOP e retorna em vez de travar. Com a
+    # EEPROM presente o ACK sempre chega e este caminho não é executado: salvar e
+    # carregar não mudam (testes/test_patches.py::test_save_e_load_iguais_com_patch).
+    novo: "4EF90001C57E"
+    descricao: "Não travar quando a EEPROM do save não responde"
+    origem: "projeto"
+  # HUD: rótulo "MOEDAS" do quadro do ouro em duas linhas de tiles (mapa-rom.md §8, "HUD").
+  # A rotina 0x8596 põe o endereço da janela em (coluna 22, linha 5) e chama 0x786A, que
+  # escreve a string 'GOLD' (0x84E7) como tiles da fonte com paleta 1 ($A000 | byte).
+  # O valor fica na linha 6, colunas 24-29 (até 999999), e o GOLD encostava nele.
+  - id: hud.moedas_chamada
+    end: 0x85A0
+    # Original: 43FAFF45 6100F2C4 = lea $84E7(pc),a1; bsr.w $786A
+    original: "43FAFF456100F2C4"
+    # Novo: 4EB90009F780 4E71 = jsr $9F780.l; nop (rotina abaixo)
+    novo: "4EB90009F7804E71"
+    descricao: "HUD: o rótulo do ouro passa a ser impresso pela rotina de duas linhas"
+    origem: "projeto"
+  - id: hud.moedas_rotina
+    end: 0x9F780
+    # Espaço livre (FF de 0x9F777 a 0xA0000, mapa-rom.md §7), fora da região do build.
+    original: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+    # 3E3C1704      move.w #$1704,d7      ; coluna 23, linha 4
+    # 4EB9000083B0  jsr $83B0.l           ; endereço da janela (d7 = coluna<<8 | linha)
+    # 43FA0016      lea $9F7A2(pc),a1     ; string de cima
+    # 4EB8786A      jsr $786A.w           ; imprime ($A000 | byte); a1 para depois do 00
+    # 3E3C1705      move.w #$1705,d7      ; coluna 23, linha 5
+    # 4EB9000083B0  jsr $83B0.l
+    # 4EB8786A      jsr $786A.w           ; string de baixo (logo depois da de cima)
+    # 4E75          rts
+    # C6..CB 00     cima: tiles 0xC6-0xCB da fonte (graficos/fonte/fonte.png, HUD_* em
+    # D3..D8 00     baixo: tiles 0xD3-0xD8   ferramentas/fonte.py; 0xC0-0xC5 e 0xD0
+    #                são as bolhas d'água, TILES_EFEITO)
+    novo: "3E3C17044EB9000083B043FA00164EB8786A3E3C17054EB9000083B04EB8786A4E75C6C7C8C9CACB00D3D4D5D6D7D800"
+    descricao: "HUD: imprime MOEDAS em duas linhas (4 e 5), 3 pixels acima do original"
+    origem: "projeto"
+  # Buffer do nome de item (mapa-rom.md §6, "Buffer do nome de item"). 0x1E6A copia o nome
+  # do banco 1 em duas linhas: a de cima (marcas FE/FF) e a das letras, 16 bytes depois.
+  # Na base: $8CE0 e $8CF0, 16 colunas, com a pilha das strings aninhadas em $8D00 logo
+  # depois. Novo: $AB00 e $AB20, 32 colunas cada, em RAM que o jogo não usa (nenhuma
+  # instrução endereça $A3C0-$BFFF; no emulador a área fica intacta com um padrão gravado
+  # nela, em título, campo, baú, menus, loja e estalagem com save/load, e o jogo segue
+  # igual). Auditoria das referências a $8CE0-$8CFF: testes/test_buffer_nome.py.
+  - id: buffer_nome.copia_cima
+    end: 0x1E72
+    original: "47F88CE0"   # lea $8CE0.w,a3 (preparo da cópia; a3 = linha de cima)
+    novo: "47F8AB00"       # lea $AB00.w,a3
+    descricao: "Buffer do nome de item: a cópia escreve em $AB00"
+    origem: "projeto"
+  - id: buffer_nome.copia_letras
+    end: 0x1EC4
+    original: "17430010"   # move.b d3,$10(a3) (letras = linha de cima + 16)
+    novo: "17430020"       # move.b d3,$20(a3) (+ 32)
+    descricao: "Buffer do nome de item: letras 32 bytes depois da linha de cima"
+    origem: "projeto"
+  - id: buffer_nome.bau_cima
+    end: 0x1F18
+    original: "41F88CE0"   # lea $8CE0.w,a0 (mensagem do baú de item)
+    novo: "41F8AB00"       # lea $AB00.w,a0
+    descricao: "Buffer do nome de item: o baú lê de $AB00"
+    origem: "projeto"
+  - id: buffer_nome.bau_letras
+    end: 0x1F26
+    original: "10280010"   # move.b $10(a0),d0
+    novo: "10280020"       # move.b $20(a0),d0
+    descricao: "Buffer do nome de item: o baú lê as letras em +32"
+    origem: "projeto"
+  - id: buffer_nome.itens_cima
+    end: 0x7AEE
+    original: "43F88CE0"   # lea $8CE0.w,a1 (tela ITEM do menu)
+    novo: "43F8AB00"       # lea $AB00.w,a1
+    descricao: "Buffer do nome de item: a tela ITEM lê a linha de cima em $AB00"
+    origem: "projeto"
+  - id: buffer_nome.itens_letras
+    end: 0x7AFA
+    original: "43F88CF0"   # lea $8CF0.w,a1
+    novo: "43F8AB20"       # lea $AB20.w,a1
+    descricao: "Buffer do nome de item: a tela ITEM lê as letras em $AB20"
+    origem: "projeto"
+  - id: buffer_nome.equip_cima
+    end: 0x8446
+    original: "41F88CE0"   # lea $8CE0.w,a0 (telas de equipamento)
+    novo: "41F8AB00"       # lea $AB00.w,a0
+    descricao: "Buffer do nome de item: as telas de equipamento leem a linha de cima em $AB00"
+    origem: "projeto"
+  - id: buffer_nome.equip_letras
+    end: 0x844C
+    original: "41F88CF0"   # lea $8CF0.w,a0
+    novo: "41F8AB20"       # lea $AB20.w,a0
+    descricao: "Buffer do nome de item: as telas de equipamento leem as letras em $AB20"
+    origem: "projeto"
+  # Lista das telas ARMA/ARMADURA/ESCUDO/BOTAS (mapa-rom.md §6, "Nomes de itens nos
+  # menus"): o painel tem moldura nas colunas 12 e 31 (traço nos pixels 1-6 de cada
+  # tile) e fundo preto nas colunas 13-30. Na base a seta do cursor fica na coluna 14
+  # (tile $87B5, piscando; posição em $9624/$9625, rotina 0x81D6), o nome é centrado em 14
+  # colunas a partir da 15 (cols 15-28) e o pisca do item equipado apaga 13 a partir da
+  # 15. Passam a usar o fundo preto inteiro: seta na coluna 13 e nomes em 17 colunas
+  # (14-30), onde todos os nomes completos cabem (config/texto.yaml:
+  # nomes_menu.telas.equipamento.largura = 17).
+  - id: lista_equip.cursor
+    end: 0x7848
+    original: "31FC0E079624"   # move.w #$0E07,$9624.w (seta: coluna 14, linha 7)
+    novo: "31FC0D079624"       # move.w #$0D07,$9624.w (coluna 13)
+    descricao: "Lista de equipamentos: seta do cursor na coluna 13"
+    origem: "projeto"
+  - id: lista_equip.coluna
+    end: 0x83D4
+    original: "3E3C0F06"   # move.w #$0F06,d7 (coluna 15, linha 6)
+    novo: "3E3C0E06"       # move.w #$0E06,d7 (coluna 14)
+    descricao: "Lista de equipamentos: nomes a partir da coluna 14"
+    origem: "projeto"
+  - id: lista_equip.largura
+    end: 0x842E
+    original: "720E"       # moveq #14,d1 (largura da centralização)
+    novo: "7211"           # moveq #17,d1
+    descricao: "Lista de equipamentos: nome centrado em 17 colunas"
+    origem: "projeto"
+  - id: lista_equip.pisca_coluna
+    end: 0x7E46
+    original: "3E3C0F06"   # move.w #$0F06,d7 (pisca: apaga as 2 linhas do item equipado)
+    novo: "3E3C0E06"       # move.w #$0E06,d7
+    descricao: "Lista de equipamentos: o pisca do item equipado começa na coluna 14"
+    origem: "projeto"
+  - id: lista_equip.pisca_largura
+    end: 0x7E76
+    original: "7A0D"       # moveq #13,d5 (tiles apagados por linha; laço subq/bne em 0x8762)
+    novo: "7A11"           # moveq #17,d5
+    descricao: "Lista de equipamentos: o pisca apaga as 17 colunas do nome"
+    origem: "projeto"
+  - id: lista_equip.volta_largura
+    end: 0x7812
+    original: "7A11"       # moveq #17,d5 (0x7808: ao voltar para a seleção, limpa 9 linhas da coluna 13 à 29)
+    novo: "7A12"           # moveq #18,d5 (até a coluna 30, a última da lista alargada)
+    descricao: "Lista de equipamentos: a volta para a seleção limpa até a coluna 30"
+    origem: "projeto"
+  # Mensagem do baú de ouro (mapa-rom.md §6, "Mensagens do baú"): 0x1F46 escreve
+  # "Found " + valor + " GOLD." com 0x1F8E, que usa a paleta do byte alto de d0/d1 (todo
+  # o texto em $8020, branco). No baú de item o nome sai na paleta 1 ($A000, amarelo,
+  # em 0x1F1C). Pedido do autor: o valor também em amarelo. A chamada do valor desvia para
+  # uma rotina que escreve os dígitos com $A0xx e volta para $8020 antes de " MOEDAS.".
+  # Vale para todo baú/achado de ouro (0x1FCA); as falas não passam por aqui.
+  - id: bau.valor_amarelo_chamada
+    end: 0x1F7C
+    original: "20496100000E"   # movea.l a1,a0; bsr.w $1F8E (escreve o valor)
+    novo: "4EB90009F7C0"       # jsr $9F7C0.l (rotina abaixo)
+    descricao: "Baú de ouro: o valor passa pela rotina que o escreve em amarelo"
+    origem: "projeto"
+  - id: bau.valor_amarelo_rotina
+    end: 0x9F7C0
+    # Espaço livre (FF de 0x9F777 a 0xA0000, mapa-rom.md §7), depois de hud.moedas_rotina.
+    original: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+    # 323CA020  move.w #$A020,d1   ; paleta 1 (amarelo)
+    # 3001      move.w d1,d0
+    # 2049      movea.l a1,a0      ; o valor em decimal (feito por 0x183E)
+    # 4EB81F8E  jsr $1F8E.w
+    # 323C8020  move.w #$8020,d1   ; volta à paleta 0 para " MOEDAS."
+    # 3001      move.w d1,d0
+    # 4E75      rts
+    novo: "323CA020300120494EB81F8E323C802030014E75"
+    descricao: "Baú de ouro: escreve o valor em amarelo (paleta 1)"
+    origem: "projeto"
+  - id: ocarina.1.linha
+    end: 0x2B64
+    # Mini-script da ocarina (0x2B56): "Shion plays" [02] "the " + nome do item. O 02 (nova
+    # linha) vira 07 (liga a flag de janela, já ligada pelo 07 do início do mini-script:
+    # não imprime nada), e a frase cabe numa linha só: "Shion toca sua Ocarina." (23 colunas).
+    original: "02"
+    novo: "07"
+    descricao: "Ocarina: 'Shion toca sua Ocarina.' numa linha só"
+    origem: "projeto"
+  - id: ocarina.2.linha
+    end: 0x2B9D
+    original: "02"         # mesmo caso no 2.º mini-script (0x2B8F)
+    novo: "07"
+    descricao: "Ocarina: 'Shion toca sua Ocarina.' numa linha só (2.º mini-script)"
+    origem: "projeto"
+  # Final (mapa-rom.md §8, "Texto desenhado em tiles"): fluxo de 64 colunas × 2 words
+  # (em cima, embaixo) em 0x1B61A, lido por 'lea $1B61A(pc)' em 0x1B3B8 e copiado uma
+  # coluna por vez (0x1B8DA) para as linhas 14-15 do plano A. Colunas 0-31 = 1.ª tela
+  # ("THE END"), 32-63 = última tela ("TO BE CONTINUED"). Word = 8000 | espelhamento
+  # (0800 horizontal, 1000 vertical) | tile 0x450-0x45F (bloco 0x2EE, item 'final' em
+  # config/graficos.yaml); 8000 = vazio. Cada letra tem 2 colunas (16 pixels).
+  - id: final.fim
+    end: 0x1B61A
+    # Original: THE END nas colunas 10-22 (10 livres à esquerda, 9 à direita).
+    original: "80008000 80008000 80008000 80008000 80008000 80008000 80008000 80008000
+      80008000 80008000 8C508C51 84508451 845A945A 8C5A9C5A 84528453 845B845C
+      80008000 84528453 845B845C 84569C57 84579C56 845D945D 8C589C58 80008000
+      80008000 80008000 80008000 80008000 80008000 80008000 80008000 80008000"
+    # Novo: FIM nas colunas 13-18 (13 livres de cada lado). F = 8452 845B / 8454 8455
+    # (alto do E, pé novo), I = 845F 8C5F / 945F 9C5F, M = 8453 8C53 / 9459 9C59 (alto
+    # novo espelhado; pé = haste do U virada).
+    novo: "80008000 80008000 80008000 80008000 80008000 80008000 80008000 80008000
+      80008000 80008000 80008000 80008000 80008000 84528454 845B8455 845F945F
+      8C5F9C5F 84539459 8C539C59 80008000 80008000 80008000 80008000 80008000
+      80008000 80008000 80008000 80008000 80008000 80008000 80008000 80008000"
+    descricao: "Final: FIM no lugar de THE END"
+    origem: "projeto"
+  - id: final.continua
+    end: 0x1B69A
+    # Original: TO BE CONTINUED nas colunas 34-61.
+    original: "80008000 80008000 8C508C51 84508451 84589458 8C589C58 80008000 84528453
+      84548455 84528453 845B845C 80008000 84589458 845E945E 84589458 8C589C58
+      84569C57 84579C56 8C508C51 84508451 845F945F 8C5F9C5F 84569C57 84579C56
+      84599458 8C599C58 84528453 845B845C 845D945D 8C589C58 80008000 80008000"
+    # Novo: CONTINUA... nas colunas 39-57 (7 livres à esquerda, 6 à direita, como o THE
+    # END). C, O, N, T, I, U como no original; A = alto novo espelhado (845D 8C5D) +
+    # base do H (945A 9C5A); cada ponto é uma coluna (8000 em cima, 845C embaixo).
+    novo: "80008000 80008000 80008000 80008000 80008000 80008000 80008000 84589458
+      845E945E 84589458 8C589C58 84569C57 84579C56 8C508C51 84508451 845F945F
+      8C5F9C5F 84569C57 84579C56 84599458 8C599C58 845D945A 8C5D9C5A 8000845C
+      8000845C 8000845C 80008000 80008000 80008000 80008000 80008000 80008000"
+    descricao: "Final: CONTINUA... no lugar de TO BE CONTINUED"
+    origem: "projeto"

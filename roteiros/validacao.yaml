@@ -1,0 +1,101 @@
+# Validação das regras de largura/linhas no jogo (Plano 3, Tarefa 6; ver
+# testes/test_validacao_jogo.py e docs/tecnico/mapa-rom.md, "Largura de linha").
+#
+# NEW GAME → 1.º diálogo: espera cada página terminar de imprimir (o texto de teste
+# para em [espera]) e captura pagina_0 … pagina_7, apertando C entre elas. Depois
+# fecha o diálogo, captura a casa e os menus (status e magias, strings inline).
+# Toda captura vem com checar_fonte: grava <nome>.ram e falha se $A144 > 42 ou se os
+# slots 5–7 não têm os blocos 5–7 (invariante da fonte, docs/tecnico/vram.md §3.1).
+#
+# Controles: C avança o texto/pula, START abre o menu de status, B volta.
+- esperar: 300
+- apertar: [start]        # pula a abertura
+  quadros: 2
+- esperar: 240
+- apertar: [start]        # título → menu (NEW GAME)
+  quadros: 2
+- esperar: 120
+- apertar: [start]        # NEW GAME → casa do herói, o 1.º diálogo começa
+  quadros: 2
+- esperar: 600
+- capturar: pagina_0
+- checar_fonte: pagina_0
+- apertar: [c]            # próxima página
+  quadros: 2
+- esperar: 600
+- capturar: pagina_1
+- checar_fonte: pagina_1
+- apertar: [c]            # próxima página
+  quadros: 2
+- esperar: 600
+- capturar: pagina_2
+- checar_fonte: pagina_2
+- apertar: [c]            # próxima página
+  quadros: 2
+- esperar: 600
+- capturar: pagina_3
+- checar_fonte: pagina_3
+- apertar: [c]            # próxima página
+  quadros: 2
+- esperar: 600
+- capturar: pagina_4
+- checar_fonte: pagina_4
+- apertar: [c]            # próxima página
+  quadros: 2
+- esperar: 600
+- capturar: pagina_5
+- checar_fonte: pagina_5
+- apertar: [c]            # próxima página
+  quadros: 2
+- esperar: 600
+- capturar: pagina_6
+- checar_fonte: pagina_6
+- apertar: [c]            # próxima página
+  quadros: 2
+- esperar: 600
+- capturar: pagina_7
+- checar_fonte: pagina_7
+
+# --- fecha o diálogo (C a mais só faz o herói pular dentro de casa) ---
+- repetir: 30
+  passos:
+    - apertar: [c]
+      quadros: 2
+    - esperar: 28
+- esperar: 120
+- capturar: casa
+- checar_fonte: casa
+- apertar: [start]        # menu de status (AP/DP/SP)
+  quadros: 2
+- esperar: 60
+- capturar: menu_status
+- checar_fonte: menu_status
+- apertar: [start]        # fecha o menu
+  quadros: 2
+- esperar: 60
+
+# --- campo e menu de magias ---
+- apertar: [baixo]        # sai da casa
+  quadros: 20
+- esperar: 60
+- capturar: campo
+- checar_fonte: campo
+- apertar: [start]
+  quadros: 3
+- esperar: 60
+- capturar: menu
+- checar_fonte: menu
+- apertar: [baixo]
+  quadros: 3
+- esperar: 10
+- apertar: [baixo]
+  quadros: 3
+- esperar: 10
+- apertar: [dir]
+  quadros: 3
+- esperar: 10
+- apertar: [c]            # MAGIC
+  quadros: 3
+- esperar: 40
+- capturar: menu_magia
+- checar_fonte: menu_magia

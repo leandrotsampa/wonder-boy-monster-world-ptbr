@@ -1,0 +1,26 @@
+# Item gráfico 'placa_saida' (ferramentas/graficos.py). Gerado por
+# 'python -m ferramentas importar-tiles --origem <ROM> --item placa_saida'; edite o
+# PNG, não este arquivo.
+#
+# PNG indexado de 16x2 tiles: cada bloco são 2 linhas de 16 tiles
+# em ordem de bloco (tile t na coluna t % 16), blocos empilhados na ordem abaixo.
+# Índices de cor da paleta da cena. Ver docs/tecnico/mapa-rom.md §8.
+origem:
+  descricao: "Wonder Boy in Monster World (UE), ROM base"
+  arquivo: "Wonder Boy In Monster World (UE) [!].bin"
+  rom_sha1: 87a968f773c7e807e647c0737132457b06b78276
+  base_sha1: 87a968f773c7e807e647c0737132457b06b78276
+  tabela: 0x41000
+png: placa_saida.png
+formato: "02"
+disposicao: fundo
+tiles: 32
+blocos:
+  - {bloco: 0xB8, ponteiro: 0x412E0, base: {tipo: "02", endereco: 0x56476, bytes: 531}, linhas_png: "0-1"}
+partes:
+  - retoque: "SAÍDA no lugar de EXIT (acento nas linhas 5-6, letras nas 8-15)"
+    bloco: 0xB8
+    pixels_png: "x 73-100, y 5-15"
+    origem: "desenho do projeto"
+  - texto: "restante (fora dos retoques acima)"
+    origem: "Wonder Boy in Monster World (UE), ROM base"

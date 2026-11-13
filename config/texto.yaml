@@ -1,0 +1,305 @@
+# Configuração do pipeline de texto (ver docs/tecnico/mapa-rom.md §6).
+regiao_destino: [0xA4C80, 0xBFFF8]  # 0xBFFF8-0xC0000: compensação do CRC32/checksum (rom.yaml)
+
+# Janelas de diálogo: tabela 0x1DD74 (ponteiro em 0x1CC18), 8 registros de 4 bytes
+# (x, y, largura, altura), indexados pelo byte flag de cada diálogo (0x276C -> 0x27B0:
+# largura -> $8C9E, altura -> $8CA0). Largura = colunas de texto; altura = linhas
+# visíveis (a janela rola quando o texto passa disso). Confirmado no jogo para os flags
+# 0, 4 e 7 (testes/test_validacao_jogo.py; capturas em build/capturas/validacao/).
+# testes/test_largura.py::test_janelas_conferem_com_a_rom compara com a ROM base.
+janelas:
+  - {x: 4, y: 1, largura: 23, altura: 3}    # 0: 93 diálogos (padrão), lojas, estalagem
+  - {x: 4, y: 5, largura: 23, altura: 2}    # 1: 20 diálogos
+  - {x: 1, y: 1, largura: 21, altura: 3}    # 2
+  - {x: 6, y: 3, largura: 17, altura: 1}    # 3
+  - {x: 0, y: 0, largura: 17, altura: 5}    # 4: Esfinge (quiz)
+  - {x: 0, y: 0, largura: 19, altura: 3}    # 5
+  - {x: 4, y: 10, largura: 23, altura: 3}   # 6
+  - {x: 2, y: 3, largura: 26, altura: 1}    # 7: falas de 1 linha (dialogo.106, .120)
+
+# Largura e linhas por página para texto sem janela conhecida (= janela 0). Regras de
+# contagem em docs/tecnico/mapa-rom.md §5 ("Largura de linha"); código em
+# ferramentas/verificacao.py (checar_largura, checar_linhas).
+largura_linha: 23
+linhas_por_caixa: 3
+
+# Scripts referenciados direto pelo código (absolutos de 32 bits). A auditoria
+# (testes/test_auditoria.py) não encontrou nenhum: todo texto da faixa
+# 0x1DD94-0x22460 é alcançado pelas tabelas 0x1DD94 (diálogos) e 0x211CA (bancos).
+raizes_extra: []
+
+# Referências absolutas achadas pela auditoria que NÃO são texto.
+referencias_ignoradas:
+  - end: 0x1BABC
+    valor: 0x21001
+    motivo: >-
+      falso positivo: 0x1BA90-0x1BAF0 é tabela de dados (frames/atributos de
+      sprite, bytes como 01 01 00 80 00 02 10 01), não instrução. O varredor
+      linear decodificou ori/andi sobre dados e o word 0002 1001 coincide com a
+      faixa. Nenhum ponteiro de texto.
+
+# Strings inline no código (Task 6).
+# Strings inline no código (Task 6; mapa-rom.md §6). end = endereço do texto editável,
+# tam = comprimento original (sem o terminador 00 nem bytes de controle). Nomes de pessoas
+# dos créditos não são itens. Ocarina (0x2B56-0x2C05): os mini-scripts são lidos por
+# move.l #$2B56/$2B8F/$2BA9/$2BC4/$2BE5 (código em 0xC4B0-0xC530), não por ponteiros da
+# faixa de texto; por isso não são raízes. Cada trecho de texto entre bytes de controle
+# (06, 02, 0B..., 05) é um item de tam fixo; os controles não são tocados.
+# Créditos (0x1ABD2-0x1AD60): fluxo lido por um só ponteiro (lea $1ABD2 em 0x1AB10 ->
+# $A3B6); cada string termina em 00, 9A separa as telas, 99 encerra. 0x1B004 mede a string
+# até o 00 e 0x1AF6A centra em 20 colunas ((20 - tam) / 2). Os cargos não têm tamanho
+# fixo: o bloco é remontado no lugar (ferramentas/inline.py, sequência).
+sequencias_inline:
+  creditos: {ini: 0x1abd2, fim: 0x1ad61, largura: 20}
+
+inline:
+  - {id: "quiz.tempo", end: 0x1d72, tam: 10, preencher: espaco, nota: "Time's up."}
+  - {id: "quiz.errou", end: 0x1d7d, tam: 10, preencher: espaco, nota: "Incorrect."}
+  - {id: "quiz.acertou", end: 0x1d88, tam: 8, preencher: espaco, nota: "Correct."}
+  - {id: "status.ap", end: 0x84de, tam: 2, preencher: espaco, nota: "AP"}
+  - {id: "status.dp", end: 0x84e1, tam: 2, preencher: espaco, nota: "DP"}
+  - {id: "status.sp", end: 0x84e4, tam: 2, preencher: espaco, nota: "SP"}
+  - {id: "pausa", end: 0x7f4e, tam: 5, preencher: espaco, nota: "PAUSE (START com o herói andando: lea em 0x7F1E, impresso por 0x7870 na janela)"}
+  - {id: "creditos.equipe", end: 0x1abd2, tam: 5, preencher: espaco, sequencia: creditos, nota: "STAFF"}
+  - {id: "creditos.programador_chefe", end: 0x1abd9, tam: 16, preencher: espaco, sequencia: creditos, nota: "CHIEF PROGRAMMER"}
+  - {id: "creditos.programador", end: 0x1abfd, tam: 10, preencher: espaco, sequencia: creditos, nota: "PROGRAMMER"}
+  - {id: "creditos.musica_efeitos", end: 0x1ac1b, tam: 15, preencher: espaco, sequencia: creditos, nota: "MUSIC / EFFECTS"}
+  - {id: "creditos.projetistas", end: 0x1ac3e, tam: 9, preencher: espaco, sequencia: creditos, nota: "DESIGNERS"}
+  - {id: "creditos.diretores", end: 0x1ac82, tam: 9, preencher: espaco, sequencia: creditos, nota: "DIRECTORS"}
+  - {id: "creditos.supervisor", end: 0x1acad, tam: 10, preencher: espaco, sequencia: creditos, nota: "SUPERVISOR"}
+  - {id: "creditos.agradecimentos", end: 0x1accd, tam: 14, preencher: espaco, sequencia: creditos, nota: "SPECIAL THANKS"}
+  - {id: "ocarina.1.shion", end: 0x2b59, tam: 11, preencher: espaco, nota: "Shion plays"}
+  - {id: "ocarina.1.the", end: 0x2b65, tam: 4, preencher: espaco, nota: "the "}
+  - {id: "ocarina.1.oh", end: 0x2b76, tam: 23, preencher: espaco, nota: "Oh, that sounds lovely."}
+  - {id: "ocarina.2.shion", end: 0x2b92, tam: 11, preencher: espaco, nota: "Shion plays"}
+  - {id: "ocarina.2.the", end: 0x2b9e, tam: 4, preencher: espaco, nota: "the "}
+  - {id: "ocarina.3.voce", end: 0x2bad, tam: 21, preencher: espaco, nota: "You play beautifully."}
+  - {id: "ocarina.4.mas", end: 0x2bc8, tam: 21, preencher: espaco, nota: "But I can't play very"}
+  - {id: "ocarina.4.bem", end: 0x2bde, tam: 5, preencher: espaco, nota: "well."}
+  - {id: "ocarina.5.melodia", end: 0x2be9, tam: 29, preencher: espaco, nota: "The melody isn't quite right."}
+
+# status.ouro ("GOLD" em 0x84E7) saiu: era o rótulo do HUD e o único leitor (lea em
+# 0x85A0) foi trocado pelo patch hud.moedas_chamada (Plano 4, Task 1). A tela de status
+# (menu do START) não mostra ouro. Mensagens do baú: em inline_repontavel (abaixo).
+
+# Strings inline repontáveis (ferramentas/repontavel.py; mapa-rom.md §6, "Repontáveis").
+# O pt vai para a região livre do build e as instruções de refs passam a ler a cópia
+# nova (o original fica intacto; pt vazio = nada muda). end/tam = texto original (sem o
+# 00). refs: lea_pc (4 bytes), lea_pc_bsr (lea d16(pc),An + bsr.w -> lea abs.l,An +
+# bsr.b, 8 bytes), abs_l (operando de 32 bits) ou trampolim (o trecho [ini, fim) com o
+# lea vira jsr + nop; o trampolim refaz o trecho com lea abs.l e volta). blocos: strings
+# que mudam de lugar juntas (ferramentas/repontavel.py). Auditoria das referências:
+# testes/test_repontavel.py::test_auditoria_referencias e test_menus.py.
+inline_repontavel:
+  itens:
+    # Baú de item (0x1EEC): "Found the " + nome do item (buffer $AB00, patches buffer_nome.*) + "."
+    - {id: "bau.achou_o", end: 0x1fe6, tam: 10, nota: "Found the ",
+       refs: [{end: 0x1f10, tipo: lea_pc_bsr}]}
+    - {id: "bau.ponto", end: 0x1fff, tam: 1, nota: ". (depois do nome do item)",
+       refs: [{end: 0x1f3c, tipo: lea_pc_bsr}]}
+    # Baú de ouro (0x1F46): "Found " + valor em decimal + " GOLD."
+    - {id: "bau.achou", end: 0x1ff1, tam: 6, nota: "Found ",
+       refs: [{end: 0x1f74, tipo: lea_pc_bsr}]}
+    - {id: "bau.ouro", end: 0x1ff8, tam: 6, nota: " GOLD.",
+       refs: [{end: 0x1f82, tipo: lea_pc_bsr}]}
+  # Centralização das mensagens do baú na linha de 30 colunas ($8D12): o código soma ao
+  # tamanho da parte variável um imediato fixo (addi.w #6,d0 em 0x1EF8; addi.w #5,d0 em
+  # 0x1F5C) que é (tamanho dos textos fixos) - 5 / - 7. variavel: nome do item <= 18
+  # (MAX_NOME_ITEM em ferramentas/verificacao.py: "Você achou " + 18 + "." = 30; o buffer
+  # $AB00 tem 32 colunas); valor do ouro <= 6 dígitos (999999).
+  ajustes:
+    - {id: "bau.centro_item", end: 0x1efa, base: -5, soma: ["bau.achou_o", "bau.ponto"],
+       largura: {max: 30, variavel: 18}}
+    - {id: "bau.centro_ouro", end: 0x1f5e, base: -7, soma: ["bau.achou", "bau.ouro"],
+       largura: {max: 30, variavel: 6}}
+
+  # Menus do START e magias (mapa-rom.md §6, "Menus e magias"; testes/test_menus.py).
+  # Texto da fonte desenhado pelo código, lido em sequência ou por tabelas de
+  # deslocamentos de 16 bits: cada bloco muda de lugar inteiro. O lea (pc) não alcança a
+  # região livre, por isso as referências são trampolins (jsr para um trecho que refaz as
+  # instruções com o lea absoluto). largura = colunas que cabem no painel (janela de 32
+  # colunas; moldura nas colunas 12 e 31 no menu de seleção, 0 e 31 em item/magia).
+  blocos:
+    # Cabeçalhos ("<enfeite> SELECT <enfeite>", linha 4): 0x8272 lê a tabela 0x82B6 pelo
+    # índice da tela ($95FA). Telas 0-4 na coluna da word 0x82B2 (0x10 -> 0x0E para caber
+    # SELECIONAR), item e magia na de 0x82B4 (0x0B). A linha não é limpa entre as telas
+    # 0-4: os cabeçalhos delas têm o mesmo tamanho (o original completa ARMOR/BOOTS com
+    # espaço). Coluna c: enfeite(2) + espaço + texto + espaço + enfeite(2) até a coluna 30.
+    - id: menu.cabecalhos
+      end: 0x82c4
+      origem: "projeto (nomes, cabeçalhos com espaço até 10 letras, trampolim em 0xC0000)"
+      prefixo: 0
+      entradas:
+        - {id: menu.cabecalho.selecionar, largura: 11}
+        - {id: menu.cabecalho.arma, largura: 11}
+        - {id: menu.cabecalho.armadura, largura: 11}
+        - {id: menu.cabecalho.escudo, largura: 11}
+        - {id: menu.cabecalho.botas, largura: 11}
+        - {id: menu.cabecalho.item, largura: 14}
+        - {id: menu.cabecalho.magia, largura: 14}
+      iguais: [menu.cabecalho.selecionar, menu.cabecalho.arma, menu.cabecalho.armadura,
+               menu.cabecalho.escudo, menu.cabecalho.botas]
+      tabela:
+        end: 0x82b6
+        refs:
+          # 43FA003C D2F10000 = lea $82B6(pc),a1; adda.w (a1,d0.w),a1
+          - {end: 0x8278, tipo: trampolim, ini: 0x8278, fim: 0x8280, original: "43FA003CD2F10000"}
+      trocas:
+        - {end: 0x82b2, original: "1004", novo: "0E04", nota: "cabeçalho das telas 0-4: coluna 16 -> 14",
+           origem: "projeto"}
+    # Opções da tela de seleção: 0x77CC lê 6 strings em sequência a partir de WEAPON
+    # (0x82CB, as mesmas do cabeçalho no original) e as põe nas posições de 0x7D6E
+    # (coluna, linha; o cursor fica uma coluna antes: 0x77EC, 0x7D2E). Colunas 15/24 ->
+    # 14/22 para ARMADURA caber na direita: esquerda 14-20 (o cursor da
+    # direita fica na 21), direita 22-29.
+    - id: menu.opcoes
+      end: 0x82cb
+      origem: "projeto (nomes, colunas 14/22, trampolim em 0xC0010)"
+      prefixo: 0
+      entradas:
+        - {id: menu.opcao.arma, largura: 7}
+        - {id: menu.opcao.armadura, largura: 8}
+        - {id: menu.opcao.escudo, largura: 7}
+        - {id: menu.opcao.botas, largura: 8}
+        - {id: menu.opcao.item, largura: 7}
+        - {id: menu.opcao.magia, largura: 8}
+      refs:
+        # 43FA0AF5 7405 = lea $82CB(pc),a1; moveq #5,d2
+        - {end: 0x77d4, tipo: trampolim, ini: 0x77d4, fim: 0x77da, original: "43FA0AF57405"}
+      trocas:
+        - {end: 0x7d6e, original: "0F0718070F0A180A0F0D180D", novo: "0E0716070E0A160A0E0D160D",
+           nota: "posições das opções e do cursor: colunas 15/24 -> 14/22",
+           origem: "projeto"}
+    # Tela de magias: 6 entradas (coluna, linha, texto, 00) em 0x7C0A, colunas 3 e 18,
+    # linhas 6/9/12. 0x7BB6 desenha em sequência; 0x7C56 (destaque ao equipar, 0x7A18)
+    # acha cada uma pela tabela 0x7BFE. Esquerda até a coluna 16 (o cursor da direita fica
+    # na 17), direita até a 30.
+    - id: menu.magias
+      end: 0x7c0a
+      origem: "projeto (nomes, trampolim em 0x1C800)"
+      prefixo: 2
+      entradas:
+        - {id: magia.fogo, largura: 14}
+        - {id: magia.terremoto, largura: 13}
+        - {id: magia.trovao, largura: 14}
+        - {id: magia.poder, largura: 13}
+        - {id: magia.escudo, largura: 14}
+        - {id: magia.retorno, largura: 13}
+      refs:
+        # 7800 43FA0050 = moveq #0,d4; lea $7C0A(pc),a1
+        - {end: 0x7bb8, tipo: trampolim, ini: 0x7bb6, fim: 0x7bbc, original: "780043FA0050"}
+      tabela:
+        end: 0x7bfe
+        refs:
+          # 43FAFFA6 D2F10000 = lea $7BFE(pc),a1; adda.w (a1,d0.w),a1
+          - {end: 0x7c56, tipo: trampolim, ini: 0x7c56, fim: 0x7c5e, original: "43FAFFA6D2F10000"}
+    # Nome da magia no HUD ao lançar (0x11402 -> 0x8778): a mesma tabela 0x7BFE (+2, pula
+    # a coordenada), centrado em 10 colunas a partir de (21, 1). Forma curta à parte.
+    - id: menu.magias_hud
+      end: 0x7c0a
+      origem: "projeto (forma curta para o HUD, leitura da tabela 0x7BFE)"
+      prefixo: 2
+      entradas:
+        - {id: magia_hud.fogo, largura: 10}
+        - {id: magia_hud.terremoto, largura: 10}
+        - {id: magia_hud.trovao, largura: 10}
+        - {id: magia_hud.poder, largura: 10}
+        - {id: magia_hud.escudo, largura: 10}
+        - {id: magia_hud.retorno, largura: 10}
+      tabela:
+        end: 0x7bfe
+        refs:
+          # 43FAF478 D040 = lea $7BFE(pc),a1; add.w d0,d0
+          - {end: 0x8784, tipo: trampolim, ini: 0x8784, fim: 0x878a, original: "43FAF478D040"}
+
+# Nomes de itens nos menus (mapa-rom.md §6, "Nomes de itens nos menus";
+# ferramentas/nomes_menu.py; testes/test_nomes_menu.py). O nome completo fica no banco 1
+# (diálogos e loja pelo motor de texto, baú pela cópia 0x1E6A); as duas listas do menu do
+# START chamam 0x1E6A com 'jsr $1E6A.w' e passam a chamar uma rotina nova (trampolim) que
+# lê antes a tabela dos nomes curtos (traducao/textos/banco1_menu.yaml). Item sem nome
+# curto mostra o completo. Sem nenhum nome curto nada é gravado.
+nomes_menu:
+  arquivo: banco1_menu
+  rotina:
+    end: 0x1e6a
+    # 42788D10 42788CDE 47F88CE0 = clr.w $8D10.w; clr.w $8CDE.w; lea $8CE0.w,a3 (preparo,
+    # 12 bytes); 760D 61000056 = moveq #$D,d3; bsr.w $1ED0 (endereço do nome no banco 1).
+    # O laço de cópia segue em 0x1E7C. O preparo refeito leva os patches que caem nele
+    # (buffer_nome.copia_cima: lea $AB00.w,a3), gravados depois desta etapa.
+    original: "42788D1042788CDE47F88CE0760D61000056"
+    preparo: 12
+  chamadas:
+    # lista de equipamentos da categoria ($95FA - 1) * 8 + índice: D041 4EB81E6A =
+    # add.w d1,d0; jsr $1E6A.w
+    - {tela: equipamento, end: 0x8428, ini: 0x8426, fim: 0x842c, original: "D0414EB81E6A"}
+    # lista de itens (0x30 + espaço do inventário): 00400030 4EB81E6A = ori.w #$30,d0;
+    # jsr $1E6A.w
+    - {tela: item, end: 0x7ad6, ini: 0x7ad2, fim: 0x7ada, original: "004000304EB81E6A"}
+  telas:
+    # 0x8428 centraliza o nome em 17 colunas a partir da 14 ((17 - n) / 2 espaços dos dois
+    # lados; patches lista_equip.* de config/patches.yaml, na base 14 a partir da 15; a
+    # seta do cursor fica na coluna 13).
+    # Acima da largura a margem fica negativa e o laço de espaços não termina.
+    equipamento:
+      itens: [0x00, 0x1f]
+      largura: 17
+      nota: "telas ARMA, ARMADURA, ESCUDO e BOTAS (0x8428)"
+    # 0x7AD6 imprime cada item na posição fixa do espaço dele (tabela 0x7B0A: colunas 2,
+    # 12 e 22): 9 colunas deixam uma livre antes da coluna seguinte e da moldura (31).
+    item:
+      itens: [0x31, 0x3b]
+      largura: 9
+      nota: "tela ITEM (0x7AD6), 3 colunas de 10"
+
+# Bytes da faixa de texto que o desmontador não alcança a partir das raízes
+# (testes/test_desmontador.py::test_cobertura_rom). Faixas [inicio, fim).
+lacunas_conhecidas:
+  - inicio: 0x1E54D
+    fim: 0x1E552
+    justificativa: >-
+      código morto: "0B 11 1E 00 36" (testa a flag 0x1E e salta para 0x1E586)
+      logo após o 00 que encerra o script anterior. Nenhuma raiz nem salto
+      chega aqui; o script seguinte (raiz 0x1E512 -> 0B 17 em 0x1E514) salta
+      direto para 0x1E552.
+  - inicio: 0x21A05
+    fim: 0x21A06
+    justificativa: "padding (00) para alinhar em word a tabela do banco 2 (0x21A06)."
+  - inicio: 0x21FC9
+    fim: 0x21FCA
+    justificativa: "padding (00) para alinhar em word a tabela do banco 3 (0x21FCA)."
+
+# Letras acentuadas: caractere -> código (byte do script = índice do tile da fonte).
+# Todos no bloco 5 da fonte (tiles 0xA0-0xBF, kana que o
+# texto em inglês não usa, exceto 4 strings japonesas que sobraram: vram.md §3.2),
+# que fica carregado em toda cena com texto. Fora de 0x80-0x9F (no jogo o slot 4
+# recebe o bloco 0x235: HUD/efeitos) e de 0xBE/0xBF (tile de cima do prefixo
+# FE/FF). Evidência e justificativa: docs/tecnico/vram.md.
+acentos:
+  À: 0xA1
+  Ã: 0xA2
+  Â: 0xA3
+  Á: 0xA4
+  É: 0xA5
+  Ê: 0xA6
+  Í: 0xA7
+  Ó: 0xA8
+  Õ: 0xA9
+  Ô: 0xAA
+  Ú: 0xAB
+  Ç: 0xAC
+  à: 0xB1
+  ã: 0xB2
+  â: 0xB3
+  á: 0xB4
+  é: 0xB5
+  ê: 0xB6
+  í: 0xB7
+  ó: 0xB8
+  õ: 0xB9
+  ô: 0xBA
+  ú: 0xBB
+  ç: 0xBC
+
+# Fonte editável: graficos/fonte/fonte.png (ferramentas/fonte.py). Quando o PNG não
+# existe, 'extrair' o gera da ROM base com os glifos dos acentos (códigos acima) e o
+# rótulo MOEDAS do HUD desenhados pelo projeto.

@@ -1,0 +1,60 @@
+# Itens gráficos reinseridos pelo build (ferramentas/graficos.py, etapa_graficos).
+# Cada item: blocos da tabela 0x41000 (32 tiles cada), formato de reinserção ("02" =
+# Huffman + LZ, "01" = cru, endereço par), disposição do PNG ("sprite", o padrão: colunas
+# de 2 tiles em ordem de sprite; "fundo": cada bloco = 2 linhas de 16 tiles, blocos
+# empilhados), PNG editável e metadados.
+# Item com 'origem': o PNG é gerado uma vez por 'python -m ferramentas importar-tiles
+# --origem <ROM> --item <nome>' (a ROM de origem tem de ter o sha1 abaixo) e depois
+# editado à mão. Item sem 'origem': o PNG é arte do projeto, editada só à mão.
+itens:
+  titulo:
+    # Textos da tela de título (sprites, tiles 0x3C0-0x41F = slots 30-32): "APERTE
+    # START", "NOVO JOGO", "CONTINUAR" e a seta do menu. O logo (blocos 0x140-0x15D)
+    # não muda. Arte do projeto (sem origem de importação).
+    blocos: [0x166, 0x167, 0x168]
+    formato: "02"
+    png: graficos/telas/titulo.png
+    meta: graficos/telas/titulo.yaml
+  # Texto desenhado em tiles do cenário e do final (docs/tecnico/mapa-rom.md §8, "Texto
+  # desenhado em tiles"). Origem = a própria ROM base; as letras novas são retoques do
+  # projeto (RETOQUES em ferramentas/graficos.py), no estilo das originais.
+  placas_hot:
+    # Placa "INN" das estalagens (2 × 2 tiles: 12-13 em cima, 28-29 embaixo) -> "HOT".
+    # Todos os blocos que têm a placa.
+    blocos: [0x37, 0x88, 0xD3, 0x10B, 0x11C]
+    formato: "02"
+    disposicao: fundo
+    png: graficos/telas/placas_hot.png
+    meta: graficos/telas/placas_hot.yaml
+    origem: &base
+      descricao: "Wonder Boy in Monster World (UE), ROM base"
+      arquivo: "Wonder Boy In Monster World (UE) [!].bin"
+      sha1: "87a968f773c7e807e647c0737132457b06b78276"
+  placa_saida:
+    # Placa "EXIT" (tiles 25-28; o acento do Í no tile 10, acima) -> "SAÍDA".
+    blocos: [0xB8]
+    formato: "02"
+    disposicao: fundo
+    png: graficos/telas/placa_saida.png
+    meta: graficos/telas/placa_saida.yaml
+    origem: *base
+  final:
+    # Letras do final (tiles 16-31 = 0x450-0x45F, slot 34): "FIM" e "CONTINUA..." no
+    # lugar de "THE END" e "TO BE CONTINUED". O tilemap (fluxo de 0x1B61A) muda pelos
+    # patches final.fim e final.continua (config/patches.yaml).
+    blocos: [0x2EE]
+    formato: "02"
+    disposicao: fundo
+    png: graficos/telas/final.png
+    meta: graficos/telas/final.yaml
+    origem: *base
+  game_over:
+    # Tela de game over (bloco 0xFF no slot 9 = tiles 0x120-0x13F, os 32 tiles do texto):
+    # "FIM DE JOGO" no lugar de "GAME OVER". O tilemap (16 x 2 tiles nas colunas 8-23 das
+    # linhas 12-13, de 0x91C2) não muda.
+    blocos: [0xFF]
+    formato: "02"
+    disposicao: fundo
+    png: graficos/telas/game_over.png
+    meta: graficos/telas/game_over.yaml
+    origem: *base
