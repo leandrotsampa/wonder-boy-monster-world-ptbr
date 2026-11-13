@@ -11,7 +11,6 @@ O projeto é distribuído **apenas como patch IPS**: você aplica o patch na sua
 - **Gráficos traduzidos:** tela de título (APERTE START, NOVO JOGO, CONTINUAR), "MOEDAS" no HUD, placas de HOT e SAÍDA, FIM DE JOGO, FIM e CONTINUA... no final.
 - **Texto natural:** português conversado, adaptado ao tom de cada cena, e não uma tradução ao pé da letra.
 - **Revisada jogando**, do início ao fim, com cada tela conferida no jogo.
-- **Save funcionando** nos emuladores com suporte à EEPROM do cartucho (veja "Como jogar").
 - **Mesmo CRC32 da ROM original** (`1592F5B0`) e checksum do cabeçalho válido.
 
 ## Imagens
@@ -39,7 +38,6 @@ O projeto é distribuído **apenas como patch IPS**: você aplica o patch na sua
 | Checksum do cabeçalho (`0x18E`) | `9D79` |
 
 3. Aplique o patch com um programa de IPS, como o [Floating IPS](https://www.smwcentral.net/?p=section&a=details&id=11474) ou o [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) (no navegador). Em outra ROM (outra versão, com cabeçalho ou já modificada), o resultado não funciona.
-4. Emuladores recomendados: **Genesis Plus GX** (RetroArch) ou **BlastEm**.
 
 A ROM traduzida tem o mesmo CRC32 da original, então gerenciadores de coleção que identificam pelo CRC32 vão mostrá-la como a original. Para diferenciar, use o nome do arquivo ou o SHA-1.
 
